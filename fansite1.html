@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Empereur du Japon - Fansite</title>
+    <link rel="stylesheet" href="fansite1.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="Index.html">日本</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Index.html">Accueil</a></li>
+                <li><a href="#actualites">Actualités</a></li>
+                <li><a href="#realisations">Réalisations</a></li>
+                <li><a href="#evenements">Événements</a></li>
+                <li><a href="#medias">Médias</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>L'Empereur du Japon</h1>
+            <p>Gardien de la tradition millénaire et symbole de l'unité nationale</p>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="actualites" class="news-section">
+        <div class="container">
+            <h2>Actualités</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="./images/news-emperor-1.jpg" alt="Actualité 1">
+                    <div class="news-content">
+                        <span class="news-date">15 Novembre 2024</span>
+                        <h3>Cérémonie d'intronisation anniversaire</h3>
+                        <p>L'Empereur Naruhito célèbre le 5ème anniversaire de son intronisation avec une cérémonie traditionnelle au Palais Impérial.</p>
+                        <a href="#" class="read-more">Lire plus →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="./images/news-emperor-2.jpg" alt="Actualité 2">
+                    <div class="news-content">
+                        <span class="news-date">3 Novembre 2024</span>
+                        <h3>Visite officielle en France</h3>
+                        <p>Rencontre historique avec le Président français pour renforcer les liens diplomatiques entre les deux nations.</p>
+                        <a href="#" class="read-more">Lire plus →</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <img src="./images/news-emperor-3.jpg" alt="Actualité 3">
+                    <div class="news-content">
+                        <span class="news-date">23 Octobre 2024</span>
+                        <h3>Message impérial pour la paix</h3>
+                        <p>Discours émouvant lors de la commémoration annuelle appelant à l'harmonie mondiale et à la préservation de la paix.</p>
+                        <a href="#" class="read-more">Lire plus →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="realisations" class="achievements-section">
+        <div class="container">
+            <h2>Réalisations</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2019</h3>
+                        <h4>Ascension au Trône du Chrysanthème</h4>
+                        <p>Intronisation de l'Empereur Naruhito, inaugurant l'ère Reiwa (Belle Harmonie).</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <h4>Leadership durant la Pandémie</h4>
+                        <p>Messages d'encouragement à la nation japonaise pendant la crise sanitaire mondiale.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2022</h3>
+                        <h4>Promotion de la Diplomatie Culturelle</h4>
+                        <p>Renforcement des liens internationaux à travers des échanges culturels et académiques.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2024</h3>
+                        <h4>Initiatives Environnementales</h4>
+                        <p>Soutien actif aux politiques de développement durable et de protection de l'environnement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="evenements" class="events-section">
+        <div class="container">
+            <h2>Événements</h2>
+
+            <!-- Hidden radio inputs for tab switching -->
+            <input type="radio" name="events-tab" id="tab-upcoming" class="tab-radio" checked>
+            <input type="radio" name="events-tab" id="tab-past" class="tab-radio">
+
+            <div class="events-tabs">
+                <label for="tab-upcoming" class="tab-btn">À venir</label>
+                <label for="tab-past" class="tab-btn">Passés</label>
+            </div>
+
+            <div class="events-content">
+                <!-- Upcoming Events -->
+                <div class="tab-content" id="upcoming">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">23</span>
+                            <span class="month">DÉC</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Célébration d'anniversaire de l'Empereur</h3>
+                            <p class="event-location">📍 Palais Impérial de Tokyo</p>
+                            <p>Cérémonie publique célébrant l'anniversaire de Sa Majesté Impériale.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">01</span>
+                            <span class="month">JAN</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Cérémonie du Nouvel An</h3>
+                            <p class="event-location">📍 Palais Impérial de Tokyo</p>
+                            <p>Audience publique et vœux du Nouvel An à la nation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Past Events -->
+                <div class="tab-content" id="past">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">03</span>
+                            <span class="month">NOV</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Fête de la Culture</h3>
+                            <p class="event-location">📍 Palais Impérial de Tokyo</p>
+                            <p>Remise des distinctions culturelles et célébration des arts japonais.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">23</span>
+                            <span class="month">OCT</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Commémoration de la Paix</h3>
+                            <p class="event-location">📍 Tokyo</p>
+                            <p>Cérémonie commémorative et discours impérial sur la paix mondiale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="medias" class="media-section">
+        <div class="container">
+            <h2>Photos et Vidéos</h2>
+
+            <!-- Hidden radio inputs for media tab switching -->
+            <input type="radio" name="media-tab" id="media-photos" class="media-radio" checked>
+            <input type="radio" name="media-tab" id="media-videos" class="media-radio">
+
+            <div class="media-tabs">
+                <label for="media-photos" class="media-tab-btn">Photos</label>
+                <label for="media-videos" class="media-tab-btn">Vidéos</label>
+            </div>
+
+            <div class="media-content">
+                <!-- Photos Gallery -->
+                <div class="media-tab-content" id="photos">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="./images/gallery-emperor-1.jpg" alt="Galerie 1">
+                            <div class="gallery-overlay">
+                                <p>Cérémonie d'intronisation 2019</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery-emperor-2.jpg" alt="Galerie 2">
+                            <div class="gallery-overlay">
+                                <p>Audience au Palais Impérial</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery-emperor-3.jpg" alt="Galerie 3">
+                            <div class="gallery-overlay">
+                                <p>Visite officielle en France</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery-emperor-4.jpg" alt="Galerie 4">
+                            <div class="gallery-overlay">
+                                <p>Cérémonie traditionnelle</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery-emperor-5.jpg" alt="Galerie 5">
+                            <div class="gallery-overlay">
+                                <p>Jardin du Palais Impérial</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="./images/gallery-emperor-6.jpg" alt="Galerie 6">
+                            <div class="gallery-overlay">
+                                <p>Rencontre diplomatique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Videos -->
+                <div class="media-tab-content" id="videos">
+                    <div class="video-grid">
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Cérémonie d'intronisation complète</h4>
+                            <p>Durée : 45:30</p>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Discours du Nouvel An 2024</h4>
+                            <p>Durée : 12:15</p>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Visite au temple Ise</h4>
+                            <p>Durée : 23:42</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="links-section">
+        <div class="container">
+            <h2>Liens Utiles</h2>
+            <div class="links-grid">
+                <div class="links-card">
+                    <h3>Sites de Fans</h3>
+                    <ul class="fan-links">
+                        <li><a href="#" target="_blank">🌸 Impérial Heritage Foundation</a></li>
+                        <li><a href="#" target="_blank">🏯 Japan Royal Watchers</a></li>
+                        <li><a href="#" target="_blank">👑 Friends of the Imperial Family</a></li>
+                        <li><a href="#" target="_blank">🎌 Chrysanthemum Throne Society</a></li>
+                    </ul>
+                </div>
+
+                <div class="links-card">
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-btn twitter" target="_blank">
+                            <span class="social-icon">🐦</span>
+                            Twitter
+                        </a>
+                        <a href="#" class="social-btn facebook" target="_blank">
+                            <span class="social-icon">📘</span>
+                            Facebook
+                        </a>
+                        <a href="#" class="social-btn instagram" target="_blank">
+                            <span class="social-icon">📷</span>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-btn youtube" target="_blank">
+                            <span class="social-icon">📺</span>
+                            YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations de Contact</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>contact@empereur-japon-fansite.jp</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <p>+81 3-1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Adresse</strong>
+                            <p>Tokyo, Japon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" method="post" action="#">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="question">Question générale</option>
+                            <option value="feedback">Retour d'expérience</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <p>Site de fans dédié à l'Empereur du Japon et à l'institution impériale japonaise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="Index.html">Accueil</a></li>
+                        <li><a href="#actualites">Actualités</a></li>
+                        <li><a href="#evenements">Événements</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="footer-social">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Empereur du Japon Fansite. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

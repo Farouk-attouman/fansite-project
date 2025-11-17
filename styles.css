@@ -94,6 +94,17 @@ header {
     background-position: center;
 }
 
+/* Strip Link - covers entire strip */
+.strip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    text-decoration: none;
+}
+
 .strip:hover {
     flex: 2.5;
 }
@@ -228,28 +239,190 @@ footer p {
 }
 
 /* Responsive Design */
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    .header-nav {
+        padding: 1rem 2rem;
+    }
+
+    .header-nav ul {
+        gap: 1.5rem;
+    }
+
+    .strip-content h2 {
+        font-size: 2rem;
+    }
+
+    .strip:hover .strip-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablets (portrait) and large phones */
 @media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
     .header-nav {
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
     }
 
+    .logo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
     .header-nav ul {
         gap: 1rem;
-        font-size: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-nav a {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    /* Main container adjustment */
+    .strips-container {
+        margin-top: 0;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* Strips remain visible without hover */
+    .strip {
+        min-height: 150px;
+        flex: 1;
+    }
+
+    .strip:not(:hover) {
+        flex: 1;
+    }
+
+    .strip:hover {
+        flex: 2;
+    }
+
+    /* Strip content always visible */
+    .strip-content {
+        opacity: 1;
     }
 
     .strip-content h2 {
         font-size: 1.5rem;
+        letter-spacing: 2px;
     }
 
     .strip:hover .strip-content h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .strip-content p {
+        opacity: 1;
+        transform: translateY(0);
+        font-size: 1rem;
+    }
+
+    .strip-icon {
+        font-size: 2.5rem;
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 1rem;
     }
 
     .footer-nav ul {
         flex-wrap: wrap;
         gap: 1rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.85rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .header-nav a {
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .strip {
+        min-height: 120px;
+    }
+
+    .strip-content h2 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .strip:hover .strip-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .strip-content p {
+        font-size: 0.85rem;
+    }
+
+    .strip-icon {
+        font-size: 2rem;
+    }
+
+    .footer-nav ul {
+        gap: 0.8rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.75rem;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Landscape mode for phones */
+@media (max-height: 600px) and (orientation: landscape) {
+    .strips-container {
+        height: auto;
+        min-height: auto;
+    }
+
+    .strip {
+        min-height: 100px;
+    }
+
+    .strip-content h2 {
+        font-size: 1rem;
+    }
+
+    .strip-content p {
+        font-size: 0.8rem;
+    }
+
+    .strip-icon {
+        display: none;
     }
 }
