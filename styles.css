@@ -115,7 +115,7 @@ header {
 
 /* Individual Strip Backgrounds */
 .strip-1 {
-    background: url('./images/ceremonie-empereur-naruhito.jpg') center top / cover no-repeat;
+    background: url('./images/ceremonie-empereur-naruhito-cropped-16:9.jpg') center top / cover no-repeat;
 }
 
 .strip-2 {
