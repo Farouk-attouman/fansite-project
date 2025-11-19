@@ -1,0 +1,386 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#naruto,
+#boruto,
+#samurai8 {
+    scroll-margin-top: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F6F0;
+    color: #221C1A;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ======================================================
+   HEADER
+   ====================================================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(248, 246, 240, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 2px solid rgba(251, 106, 21, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-tagline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #221C1A;
+    opacity: 0.75;
+    margin: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FB6A15;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(251, 106, 21, 0.3);
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(251, 106, 21, 0.5);
+}
+
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #221C1A;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #FB6A15;
+    background: rgba(251, 106, 21, 0.08);
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover .nav-icon {
+    filter: brightness(1.2) drop-shadow(0 0 6px rgba(251, 106, 21, 0.6));
+    transform: scale(1.15) rotate(5deg);
+}
+
+/* ======================================================
+   PAGE HEADER
+   ====================================================== */
+.page-header {
+    background: linear-gradient(135deg, rgba(251, 106, 21, 0.1), rgba(251, 106, 21, 0.05));
+    padding: 120px 20px 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: #221C1A;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #6B6763;
+}
+
+/* ======================================================
+   ŒUVRES SECTION
+   ====================================================== */
+.oeuvres-section {
+    padding: 0 20px 80px;
+}
+
+.oeuvre-card {
+    display: grid;
+    grid-template-columns: 100px 300px 1fr;
+    gap: 30px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #FB6A15;
+}
+
+.oeuvre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(251, 106, 21, 0.15);
+}
+
+/* Carte spéciale pour Naruto */
+.oeuvre-card.masterpiece {
+    border-left: 6px solid #FB6A15;
+    background: linear-gradient(135deg, rgba(251, 106, 21, 0.03), rgba(255, 255, 255, 1));
+}
+
+/* Carte featured */
+.oeuvre-card.featured {
+    border-left: 5px solid #FB6A15;
+}
+
+.oeuvre-year {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FB6A15;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.oeuvre-image {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.oeuvre-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.oeuvre-card:hover .oeuvre-image img {
+    transform: scale(1.05);
+}
+
+.oeuvre-content h2 {
+    font-size: 1.8rem;
+    color: #221C1A;
+    margin-bottom: 10px;
+}
+
+.oeuvre-meta {
+    font-size: 0.95rem;
+    color: #FB6A15;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.oeuvre-description {
+    color: #6B6763;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Stats pour Naruto */
+.oeuvre-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-item {
+    background: rgba(251, 106, 21, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #221C1A;
+    font-weight: 500;
+}
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
+.site-footer {
+    background: #221C1A;
+    padding: 80px 20px 30px;
+    border-top: 3px solid #FB6A15;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-column h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #FB6A15;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-description {
+    color: #F8F6F0;
+    opacity: 0.8;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    color: #FB6A15;
+    text-shadow: 0 0 15px rgba(251, 106, 21, 0.4);
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #F8F6F0;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #FB6A15;
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.footer-info {
+    color: #F8F6F0;
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(251, 106, 21, 0.3);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: 1rem;
+    color: #F8F6F0;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.footer-disclaimer {
+    font-size: 0.9rem;
+    color: #F8F6F0;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+@media (max-width: 1024px) {
+    .oeuvre-card {
+        grid-template-columns: 80px 250px 1fr;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .oeuvre-image {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .oeuvre-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .oeuvre-image {
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .oeuvre-year {
+        order: -1;
+    }
+
+    .oeuvre-stats {
+        justify-content: center;
+    }
+}
