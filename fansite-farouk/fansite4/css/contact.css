@@ -68,6 +68,22 @@ h2 {
     transform: scale(1.05);
 }
 
+.header-tagline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #221C1A;
+    opacity: 0.8;
+    margin: 0;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    flex-shrink: 0;
+}
+
+.branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .nav-menu {
     display: flex;
     gap: 0.5rem;
@@ -109,15 +125,7 @@ h2 {
     transform: scale(1.15) rotate(5deg);
 }
 
-.header-tagline {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #221C1A;
-    opacity: 0.8;
-    margin: 0;
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    flex-shrink: 0;
-}
+
 
 /* ======================================================
    PAGE HEADER

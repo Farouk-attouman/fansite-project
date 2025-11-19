@@ -60,6 +60,23 @@ body {
     text-shadow: 0 0 20px rgba(251, 106, 21, 0.5);
 }
 
+.header-tagline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #221C1A;
+    opacity: 0.8;
+    margin: 0;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    flex-shrink: 0;
+}
+
+.branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -102,15 +119,6 @@ body {
     transform: scale(1.15) rotate(5deg);
 }
 
-.header-tagline {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #221C1A;
-    opacity: 0.8;
-    margin: 0;
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    flex-shrink: 0;
-}
 
 /* ======================================================
    HERO ACTUALITÉS
