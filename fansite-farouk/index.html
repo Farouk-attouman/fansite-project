@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
 
     <!-- Image de fond -->
@@ -16,28 +15,27 @@
          alt="Paysage japonais avec montagnes et cerisiers en fleurs" 
          class="site-background">
 
-    <!-- En-tête -->
-    <header id="hero">
-        <img src="images/test/pexels-sedanur-kunuk-78972032-31294376.webp" 
-             alt="Temple japonais avec cerisiers en fleurs" 
-             class="header-image">
-
-        <div class="header-overlay"></div>
-
-        <div class="header-content">
-        <nav>
-            <a href="index.html" class="logo">日本</a>
-            <div class="nav-links">
-                <a href="empereur.html">Naruhito</a>
-                <a href="cuisine.html">Maître Sushis</a>
-                <a href="evangelion.html">Hideaki Anno</a>
-                <a href="accueil.html">Masashi Kishimoto</a>
+    <!-- ===== HEADER STICKY ===== -->
+    <header class="site-header">
+        <nav class="site-nav">
+            <a href="index.html" class="site-logo">日本</a>
+            <p class="header-tagline">Une exploration de la culture japonaise</p>
+            <div class="site-nav-links">
+                <a href="empereur.html" class="nav-link-item">Naruhito</a>
+                <a href="cuisine.html" class="nav-link-item">Maître Sushis</a>
+                <a href="evangelion.html" class="nav-link-item">Hideaki Anno</a>
+                <a href="accueil.html" class="nav-link-item">Masashi Kishimoto</a>
             </div>
         </nav>
-
-            <h1 class="hero-title">Le Pays du Soleil Levant</h1>
-        </div>
     </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-banner">
+        <div class="hero-banner-overlay"></div>
+        <div class="hero-banner-content">
+            <h1 class="hero-banner-title">Le Pays du Soleil Levant</h1>
+        </div>
+    </section>
 
     <!-- Contenu principal -->
     <main>
@@ -46,7 +44,7 @@
         <section>
             <div class="strip-content left">
                 <h2>
-                    <a href="empreur.html" class="titre-lien">
+                    <a href="empereur.html" class="titre-lien">
                         L'Empereur du Japon
                     </a>
                 </h2>
@@ -83,10 +81,10 @@
             <div class="strip-content left">
                 <h2>
                     <a href="evangelion.html" class="titre-lien">
-                        Evangelion
+                        Hideaki Anno
                     </a>
                 </h2>
-                <p class="subtitle">Hideaki Anno</p>
+                <p class="subtitle">Evangelion</p>
                 <p>L'anime culte qui a redéfini le genre mecha et exploré la psyché humaine</p>
             </div>
 
@@ -105,11 +103,11 @@
 
             <div class="strip-content right">
                 <h2>
-                    <a href="biographie.html" class="titre-lien">
-                        Naruto
+                    <a href="accueil.html" class="titre-lien">
+                        Masashi Kishimoto
                     </a>
                 </h2>
-                <p class="subtitle">Masashi Kishimoto</p>
+                <p class="subtitle">Naruto</p>
                 <p>Le créateur de l'une des sagas manga les plus influentes de tous les temps</p>
             </div>
         </section>
@@ -117,62 +115,51 @@
     </main>
 
     <!-- Pied de page -->
-    <!-- Pied de page -->
-<footer class="site-footer">
-    <div class="footer-container">
-        <!-- Colonne 1 : À propos -->
-        <div class="footer-column">
-            <h4>À Propos</h4>
-            <p class="footer-description">
-                Une exploration passionnante de la culture japonaise à travers ses figures emblématiques : 
-                l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Colonne 1 : À propos -->
+            <div class="footer-column">
+                <h4>À Propos</h4>
+                <p class="footer-description">
+                    Une exploration passionnante de la culture japonaise à travers ses figures emblématiques : 
+                    l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
+                </p>
+            </div>
+
+            <!-- Colonne 2 : Navigation rapide -->
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="empereur.html">L'Empereur Naruhito</a></li>
+                    <li><a href="cuisine.html">Art Culinaire</a></li>
+                    <li><a href="evangelion.html">Hideaki Anno</a></li>
+                    <li><a href="accueil.html">Masashi Kishimoto</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 3 : Le Japon -->
+            <div class="footer-column">
+                <h4>Le Pays du Soleil Levant</h4>
+                <ul class="footer-links">
+                    <li><span class="footer-info">🏯 Tradition millénaire</span></li>
+                    <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
+                    <li><span class="footer-info">🎌 Culture unique</span></li>
+                    <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Barre de copyright -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+            </p>
+            <p class="footer-disclaimer">
+                Site créé dans le cadre d'un projet universitaire. Toutes les œuvres appartiennent à leurs auteurs respectifs.
             </p>
         </div>
-
-        <!-- Colonne 2 : Navigation rapide -->
-        <div class="footer-column">
-            <h4>Navigation</h4>
-            <ul class="footer-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="empereur.html">L'Empereur Naruhito</a></li>
-                <li><a href="cuisine.html">Art Culinaire</a></li>
-                <li><a href="evangelion.html">Hideaki Anno</a></li>
-                <li><a href="accueil.html">Masashi Kishimoto</a></li>
-            </ul>
-        </div>
-
-        <!-- Colonne 3 : Thématiques -->
-        <div class="footer-column">
-            <h4>Thématiques</h4>
-            <ul class="footer-links">
-                <li><a href="empereur.html">Monarchie Japonaise</a></li>
-                <li><a href="cuisine.html">Cuisine Traditionnelle</a></li>
-                <li><a href="evangelion.html">Animation & Manga</a></li>
-            </ul>
-        </div>
-
-        <!-- Colonne 4 : Le Japon -->
-        <div class="footer-column">
-            <h4>Le Pays du Soleil Levant</h4>
-            <ul class="footer-links">
-                <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-                <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-                <li><span class="footer-info">🎌 Culture unique</span></li>
-                <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Barre de copyright -->
-    <div class="footer-bottom">
-        <p class="footer-copyright">
-            © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
-        </p>
-        <p class="footer-disclaimer">
-            Site créé dans le cadre d'un projet universitaire. Toutes les œuvres appartiennent à leurs auteurs respectifs.
-        </p>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>

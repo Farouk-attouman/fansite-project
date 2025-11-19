@@ -48,7 +48,7 @@ body {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #FB6A15;
+    color: rgb(250, 20, 66);
     text-decoration: none;
     letter-spacing: 2px;
     text-shadow: 0 0 10px rgba(251, 106, 21, 0.3);
@@ -100,6 +100,16 @@ body {
 .nav-links li a:hover .nav-icon {
     filter: brightness(1.2) drop-shadow(0 0 6px rgba(251, 106, 21, 0.6));
     transform: scale(1.15) rotate(5deg);
+}
+
+.header-tagline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #221C1A;
+    opacity: 0.8;
+    margin: 0;
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    flex-shrink: 0;
 }
 
 /* ======================================================
