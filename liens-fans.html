@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liens Fans</title>
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+    background: url('22968.png') center/cover no-repeat fixed;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: url("https://images.unsplash.com/photo-1514516345957-556ca7d90a6a")
+                center/cover no-repeat;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+        }
+
+        header h1 {
+            position: relative;
+            font-size: 3rem;
+            margin: 0;
+            color: #ff9f1c;
+        }
+
+        .links-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .link-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.12);
+        }
+
+        .link-card h3 {
+            color: #ffd166;
+            margin-bottom: 10px;
+        }
+
+        .link-card a {
+            color: #ff9f1c;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .link-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Liens Fans</h1>
+</header>
+
+<div class="links-container">
+
+    <div class="link-card">
+        <h3>🍣 Site officiel du restaurant Sukiyabashi Jirō</h3>
+        <a href="https://sushi-jiro.jp" target="_blank">Voir le site</a>
+    </div>
+
+    <div class="link-card">
+        <h3>🎬 Documentaire : *Jiro Dreams of Sushi*</h3>
+        <a href="https://www.youtube.com/watch?v=I1UDS2kgqY8" target="_blank">Voir la bande-annonce</a>
+    </div>
+
+    <div class="link-card">
+        <h3>📘 Article Wikipédia de Jirō Ono</h3>
+        <a href="https://fr.wikipedia.org/wiki/Jir%C5%8D_Ono" target="_blank">Lire l'article</a>
+    </div>
+
+    <div class="link-card">
+        <h3>🍱 Interview sur sa philosophie du sushi</h3>
+        <a href="https://www.youtube.com/results?search_query=jiro+ono+interview" target="_blank">
+            Voir les interviews YouTube
+        </a>
+    </div>
+
+    <div class="link-card">
+        <h3>⭐ Fans du documentaire — Forum Reddit</h3>
+        <a href="https://www.reddit.com/r/sushi" target="_blank">Voir la communauté</a>
+    </div>
+
+</div>
+<button onclick="window.location.href='index.html'" class="retour-btn">⬅ Retour</button>
+
+</body>
+</html>

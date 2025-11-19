@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réalisations – Jirō Ono</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: url("https://upload.wikimedia.org/wikipedia/commons/7/71/Jiro_Ono_2013.jpg") center/cover no-repeat;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+        }
+
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ff9f1c;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background: #222;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #ff9f1c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2.2rem;
+            color: #ff9f1c;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 18px;
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+            transition: 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #ffd166;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Réalisations de Jirō Ono</h1>
+    <p>Les accomplissements du maître sushi</p>
+</header>
+
+
+
+<h2 class="section-title">Ses plus grandes réalisations</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OVP.RwIcFF_4IEyQrIOVl2-gwAEsDI?w=243&h=136&c=7&rs=1&qlt=70&o=7&dpr=1.3&pid=2.1&rm=3">
+        <div class="card-content">
+            <h3>⭐⭐⭐ Trois étoiles Michelin</h3>
+            <p>Sukiyabashi Jiro devient le premier restaurant de sushi à obtenir trois étoiles Michelin.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://th.bing.com/th/id/R.daa54e72e2d0d01d2d2a584f2c6374ed?rik=D3KD%2fQXtayUzVA&riu=http%3a%2f%2fwww.magpictures.com%2fjirodreamsofsushi%2fimages%2fvod-side.png&ehk=cMtp6S%2b0mGYTsM4I5FjVG4REP8DVga3FOral%2bS9Ccqk%3d&risl=&pid=ImgRaw&r=0">
+        <div class="card-content">
+            <h3>🎬 Jiro Dreams of Sushi</h3>
+            <p>Un documentaire devenu culte qui présente la quête de perfection de Jirō Ono.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="13.png">
+        <div class="card-content">
+            <h3>🍣 Plus de 75 ans d'expertise</h3>
+            <p>Une carrière entièrement dédiée à l’art du sushi et à la transmission du savoir-faire.</p>
+        </div>
+    </div>
+
+</div>
+<button onclick="window.location.href='index.html'" class="retour-btn">⬅ Retour</button>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Jirō Ono</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+background: url("7286244.jpg")
+                center/cover no-repeat;        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        header h1 {
+            position: relative;
+            color: #ff9f1c;
+            font-size: 3rem;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: black;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .contact-container h2 {
+            text-align: center;
+            color: #ffd166;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            background: #ff9f1c;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background: #ffd166;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact</h1>
+</header>
+
+<div class="contact-container">
+    <h2>Envoyer un message</h2>
+
+    <form action="#" method="POST">
+        <label>Nom :</label>
+        <input type="text" placeholder="Votre nom" required>
+
+        <label>Email :</label>
+        <input type="email" placeholder="Votre email" required>
+
+        <label>Message :</label>
+        <textarea placeholder="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+<button onclick="window.location.href='index.html'" class="retour-btn">⬅ Retour</button>
+
+</body>
+</html>

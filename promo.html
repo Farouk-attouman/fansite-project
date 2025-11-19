@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promo</title>
+</head>
+<style>
+    .promo-section {
+  text-align: center;
+  padding:90px;
+  background:rgb(134, 130, 130);
+  
+}
+
+.promo-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.promo-card {
+  background: rgba(74, 67, 67, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  position: relative;
+}
+
+.promo-card:hover {
+  transform: scale(1.05);
+}
+
+.promo-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.promo-price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #d62828;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+</style>
+<body>
+    <section id="promo" class="section promo-section">
+  <h2>🔥 Promotions du Moment</h2>
+
+  <div class="promo-container">
+
+    <div class="promo-card">
+      <img src="R.jpeg" alt="Menu Sushi">
+      <h3>Menu Duo</h3>
+      <p>2 plateaux de 18 pièces + 2 boissons</p>
+      <span class="promo-price">-20%</span>
+    </div>
+
+    <div class="promo-card">
+      <img src="https://www.sushi-marseille.com/189-large_default/plateau-diner-deluxe.jpg" alt="Sushi Deluxe">
+      <h3>Plateau Deluxe</h3>
+      <p>30 pièces variées + soupe miso</p>
+      <span class="promo-price">-15%</span>
+    </div>
+
+    <div class="promo-card">
+      <img src="https://thumbs.dreamstime.com/z/japanese-food-assortment-maki-sushi-rolls-delicious-appetizing-115706488.jpg" alt="Maki Mix">
+      <h3>Maki Mix</h3>
+      <p>Assortiment 24 makis</p>
+      <span class="promo-price">-10%</span>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
