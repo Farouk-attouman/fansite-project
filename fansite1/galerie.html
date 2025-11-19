@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - L'Empereur du Japon</title>
+    <link rel="stylesheet" href="fansite1.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="../Index.html">日本</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="fansite1.html">Accueil</a></li>
+                <li><a href="actus.html">Actualités</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="galerie.html">Médias</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="hero hero-galerie">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Galerie Multimédia</h1>
+            <p>Photos et vidéos de la famille impériale</p>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section class="media-section">
+        <div class="container">
+            <h2>Photos et Vidéos</h2>
+
+            <!-- Hidden radio inputs for media tab switching -->
+            <input type="radio" name="media-tab" id="media-photos" class="media-radio" checked>
+            <input type="radio" name="media-tab" id="media-videos" class="media-radio">
+
+            <div class="media-tabs">
+                <label for="media-photos" class="media-tab-btn">Photos</label>
+                <label for="media-videos" class="media-tab-btn">Vidéos</label>
+            </div>
+
+            <div class="media-content">
+                <!-- Photos Gallery -->
+                <div class="media-tab-content" id="photos">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-1.jpg" alt="Galerie 1">
+                            <div class="gallery-overlay">
+                                <p>Cérémonie d'intronisation 2019</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-2.jpg" alt="Galerie 2">
+                            <div class="gallery-overlay">
+                                <p>Audience au Palais Impérial</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-3.jpg" alt="Galerie 3">
+                            <div class="gallery-overlay">
+                                <p>Visite officielle en France</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-4.jpg" alt="Galerie 4">
+                            <div class="gallery-overlay">
+                                <p>Cérémonie traditionnelle</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-5.jpg" alt="Galerie 5">
+                            <div class="gallery-overlay">
+                                <p>Jardin du Palais Impérial</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-6.jpg" alt="Galerie 6">
+                            <div class="gallery-overlay">
+                                <p>Rencontre diplomatique</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-1.jpg" alt="Galerie 7">
+                            <div class="gallery-overlay">
+                                <p>Cérémonie du thé impériale</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-2.jpg" alt="Galerie 8">
+                            <div class="gallery-overlay">
+                                <p>Festival des cerisiers</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../images/gallery-emperor-3.jpg" alt="Galerie 9">
+                            <div class="gallery-overlay">
+                                <p>Visite d'État</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Videos -->
+                <div class="media-tab-content" id="videos">
+                    <div class="video-grid">
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Cérémonie d'intronisation complète</h4>
+                            <p>Durée : 45:30</p>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Discours du Nouvel An 2024</h4>
+                            <p>Durée : 12:15</p>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Visite au temple Ise</h4>
+                            <p>Durée : 23:42</p>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Rencontre avec les étudiants</h4>
+                            <p>Durée : 18:20</p>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Cérémonie d'automne</h4>
+                            <p>Durée : 31:45</p>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-placeholder">
+                                <span class="play-icon">▶</span>
+                            </div>
+                            <h4>Documentaire : L'ère Reiwa</h4>
+                            <p>Durée : 58:12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <p>Site de fans dédié à l'Empereur du Japon et à l'institution impériale japonaise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="fansite1.html">Accueil</a></li>
+                        <li><a href="actus.html">Actualités</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                        <li><a href="galerie.html">Médias</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="footer-social">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Empereur du Japon Fansite. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

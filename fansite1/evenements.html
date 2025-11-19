@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements - L'Empereur du Japon</title>
+    <link rel="stylesheet" href="fansite1.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="../Index.html">日本</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="fansite1.html">Accueil</a></li>
+                <li><a href="actus.html">Actualités</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="galerie.html">Médias</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="hero hero-evenements">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Événements & Cérémonies</h1>
+            <p>Le calendrier impérial</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <div class="container">
+            <h2>Événements</h2>
+
+            <!-- Hidden radio inputs for tab switching -->
+            <input type="radio" name="events-tab" id="tab-upcoming" class="tab-radio" checked>
+            <input type="radio" name="events-tab" id="tab-past" class="tab-radio">
+
+            <div class="events-tabs">
+                <label for="tab-upcoming" class="tab-btn">À venir</label>
+                <label for="tab-past" class="tab-btn">Passés</label>
+            </div>
+
+            <div class="events-content">
+                <!-- Upcoming Events -->
+                <div class="tab-content" id="upcoming">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">23</span>
+                            <span class="month">DÉC</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Célébration d'anniversaire de l'Empereur</h3>
+                            <p class="event-location">📍 Palais Impérial de Tokyo</p>
+                            <p>Cérémonie publique célébrant l'anniversaire de Sa Majesté Impériale. Le peuple japonais est invité à présenter ses vœux.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">01</span>
+                            <span class="month">JAN</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Cérémonie du Nouvel An</h3>
+                            <p class="event-location">📍 Palais Impérial de Tokyo</p>
+                            <p>Audience publique et vœux du Nouvel An à la nation. Discours traditionnel de l'Empereur.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">11</span>
+                            <span class="month">FÉV</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Fête de la Fondation Nationale</h3>
+                            <p class="event-location">📍 Tokyo</p>
+                            <p>Commémoration de la fondation mythologique du Japon. Célébrations à travers tout le pays.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">20</span>
+                            <span class="month">MAR</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Équinoxe de Printemps</h3>
+                            <p class="event-location">📍 Sanctuaire Impérial</p>
+                            <p>Cérémonie traditionnelle du printemps. Rituels shintoïstes au sanctuaire impérial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Past Events -->
+                <div class="tab-content" id="past">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">03</span>
+                            <span class="month">NOV</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Fête de la Culture</h3>
+                            <p class="event-location">📍 Palais Impérial de Tokyo</p>
+                            <p>Remise des distinctions culturelles et célébration des arts japonais. L'Empereur a honoré plusieurs artistes et intellectuels.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">23</span>
+                            <span class="month">OCT</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Commémoration de la Paix</h3>
+                            <p class="event-location">📍 Tokyo</p>
+                            <p>Cérémonie commémorative et discours impérial sur la paix mondiale. Message d'espoir et d'harmonie.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">SEP</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Équinoxe d'Automne</h3>
+                            <p class="event-location">📍 Sanctuaire Meiji</p>
+                            <p>Célébration traditionnelle de l'équinoxe d'automne. Rituels en honneur des ancêtres.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">AOÛ</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Commémoration de la Fin de la Guerre</h3>
+                            <p class="event-location">📍 Budokan, Tokyo</p>
+                            <p>Cérémonie nationale en mémoire des victimes de la Seconde Guerre mondiale. Discours solennel de l'Empereur.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">29</span>
+                            <span class="month">AVR</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Jour de la Verdure</h3>
+                            <p class="event-location">📍 Jardins du Palais Impérial</p>
+                            <p>Journée dédiée à la nature et à l'environnement. Ouverture exceptionnelle des jardins impériaux au public.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Annual Ceremonies Info -->
+    <section class="news-section">
+        <div class="container">
+            <h2>Cérémonies Annuelles</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-content" style="padding: 2rem;">
+                        <h3 style="color: #ff6b6b;">🌅 Cérémonies du Nouvel An</h3>
+                        <p><strong>Janvier</strong></p>
+                        <p>L'Empereur et la famille impériale accueillent le Nouvel An avec des rituels traditionnels et une audience publique au Palais.</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-content" style="padding: 2rem;">
+                        <h3 style="color: #ff6b6b;">🎂 Anniversaire de l'Empereur</h3>
+                        <p><strong>23 Février</strong></p>
+                        <p>Célébration de l'anniversaire de Sa Majesté avec une audience publique et des festivités nationales.</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-content" style="padding: 2rem;">
+                        <h3 style="color: #ff6b6b;">🌸 Hanami Impérial</h3>
+                        <p><strong>Avril</strong></p>
+                        <p>Réception printanière dans les jardins du Palais pendant la floraison des cerisiers.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <p>Site de fans dédié à l'Empereur du Japon et à l'institution impériale japonaise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="fansite1.html">Accueil</a></li>
+                        <li><a href="actus.html">Actualités</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                        <li><a href="galerie.html">Médias</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="footer-social">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Empereur du Japon Fansite. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
