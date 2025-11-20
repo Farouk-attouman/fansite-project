@@ -1,6 +1,3 @@
-/* ======================================================
-   BASE STYLES
-   ====================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -35,9 +32,7 @@ h2 {
     padding: 0 1rem;
 }
 
-/* ======================================================
-   HEADER
-   ====================================================== */
+/*HEADER*/
 .site-header {
     position: sticky;
     top: 0;
@@ -74,7 +69,7 @@ h2 {
     color: #221C1A;
     opacity: 0.8;
     margin: 0;
-    white-space: nowrap; /* Empêche le retour à la ligne */
+    white-space: nowrap; /* Prevents line breaks */
     flex-shrink: 0;
 }
 
@@ -127,9 +122,7 @@ h2 {
 
 
 
-/* ======================================================
-   PAGE HEADER
-   ====================================================== */
+/*PAGE HEADER*/
 .page-header {
     background: linear-gradient(to right, rgba(251, 106, 21, 0.1), rgba(251, 106, 21, 0.05));
     padding: 3rem 0;
@@ -147,9 +140,7 @@ h2 {
     color: #6B6763;
 }
 
-/* ======================================================
-   CONTACT SECTION
-   ====================================================== */
+/*CONTACT SECTION*/
 .contact-section {
     padding-bottom: 4rem;
 }
@@ -182,9 +173,7 @@ h2 {
     line-height: 1.7;
 }
 
-/* ======================================================
-   FORM STYLES
-   ====================================================== */
+/*FORM STYLES*/
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -227,16 +216,11 @@ h2 {
     min-height: 2.75rem;
 }
 
-/* Correction spécifique pour le select */
 select.form-input {
     height: auto;
     padding: 0.75rem 2.5rem 0.75rem 1rem;
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FB6A15' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 1.25rem;
 }
 
 select.form-input option {
@@ -304,9 +288,7 @@ select.form-input option {
     transform: translateY(0);
 }
 
-/* ======================================================
-   CONTACT INFO
-   ====================================================== */
+/*CONTACT INFO*/
 .contact-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -357,9 +339,7 @@ select.form-input option {
     line-height: 1.7;
 }
 
-/* ======================================================
-   FOOTER
-   ====================================================== */
+/*FOOTER*/
 .site-footer {
     background: #221C1A;
     padding: 80px 20px 30px;
@@ -448,9 +428,7 @@ select.form-input option {
     font-style: italic;
 }
 
-/* ======================================================
-   RESPONSIVE DESIGN
-   ====================================================== */
+/*RESPONSIVE DESIGN*/
 @media (max-width: 1024px) {
     .nav-menu {
         gap: 0.25rem;
