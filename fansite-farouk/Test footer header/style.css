@@ -15,19 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Image de fond globale */
-.site-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.6;
-    filter: brightness(1.3);
-    z-index: -2;
-}
-
 /* ======================================================
    HEADER STICKY UNIFORME
    ====================================================== */
@@ -67,6 +54,25 @@ body {
     transform: scale(1.05);
     text-shadow: 0 0 20px rgba(251, 106, 21, 0.5);
 }
+
+.header-tagline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #221C1A;
+    opacity: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.site-branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
 
 /* Navigation Links */
 .site-nav-links {
@@ -110,139 +116,6 @@ body {
 .nav-link-item.active {
     color: #FB6A15;
     background: rgba(251, 106, 21, 0.12);
-}
-
-.header-tagline {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #221C1A;
-    opacity: 0.8;
-    margin: 0;
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    flex-shrink: 0;
-}
-
-/* ======================================================
-   HERO BANNER
-   ====================================================== */
-.hero-banner {
-    position: relative;
-    height: 60vh;
-    min-height: 400px;
-    margin-top: 60px; /* Espace pour le header fixe */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.hero-banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.hero-banner-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.hero-banner-title {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #f1f1f1;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 
-                 0 0 40px rgba(255, 77, 77, 0.4);
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-
-/* ======================================================
-   TITRES CLIQUABLES (h2)
-   ====================================================== */
-.titre-lien {
-    color: inherit;
-    text-decoration: none;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.titre-lien::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #ff4d4d, #ff8080);
-    transition: width 0.3s ease;
-}
-
-.titre-lien:hover {
-    color: #ff4d4d;
-}
-
-.titre-lien:hover::after {
-    width: 100%;
-}
-
-/* ======================================================
-   SECTIONS ALTERNÉES
-   ====================================================== */
-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 60vh;
-    padding: 60px 0;
-    align-items: center;
-}
-
-.strip-content {
-    padding: 40px;
-}
-
-.strip-content h2 {
-    font-size: 2.3rem;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    opacity: 0.8;
-    margin-bottom: 20px;
-}
-
-.strip-content p {
-    font-size: 1.05rem;
-}
-
-/* Images */
-.strip-image img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 8px;
-    opacity: 0.95;
-    transition: transform 0.35s ease, opacity 0.35s ease;
-}
-
-.strip-image img:hover {
-    transform: scale(1.03);
-    opacity: 1;
-}
-
-/* Alternance gauche/droite */
-.left {
-    grid-column: 1;
-}
-
-.right {
-    grid-column: 2;
 }
 
 /* ======================================================
@@ -348,30 +221,6 @@ section {
     }
 }
 
-@media (max-width: 900px) {
-    section {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .left,
-    .right {
-        grid-column: 1;
-    }
-
-    .strip-image img {
-        height: 300px;
-    }
-
-    .hero-banner-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-banner-subtitle {
-        font-size: 1.2rem;
-    }
-}
-
 @media (max-width: 768px) {
     .site-nav {
         flex-direction: column;
@@ -382,10 +231,6 @@ section {
     .site-nav-links {
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .hero-banner {
-        margin-top: 100px;
     }
 }
 
@@ -399,9 +244,5 @@ section {
     .site-nav-links {
         flex-direction: column;
         gap: 8px;
-    }
-
-    .hero-banner-title {
-        font-size: 2rem;
     }
 }

@@ -16,9 +16,9 @@ body {
 }
 
 /* ======================================================
-   HEADER & NAVIGATION (RÉDUIT)
+   HEADER STICKY UNIFORME
    ====================================================== */
-.header {
+.site-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@ body {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.nav {
+.site-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ body {
 }
 
 /* Logo 日本 */
-.logo {
+.site-logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: rgb(250, 20, 66);
@@ -50,7 +50,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.logo:hover {
+.site-logo:hover {
     transform: scale(1.05);
     text-shadow: 0 0 20px rgba(251, 106, 21, 0.5);
 }
@@ -66,20 +66,20 @@ body {
     text-align: center;
 }
 
-.branding {
+.site-branding {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 2px;
 }
 
 /* Navigation Links */
-.nav-links {
+.site-nav-links {
     display: flex;
-    list-style: none;
     gap: 8px;
 }
 
-.nav-links li a {
+.nav-link-item {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -93,7 +93,7 @@ body {
     position: relative;
 }
 
-.nav-links li a::before {
+.nav-link-item::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -105,13 +105,18 @@ body {
     transition: width 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-link-item:hover {
     color: #FB6A15;
     background: rgba(251, 106, 21, 0.08);
 }
 
-.nav-links li a:hover::before {
+.nav-link-item:hover::before {
     width: 80%;
+}
+
+.nav-link-item.active {
+    color: #FB6A15;
+    background: rgba(251, 106, 21, 0.12);
 }
 
 /* Icônes de navigation */
@@ -123,7 +128,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav-links li a:hover .nav-icon {
+.nav-link-item:hover .nav-icon {
     filter: brightness(1.2) drop-shadow(0 0 6px rgba(251, 106, 21, 0.6));
     transform: scale(1.15) rotate(5deg);
 }
@@ -474,15 +479,15 @@ body {
    RESPONSIVE DESIGN
    ====================================================== */
 @media (max-width: 1024px) {
-    .nav {
+    .site-nav {
         padding: 10px 25px;
     }
 
-    .nav-links {
+    .site-nav-links {
         gap: 5px;
     }
 
-    .nav-links li a {
+    .nav-link-item {
         padding: 6px 10px;
         font-size: 0.85rem;
     }
@@ -498,25 +503,30 @@ body {
     .hero-subtitle {
         font-size: 2rem;
     }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
 }
 
 @media (max-width: 768px) {
-    .nav {
+    .site-nav {
         flex-direction: column;
         gap: 15px;
         padding: 12px 20px;
     }
 
-    .logo {
+    .site-logo {
         font-size: 1.5rem;
     }
 
-    .nav-links {
+    .site-nav-links {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .nav-links li a {
+    .nav-link-item {
         padding: 6px 8px;
         font-size: 0.8rem;
     }
@@ -555,6 +565,14 @@ body {
     .footer-container {
         grid-template-columns: 1fr;
         gap: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-nav-links {
+        flex-direction: column;
+        gap: 8px;
     }
 }
 

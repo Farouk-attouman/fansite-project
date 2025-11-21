@@ -36,22 +36,27 @@ h2 {
 }
 
 /* ======================================================
-   HEADER
+   HEADER STICKY UNIFORME
    ====================================================== */
 .site-header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 50;
-    background-color: #F8F6F0;
+    left: 0;
+    width: 100%;
+    background: rgba(248, 246, 240, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
     border-bottom: 2px solid rgba(251, 106, 21, 0.3);
-    padding: 0.75rem 0;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.header-content {
+.site-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .site-logo {
@@ -66,6 +71,7 @@ h2 {
 
 .site-logo:hover {
     transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(251, 106, 21, 0.5);
 }
 
 .header-tagline {
@@ -74,22 +80,23 @@ h2 {
     color: #221C1A;
     opacity: 0.8;
     margin: 0;
-    white-space: nowrap; /* Empêche le retour à la ligne */
+    white-space: nowrap;
     flex-shrink: 0;
 }
 
-.branding {
+.site-branding {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 2px;
 }
 
-.nav-menu {
+.site-nav-links {
     display: flex;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
-.nav-link {
+.nav-link-item {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -103,12 +110,12 @@ h2 {
     font-size: 0.95rem;
 }
 
-.nav-link:hover {
+.nav-link-item:hover {
     color: #FB6A15;
     background: rgba(251, 106, 21, 0.08);
 }
 
-.nav-link.active {
+.nav-link-item.active {
     color: #FB6A15;
     background: rgba(251, 106, 21, 0.12);
 }
@@ -120,7 +127,7 @@ h2 {
     transition: all 0.3s ease;
 }
 
-.nav-link:hover .nav-icon {
+.nav-link-item:hover .nav-icon {
     filter: brightness(1.2) drop-shadow(0 0 6px rgba(251, 106, 21, 0.6));
     transform: scale(1.15) rotate(5deg);
 }

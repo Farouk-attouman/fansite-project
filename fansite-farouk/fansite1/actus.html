@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="fansite1.css">
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header>
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="../index.html">日本</a>
+    <!-- ===== HEADER STICKY ===== -->
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="site-branding">
+                <a href="../index.html" class="site-logo">日本</a>
                 <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
-            <ul class="nav-links">
-                <li><a href="fansite1.html">Accueil</a></li>
-                <li><a href="actus.html">Actualités</a></li>
-                <li><a href="realisations.html">Réalisations</a></li>
-                <li><a href="evenements.html">Événements</a></li>
-                <li><a href="galerie.html">Médias</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="site-nav-links">
+                <a href="fansite1.html" class="nav-link-item">Accueil</a>
+                <a href="actus.html" class="nav-link-item">Actualités</a>
+                <a href="realisations.html" class="nav-link-item">Réalisations</a>
+                <a href="evenements.html" class="nav-link-item">Événements</a>
+                <a href="galerie.html" class="nav-link-item">Médias</a>
+                <a href="contact.html" class="nav-link-item">Contact</a>
+            </div>
         </nav>
     </header>
 
@@ -40,7 +40,7 @@
             <h2>Toutes les Actualités</h2>
             <div class="news-grid">
                 <article class="news-card">
-                    <img src="../images/news-emperor-1.jpg" alt="Actualité 1">
+                    <img src="../images/emperor-naruhito-and-empress-masako-attend-the-enthronement-news-photo-1571742798.jpg" alt="Actualité 1">
                     <div class="news-content">
                         <span class="news-date">15 Novembre 2024</span>
                         <h3>Cérémonie d'intronisation anniversaire</h3>
@@ -50,7 +50,7 @@
                 </article>
 
                 <article class="news-card">
-                    <img src="../images/news-emperor-2.jpg" alt="Actualité 2">
+                    <img src="../images/japanese-dignitaries-and-government-representatives-raise-news-photo-1571742988.jpg" alt="Actualité 2">
                     <div class="news-content">
                         <span class="news-date">3 Novembre 2024</span>
                         <h3>Visite officielle en France</h3>
@@ -60,7 +60,7 @@
                 </article>
 
                 <article class="news-card">
-                    <img src="../images/news-emperor-3.jpg" alt="Actualité 3">
+                    <img src="../images/japans-emperor-naruhito-and-empress-masako-depart-akasaka-news-photo-1571751100.jpg" alt="Actualité 3">
                     <div class="news-content">
                         <span class="news-date">23 Octobre 2024</span>
                         <h3>Message impérial pour la paix</h3>
@@ -70,7 +70,7 @@
                 </article>
 
                 <article class="news-card">
-                    <img src="../images/news-emperor-1.jpg" alt="Actualité 4">
+                    <img src="../images/japanese-emperor-naruhito-leaves-the-ceremony-hall-after-news-photo-1571741152.jpg" alt="Actualité 4">
                     <div class="news-content">
                         <span class="news-date">10 Octobre 2024</span>
                         <h3>Rencontre avec les jeunes</h3>
@@ -80,7 +80,7 @@
                 </article>
 
                 <article class="news-card">
-                    <img src="../images/news-emperor-2.jpg" alt="Actualité 5">
+                    <img src="../images/japans-crown-prince-akishino-attends-the-enthronement-news-photo-1571750982.jpg" alt="Actualité 5">
                     <div class="news-content">
                         <span class="news-date">28 Septembre 2024</span>
                         <h3>Cérémonie d'automne</h3>
@@ -90,7 +90,7 @@
                 </article>
 
                 <article class="news-card">
-                    <img src="../images/news-emperor-3.jpg" alt="Actualité 6">
+                    <img src="../images/ceremonie-empereur-naruhito.jpg" alt="Actualité 6">
                     <div class="news-content">
                         <span class="news-date">15 Septembre 2024</span>
                         <h3>Engagement environnemental</h3>
@@ -102,37 +102,51 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>À propos</h4>
-                    <p>Site de fans dédié à l'Empereur du Japon et à l'institution impériale japonaise.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="fansite1.html">Accueil</a></li>
-                        <li><a href="actus.html">Actualités</a></li>
-                        <li><a href="realisations.html">Réalisations</a></li>
-                        <li><a href="evenements.html">Événements</a></li>
-                        <li><a href="galerie.html">Médias</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Suivez-nous</h4>
-                    <div class="footer-social">
-                        <a href="#">Twitter</a>
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                    </div>
-                </div>
+    <!-- Pied de page -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Colonne 1 : À propos -->
+            <div class="footer-column">
+                <h4>À Propos</h4>
+                <p class="footer-description">
+                    Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
+                    l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
+                </p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Empereur du Japon Fansite. Tous droits réservés.</p>
+
+            <!-- Colonne 2 : Navigation rapide -->
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="fansite1.html">Accueil</a></li>
+                    <li><a href="actus.html">Actualités</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="evenements.html">Événements</a></li>
+                    <li><a href="galerie.html">Médias</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
+
+            <!-- Colonne 3 : Le Japon -->
+            <div class="footer-column">
+                <h4>Le Pays du Soleil Levant</h4>
+                <ul class="footer-links">
+                    <li><span class="footer-info">🏯 Tradition millénaire</span></li>
+                    <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
+                    <li><span class="footer-info">🎌 Culture unique</span></li>
+                    <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Barre de copyright -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+            </p>
+            <p class="footer-disclaimer">
+                Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+            </p>
         </div>
     </footer>
 </body>

@@ -21,9 +21,9 @@ body {
 }
 
 /* ======================================================
-   HEADER & NAVIGATION
+   HEADER STICKY UNIFORME
    ====================================================== */
-.header {
+.site-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@ body {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.nav {
+.site-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@ body {
     margin: 0 auto;
 }
 
-.logo {
+.site-logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: rgb(250, 20, 66);
@@ -54,7 +54,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.logo:hover {
+.site-logo:hover {
     transform: scale(1.05);
     text-shadow: 0 0 20px rgba(251, 106, 21, 0.5);
 }
@@ -65,23 +65,23 @@ body {
     color: #221C1A;
     opacity: 0.8;
     margin: 0;
-    white-space: nowrap; /* Empêche le retour à la ligne */
+    white-space: nowrap;
     flex-shrink: 0;
 }
 
-.branding {
+.site-branding {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 2px;
 }
 
-.nav-links {
+.site-nav-links {
     display: flex;
-    list-style: none;
     gap: 8px;
 }
 
-.nav-links li a {
+.nav-link-item {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -95,12 +95,12 @@ body {
     position: relative;
 }
 
-.nav-links li a.active {
+.nav-link-item.active {
     background: rgba(251, 106, 21, 0.12);
     color: #FB6A15;
 }
 
-.nav-links li a::before {
+.nav-link-item::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -112,12 +112,12 @@ body {
     transition: width 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-link-item:hover {
     color: #FB6A15;
     background: rgba(251, 106, 21, 0.08);
 }
 
-.nav-links li a:hover::before {
+.nav-link-item:hover::before {
     width: 80%;
 }
 
@@ -129,7 +129,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.nav-links li a:hover .nav-icon {
+.nav-link-item:hover .nav-icon {
     filter: brightness(1.2) drop-shadow(0 0 6px rgba(251, 106, 21, 0.6));
     transform: scale(1.15) rotate(5deg);
 }
