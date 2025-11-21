@@ -10,25 +10,28 @@
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
 
-  <div class="container">
-    <header class="site-header">
-      <div class="header-inner">
-        <div class="brand">
-          <img src="Neon_Genesis_Evangelion.svg.png" alt="Logo Evangelion" class="logo">
-          <div class="brand-text">
-            <h1>Hideaki <span class="brand-accent">Anno</span></h1>
-            <p class="tagline">Réalisateur • Visionnaire • Créateur d'Evangelion</p>
-          </div>
-        </div>
-
-        <nav class="site-nav" aria-label="Navigation principale">
-          <a href="accueil.html">Accueil</a>
-          <a href="biographie.html" class="active">Biographie</a>
-          <a href="actualites.html">Actualités</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+  <!-- ===== HEADER STICKY ===== -->
+  <header class="site-header">
+    <nav class="site-nav">
+      <div class="site-branding">
+        <a href="../index.html" class="site-logo">日本</a>
+        <p class="header-tagline">Une exploration de la culture japonaise</p>
       </div>
-    </header>
+      <div class="site-nav-links">
+        <a href="fansite3.html" class="nav-link-item">Accueil</a>
+        <a href="biographie.html" class="nav-link-item">Biographie</a>
+        <a href="actualites.html" class="nav-link-item">Actualités</a>
+        <a href="contact.html" class="nav-link-item">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="hero-header">
+      <img src="../images/Neon_Genesis_Evangelion.svg.png" alt="Logo Evangelion" class="hero-logo">
+      <h1>Hideaki <span class="brand-accent">Anno</span></h1>
+      <p class="tagline">Réalisateur • Visionnaire • Créateur d'Evangelion</p>
+    </div>
 
     <main id="main">
       <!-- Hero biographie -->
@@ -205,9 +208,50 @@
       </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-      <p>Hideaki Anno — Page d'hommage • Design responsive HTML/CSS</p>
-      <p style="margin-top: 0.5rem; font-size: 0.85rem;">Créé avec passion pour célébrer l'œuvre d'un visionnaire</p>
+    <!-- Pied de page -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Colonne 1 : À propos -->
+        <div class="footer-column">
+          <h4>À Propos</h4>
+          <p class="footer-description">
+            Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
+            l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
+          </p>
+        </div>
+
+        <!-- Colonne 2 : Navigation rapide -->
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="fansite3.html">Accueil</a></li>
+            <li><a href="biographie.html">Biographie</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Le Japon -->
+        <div class="footer-column">
+          <h4>Le Pays du Soleil Levant</h4>
+          <ul class="footer-links">
+            <li><span class="footer-info">🏯 Tradition millénaire</span></li>
+            <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
+            <li><span class="footer-info">🎌 Culture unique</span></li>
+            <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Barre de copyright -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+        </p>
+        <p class="footer-disclaimer">
+          Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+        </p>
+      </div>
     </footer>
   </div>
 </body>

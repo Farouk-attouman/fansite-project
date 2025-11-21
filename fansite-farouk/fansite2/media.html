@@ -1,151 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Photos & Vidéos – Jirō Ono</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-    background: url('https://images.squarespace-cdn.com/content/v1/62fbfbed423b4f1bb8caed31/a83c13cd-0d93-4b05-8c1a-13de819f56c6/v2-e1rpl-34vsk.jpg') center/cover no-repeat fixed;
-            color: #fff;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: url("https://upload.wikimedia.org/wikipedia/commons/7/71/Jiro_Ono_2013.jpg") center/cover no-repeat;
-            position: relative;
-        }
-
-        header::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.6);
-        }
-
-        header h1, header p {
-            position: relative;
-            z-index: 2;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            color: #ff9f1c;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            background: #191919;
-            padding: 12px;
-        }
-
-        nav a {
-            color: #ff9f1c;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffd166;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 2.3rem;
-            color: #ff9f1c;
-        }
-
-        /* Galerie images */
-        .gallery {
-            max-width: 1200px;
-            margin: 40px auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            padding: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 230px;
-            object-fit: cover;
-            border-radius: 15px;
-            transition: 0.3s;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Vidéo */
-        .video-section {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 20px;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 18px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
-        }
-
-        .video-container iframe {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fansite2.css">
+  <title>Photos & Vidéos – Jirō Ono</title>
 </head>
 
 <body>
 
-<header>
-    <h1>Photos & Vidéos</h1>
-    <p>L'univers visuel du maître sushi Jirō Ono</p>
+<!-- ===== HEADER STICKY ===== -->
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="site-branding">
+      <a href="../index.html" class="site-logo">日本</a>
+      <p class="header-tagline">Une exploration de la culture japonaise</p>
+    </div>
+    <div class="site-nav-links">
+      <a href="fansite2.html" class="nav-link-item">Accueil</a>
+      <a href="actualite.html" class="nav-link-item">Actualités</a>
+      <a href="realisations.html" class="nav-link-item">Réalisations</a>
+      <a href="evenements.html" class="nav-link-item">Biographie</a>
+      <a href="media.html" class="nav-link-item">Photos & Vidéos</a>
+      <a href="liens-fans.html" class="nav-link-item">Liens Fans</a>
+      <a href="reseaux-sociaux.html" class="nav-link-item">Réseaux</a>
+      <a href="contact-form.html" class="nav-link-item">Contact</a>
+    </div>
+  </nav>
 </header>
 
-
-
-<h2 class="section-title">📸 Galerie Photos</h2>
-
-<div class="gallery">
-
-    <img src="https://tse1.mm.bing.net/th/id/OIP.RRX5nQjoVSZbH6nsdIyheAHaEo" alt="">
-    <img src="https://th.bing.com/th/id/R.1047abc74a3f20b6afa7e4884d08ce0e?rik=Mm2WAWSCfaAWtg&riu=http%3a%2f%2fwww.journaldujapon.com%2fwp-content%2fuploads%2f2018%2f10%2fjiro-ono-restaurant.jpg&ehk=77RjQnxIIlEYNUI1cnIjPp7WeEZ9OyqEj4tvXEXvR5s%3d&risl=&pid=ImgRaw&r=0" alt="">
-    <img src="data:image/webp;base64,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" alt="">
-   <br> <img src="plateau-diner-deluxe.jpg" alt="">
-    <img src="California-Rolls.jpg" alt="">
-    <img src="R (1).jpeg" alt="">
-
+<div class="hero-header">
+    <h1>Photos & Vidéos</h1>
+    <p>L'univers visuel du maître sushi Jirō Ono</p>
 </div>
 
-<h2 class="section-title">🎬 Vidéo</h2>
+<div class="section">
+<h2>📸 Galerie Photos</h2>
 
-<div class="video-section">
-    <div class="video-container">
-        <!-- Vidéo YouTube (fonctionne) -->
-        <iframe 
-            src="https://www.youtube.com/embed/I1UDS2kgqY8"
-            allowfullscreen>
-        </iframe>
+  <p>Découvrez l'art de Jirō Ono à travers ces images</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px;">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.RRX5nQjoVSZbH6nsdIyheAHaEo" alt="Jirō Ono" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
+    <img src="https://th.bing.com/th/id/R.1047abc74a3f20b6afa7e4884d08ce0e?rik=Mm2WAWSCfaAWtg&riu=http%3a%2f%2fwww.journaldujapon.com%2fwp-content%2fuploads%2f2018%2f10%2fjiro-ono-restaurant.jpg&ehk=77RjQnxIIlEYNUI1cnIjPp7WeEZ9OyqEj4tvXEXvR5s%3d&risl=&pid=ImgRaw&r=0" alt="Restaurant Sukiyabashi Jiro" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
+    <img src="../images/plateau-diner-deluxe.jpg" alt="Plateau sushi" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
+    <img src="../images/R (1).jpeg" alt="Sushi" style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
+  </div>
+</div>
+
+<div class="section">
+<h2>🎬 Vidéo</h2>
+  <p>Documentaire "Jiro Dreams of Sushi"</p>
+
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin-top: 20px;">
+    <iframe
+        src="https://www.youtube.com/embed/I1UDS2kgqY8"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <button onclick="window.location.href='fansite2.html'" style="padding: 15px 30px; background: #d62828; border: none; color: white; font-weight: bold; cursor: pointer; border-radius: 10px; font-size: 1rem;">⬅ Retour à l'accueil</button>
+</div>
+
+<!-- Pied de page -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Colonne 1 : À propos -->
+    <div class="footer-column">
+      <h4>À Propos</h4>
+      <p class="footer-description">
+        Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
+        l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
+      </p>
     </div>
-</div>
-<button onclick="window.location.href='index.html'" class="retour-btn">⬅ Retour</button>
+
+    <!-- Colonne 2 : Navigation rapide -->
+    <div class="footer-column">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="fansite2.html">Accueil</a></li>
+        <li><a href="actualite.html">Actualités</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="evenements.html">Biographie</a></li>
+        <li><a href="media.html">Photos & Vidéos</a></li>
+        <li><a href="liens-fans.html">Liens Fans</a></li>
+        <li><a href="reseaux-sociaux.html">Réseaux</a></li>
+        <li><a href="contact-form.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 3 : Le Japon -->
+    <div class="footer-column">
+      <h4>Le Pays du Soleil Levant</h4>
+      <ul class="footer-links">
+        <li><span class="footer-info">🏯 Tradition millénaire</span></li>
+        <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
+        <li><span class="footer-info">🎌 Culture unique</span></li>
+        <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Barre de copyright -->
+  <div class="footer-bottom">
+    <p class="footer-copyright">
+      © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+    </p>
+    <p class="footer-disclaimer">
+      Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>

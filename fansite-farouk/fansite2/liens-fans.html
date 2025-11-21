@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liens Fans</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="fansite2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liens Fans – Jirō Ono</title>
+</head>
 
-    <style>
+<body>
+
+<!-- ===== HEADER STICKY ===== -->
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="site-branding">
+      <a href="../index.html" class="site-logo">日本</a>
+      <p class="header-tagline">Une exploration de la culture japonaise</p>
+    </div>
+    <div class="site-nav-links">
+      <a href="fansite2.html" class="nav-link-item">Accueil</a>
+      <a href="actualite.html" class="nav-link-item">Actualités</a>
+      <a href="realisations.html" class="nav-link-item">Réalisations</a>
+      <a href="evenements.html" class="nav-link-item">Biographie</a>
+      <a href="media.html" class="nav-link-item">Photos & Vidéos</a>
+      <a href="liens-fans.html" class="nav-link-item">Liens Fans</a>
+      <a href="reseaux-sociaux.html" class="nav-link-item">Réseaux</a>
+      <a href="contact-form.html" class="nav-link-item">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero-header">
+    <h1>Jirō Ono</h1>
+    <p>Le plus grand maître sushi au monde</p>
+  </div>
+
+<style>
         body {
             font-family: "Poppins", sans-serif;
     background: url('22968.png') center/cover no-repeat fixed;
             color: white;
             margin: 0;
             padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: url("https://images.unsplash.com/photo-1514516345957-556ca7d90a6a")
-                center/cover no-repeat;
-            position: relative;
-        }
-
-        header::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.6);
-        }
-
-        header h1 {
-            position: relative;
-            font-size: 3rem;
-            margin: 0;
-            color: #ff9f1c;
         }
 
         .links-container {
@@ -72,11 +79,6 @@
         }
     </style>
 </head>
-<body>
-
-<header>
-    <h1>Liens Fans</h1>
-</header>
 
 <div class="links-container">
 
@@ -108,7 +110,56 @@
     </div>
 
 </div>
-<button onclick="window.location.href='index.html'" class="retour-btn">⬅ Retour</button>
+
+<!-- Pied de page -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Colonne 1 : À propos -->
+    <div class="footer-column">
+      <h4>À Propos</h4>
+      <p class="footer-description">
+        Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
+        l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
+      </p>
+    </div>
+
+    <!-- Colonne 2 : Navigation rapide -->
+    <div class="footer-column">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="fansite2.html">Accueil</a></li>
+        <li><a href="actualite.html">Actualités</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="evenements.html">Biographie</a></li>
+        <li><a href="media.html">Photos & Vidéos</a></li>
+        <li><a href="liens-fans.html">Liens Fans</a></li>
+        <li><a href="reseaux-sociaux.html">Réseaux</a></li>
+        <li><a href="contact-form.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 3 : Le Japon -->
+    <div class="footer-column">
+      <h4>Le Pays du Soleil Levant</h4>
+      <ul class="footer-links">
+        <li><span class="footer-info">🏯 Tradition millénaire</span></li>
+        <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
+        <li><span class="footer-info">🎌 Culture unique</span></li>
+        <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Barre de copyright -->
+  <div class="footer-bottom">
+    <p class="footer-copyright">
+      © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+    </p>
+    <p class="footer-disclaimer">
+      Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
