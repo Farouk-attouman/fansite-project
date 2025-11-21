@@ -8,11 +8,12 @@
 <link rel="stylesheet" href="fansite2.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
     <header class="site-header">
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Navigation principale">
 
         <div class="site-branding">
-            <a href="../index.html" class="site-logo">日本</a>
+            <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
             <p class="header-tagline">Une exploration de la culture japonaise</p>
         </div>
 
@@ -27,6 +28,7 @@
     </nav>
 </header>
 
+<main id="main">
 <div class="section" id="biographie">
     <h2>Biographie de Jirō Ono</h2>
 
@@ -67,6 +69,7 @@
     </div>
 
 </div>
+</main>
 <footer class="site-footer">
         <div class="footer-container">
 
@@ -98,10 +101,10 @@
             <div class="footer-column">
                 <h4>L’Art du Sushi</h4>
                 <ul class="footer-links">
-                    <li><span class="footer-info">🍣 Excellence gastronomique</span></li>
-                    <li><span class="footer-info">🔪 Techniques millimétrées</span></li>
-                    <li><span class="footer-info">🎌 Tradition japonaise</span></li>
-                    <li><span class="footer-info">🏆 Maître reconnu mondialement</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🍣</span> Excellence gastronomique</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🔪</span> Techniques millimétrées</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎌</span> Tradition japonaise</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Maître reconnu mondialement</span></li>
                 </ul>
             </div>
 
