@@ -8,40 +8,60 @@
     <link rel="stylesheet" href="css/accueil.css">
 </head>
 <body>
-    <!-- ===== HEADER STICKY ===== -->
-    <header class="site-header">
-        <nav class="site-nav">
-            <div class="site-branding">
-                <a href="../index.html" class="site-logo">日本</a>
-                <p class="header-tagline">Une exploration de la culture japonaise</p>
+    <!--HEADER-->
+    <header class="header">
+        <nav class="nav">
+            <div class="branding">
+            <a href="../index.html" class="logo">日本</a>
+            <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
-            <div class="site-nav-links">
-                <a href="accueil.html" class="nav-link-item">
-                    <img src="../images/kunai.jpg" alt="Kunai" class="nav-icon">
-                    Accueil
-                </a>
-                <a href="actualites.html" class="nav-link-item">
-                    <img src="../images/uzumaki.jpg" alt="Uzumaki" class="nav-icon">
-                    Actualités
-                </a>
-                <a href="biographie.html" class="nav-link-item">
-                    <img src="../images/uchiha.png" alt="Uchiha" class="nav-icon">
-                    Biographie
-                </a>
-                <a href="contact.html" class="nav-link-item">
-                    <img src="../images/sceau.jpg" alt="Sceau" class="nav-icon">
-                    Contact
-                </a>
-            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="accueil.html">
+                        <img src="../images/kunai.jpg" alt="Clan Uzumaki" class="nav-icon">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="actualites.html">
+                        <img src="../images/uzumaki.jpg" alt="Clan Uchiha" class="nav-icon">
+                        Actualités
+                    </a>
+                </li>
+                <li>
+                    <a href="biographie.html">
+                        <img src="../images/uchiha.png" alt="Clan Senju" class="nav-icon">
+                        Biographie
+                    </a>
+                </li>
+                <li>
+                    <a href="oeuvres.html">
+                        <img src="../images/Akatsuki-Logo.png" alt="Clan Sarutobi" class="nav-icon">
+                        Œuvres
+                    </a>
+                </li>
+                <li>
+                    <a href="galerie.html">
+                        <img src="../images/shiruken.png" alt="Clan Hyuga" class="nav-icon">
+                        Galerie
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img src="../images/sceau.jpg" alt="Clan Fuma" class="nav-icon">
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <!-- ===== HERO ===== -->
+    <!--HERO-->
     <main>
         <section class="hero">
-            <!-- Image de Masashi Kishimoto en arrière-plan -->
+            <!--Background Image-->
             <img src="../images/pxfuel.jpg" 
-                 alt="Masashi Kishimoto" 
+                 alt="Valley of the end" 
                  class="hero-background">
             
             <div class="hero-overlay"></div>
@@ -54,7 +74,7 @@
             </div>
         </section>
 
-        <!-- ===== INTRODUCTION ===== -->
+        <!--INTRODUCTION-->
         <section class="introduction container">
             <h2>Bienvenue sur le fansite officieux</h2>
             <p class="intro-text">
@@ -62,7 +82,7 @@
             </p>
             
             <div class="cards">
-                <!-- Carte 1 -->
+                <!-- Card 1 -->
                 <div class="card">
                     <div class="card-icon">📖</div>
                     <h3>Son Parcours</h3>
@@ -72,26 +92,28 @@
                     <a href="biographie.html" class="card-button">En savoir plus</a>
                 </div>
 
-                <!-- Carte 2 -->
+                <!-- Card 2 -->
                 <div class="card">
                     <div class="card-icon">✏️</div>
                     <h3>Ses Œuvres</h3>
                     <p>
-                        De Naruto à Samurai 8, découvrez l'univers créatif de Kishimoto à travers ses différentes créations manga.
+                        Explorez son univers, de Naruto à Samurai 8 et d'autres travaux moins connus.
                     </p>
+                    <a href="oeuvres.html" class="card-button">Voir les œuvres</a>
                 </div>
 
-                <!-- Carte 3 -->
+                <!-- Card 3 -->
                 <div class="card">
                     <div class="card-icon">🎨</div>
-                    <h3>Son Style</h3>
+                    <h3>Galerie</h3>
                     <p>
-                        Un style reconnaissable entre tous, mêlant action dynamique et personnages profondément humains.
+                        Admirez une sélection d'illustrations et d'images créées ou inspirées par Kishimoto.
                     </p>
+                    <a href="galerie.html" class="card-button">Voir la galerie</a>
                 </div>
             </div>
 
-            <!-- ===== CTA ACTUALITÉS ===== -->
+            <!-- ===== CTA News ===== -->
             <div class="cta">
                 <h3>Restez Informé</h3>
                 <p>
@@ -102,32 +124,35 @@
         </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="site-footer">
+    <!--FOOTER-->
+    <footer class="footer">
         <div class="footer-container">
-            <!-- Colonne 1 : À propos -->
+            <!-- Column 1 : About -->
             <div class="footer-column">
                 <h4>À Propos</h4>
                 <p class="footer-description">
-                    Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
-                    l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
+                    Fansite non officiel dédié à Masashi Kishimoto, créateur du légendaire manga Naruto. 
+                    Créé par des fans, pour les fans.
                 </p>
+                <div class="footer-logo">岸本斉史</div>
             </div>
 
-            <!-- Colonne 2 : Navigation rapide -->
+            <!-- Column 2 : Quick navigation -->
             <div class="footer-column">
                 <h4>Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="accueil.html">Accueil</a></li>
-                    <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="biographie.html">Biographie</a></li>
+                    <li><a href="oeuvres.html">Œuvres</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
-            <!-- Colonne 3 : Le Japon -->
+            <!-- Column 3 : Main Works -->
             <div class="footer-column">
-                <h4>Le Pays du Soleil Levant</h4>
+                <h4>Œuvres Majeures</h4>
                 <ul class="footer-links">
                     <li><a href="oeuvres.html#naruto">Naruto (1999-2014)</a></li>
                     <li><a href="oeuvres.html#boruto">Boruto (supervision)</a></li>
@@ -135,7 +160,7 @@
                 </ul>
             </div>
 
-            <!-- Colonne 4 : Informations -->
+            <!-- Column 4 : Informations -->
             <div class="footer-column">
                 <h4>Informations</h4>
                 <ul class="footer-links">
@@ -147,13 +172,13 @@
             </div>
         </div>
 
-        <!-- Barre de copyright -->
+        <!--copyright -->
         <div class="footer-bottom">
             <p class="footer-copyright">
-                © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+                © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire
             </p>
             <p class="footer-disclaimer">
-                Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+                Naruto © Masashi Kishimoto / Shueisha Inc. Toutes les œuvres appartiennent à leurs auteurs respectifs.
             </p>
         </div>
     </footer>
