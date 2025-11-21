@@ -629,8 +629,7 @@ select.form-input option {
     .container {
         padding: 0 1rem;
     }
-
-    /* Header Mobile */
+    
     .site-header {
         padding: 0.5rem 0;
     }
@@ -674,7 +673,6 @@ select.form-input option {
         height: 14px;
     }
 
-    /* Page Header Mobile */
     .page-header {
         padding: 100px 0 2rem;
         margin-bottom: 2rem;
@@ -697,7 +695,6 @@ select.form-input option {
         font-size: 0.95rem;
     }
 
-    /* Contact Section Mobile */
     .contact-section {
         padding-bottom: 2.5rem;
     }
@@ -724,7 +721,6 @@ select.form-input option {
         font-size: 0.95rem;
     }
 
-    /* Form Mobile */
     .contact-form {
         gap: 1.25rem;
     }
@@ -764,7 +760,6 @@ select.form-input option {
         font-size: 0.95rem;
     }
 
-    /* Contact Info Mobile */
     .contact-info {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -797,7 +792,6 @@ select.form-input option {
         line-height: 1.6;
     }
 
-    /* Footer Mobile */
     .site-footer {
         padding: 50px 15px 25px;
         margin-top: 3rem;
