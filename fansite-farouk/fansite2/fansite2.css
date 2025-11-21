@@ -1,35 +1,23 @@
+/* ======================================
+   FANSITE2.CSS - Tous les styles du site
+   ====================================== */
+
 /* --- RESET --- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* --- BODY --- */
+/* --- BASE BODY --- */
 body {
-  font-family: 'Arial', sans-serif;
-  color: white;
-  line-height: 1.6;
-  overflow-x: hidden;
-  background: url('https://images.squarespace-cdn.com/content/v1/62fbfbed423b4f1bb8caed31/a83c13cd-0d93-4b05-8c1a-13de819f56c6/v2-e1rpl-34vsk.jpg') center/cover no-repeat fixed;
-  margin-top: 30pc;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: url('https://images.squarespace-cdn.com/content/v1/62fbfbed423b4f1bb8caed31/a83c13cd-0d93-4b05-8c1a-13de819f56c6/v2-e1rpl-34vsk.jpg') center/cover no-repeat fixed;
+    padding-top: 80px; /* Espace pour le header fixed */
 }
-
-main {
-    padding: 40px 20px;
-}
-
-/* --- SLIDESHOW --- */
-.slideshow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-}
-
 
 /* ============================
    HEADER STICKY
@@ -59,6 +47,13 @@ main {
 /* ============================
    BRANDING
    ============================ */
+.site-branding {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
 .site-logo {
     font-size: 1.8rem;
     font-weight: 700;
@@ -85,13 +80,6 @@ main {
     text-align: center;
 }
 
-.site-branding {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-}
-
 /* ============================
    NAV LINKS
    ============================ */
@@ -112,7 +100,7 @@ main {
     position: relative;
 }
 
-/* Soulignement animé */
+/* Soulignement anime */
 .nav-link-item::before {
     content: '';
     position: absolute;
@@ -140,27 +128,9 @@ main {
     background: rgba(247, 127, 0, 0.18);
 }
 
-
-/* --- SECTIONS --- */
-.section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
-  background: rgba(0,0,0,0.5);
-  border-radius: 15px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.7);
-}
-
-.section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  color: #f77f00;
-  text-shadow: 1px 1px 4px #000;
-}
-
-/*Footer*/
+/* ============================
+   FOOTER
+   ============================ */
 .site-footer {
     background: #221C1A;
     padding: 80px 20px 30px;
@@ -242,10 +212,278 @@ main {
     font-style: italic;
 }
 
-.hero-banner-content{
-    margin-left: 30pc;
-    margin-bottom:30pc;
+/* ============================
+   PAGE ACCUEIL (fansite2.html)
+   ============================ */
+main {
+    padding: 40px 20px;
+}
+
+/* --- SLIDESHOW --- */
+.slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* --- SECTIONS --- */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #f77f00;
+    text-shadow: 1px 1px 4px #000;
 }
 
 
+/* ============================
+   PAGE MEDIA (media.html)
+   ============================ */
+.media-section {
+    padding: 100px 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.media-section h2 {
+    font-size: 2.5rem;
+    color: #ff9f1c;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    margin: 40px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ============================
+   PAGE ACTUALITE (actualite.html)
+   ============================ */
+.actualite-section {
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.actualite-section h2 {
+    font-size: 3rem;
+    color: #ff9f1c;
+    margin-bottom: 20px;
+}
+
+.actualite-section p.desc {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    opacity: 0.9;
+}
+
+/* Grid des cartes */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* Cartes stylees */
+.news-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.news-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-img:hover {
+    transform: scale(1.05);
+}
+
+.news-text {
+    padding: 20px;
+    text-align: left;
+}
+
+.news-text h3 {
+    color: #ffd166;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.news-text p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.news-text .date {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* ============================
+   PAGE BIOGRAPHIE (evenements.html)
+   ============================ */
+.bio-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(30,30,30,0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+.bio-card img {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+    flex: 1 1 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+.bio-content {
+    flex: 2 1 400px;
+    padding: 30px;
+}
+
+.bio-card h3 {
+    color: #ff9f1c;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.bio-card ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.bio-card li {
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+.highlight {
+    color: #ff9f1c;
+    font-weight: bold;
+}
+
+/* ============================
+   PAGE CONTACT (contact-form.html)
+   ============================ */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff9f1c;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ffd166;
+}
 
