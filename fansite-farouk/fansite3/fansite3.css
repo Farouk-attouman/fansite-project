@@ -1,4 +1,10 @@
-/* Variables de thème */
+/* ======================================================
+   FANSITE3 - CSS UNIFIÉ
+   ====================================================== */
+
+/* ======================================================
+   BASE - Variables et Reset
+   ====================================================== */
 :root {
   --bg-1: #07060b;
   --bg-2: #0f0820;
@@ -18,6 +24,14 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Reset des styles de section hérités de style.css */
+section {
+  display: block !important;
+  grid-template-columns: none !important;
+  min-height: auto !important;
+  padding: 0 !important;
+}
+
 html, body { height: 100%; }
 
 body {
@@ -34,7 +48,7 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;
-  padding-top: 80px; /* Espace pour le header fixe */
+  padding-top: 100px;
 }
 
 /* Skip link */
@@ -51,8 +65,42 @@ body {
 }
 .skip-link:focus { transform: translateY(0); }
 
-/* Header */
-header {
+/* ======================================================
+   CARDS (composant réutilisable)
+   ====================================================== */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 28px rgba(2,6,23,0.5);
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+}
+
+/* ======================================================
+   HEADER & NAVIGATION
+   ====================================================== */
+header,
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -64,7 +112,6 @@ header {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation */
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -152,7 +199,9 @@ header {
   width: 80%;
 }
 
-/* Hero Header */
+/* ======================================================
+   PAGE ACCUEIL - Hero Header
+   ====================================================== */
 .hero-header {
   text-align: center;
   padding: 2rem 1rem;
@@ -190,7 +239,9 @@ header {
   margin: 0;
 }
 
-/* Carrousel */
+/* ======================================================
+   PAGE ACCUEIL - Carrousel
+   ====================================================== */
 .carousel-container {
   position: relative;
   width: 100%;
@@ -261,7 +312,9 @@ header {
   border-radius: 5px;
 }
 
-/* Hero Section - Anno */
+/* ======================================================
+   PAGE ACCUEIL - Hero Anno
+   ====================================================== */
 .hero-anno {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -306,36 +359,9 @@ header {
   color: #dbe9ff;
 }
 
-/* Cards */
-.card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border-radius: 12px;
-  padding: 1.5rem;
-  border: 1px solid rgba(255,255,255,0.03);
-  box-shadow: 0 6px 28px rgba(2,6,23,0.5);
-  margin-bottom: 1.5rem;
-}
-
-.section-title {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 0.5rem;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60%;
-  height: 4px;
-  border-radius: 6px;
-  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-}
-
-/* Grid personnages */
+/* ======================================================
+   PAGE ACCUEIL - Personnages
+   ====================================================== */
 .characters-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -395,7 +421,673 @@ header {
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* Footer - contrer le padding du body pour occuper toute la largeur */
+/* ======================================================
+   PAGE ACTUALITÉS - News Hero
+   ====================================================== */
+.news-hero {
+  background: linear-gradient(135deg, rgba(255,45,111,0.1), rgba(138,43,226,0.05));
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.news-hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent-1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.news-hero-content .lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ======================================================
+   PAGE ACTUALITÉS - News Grid
+   ====================================================== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.news-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(138,43,226,0.2);
+}
+
+.news-card.featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(138,43,226,0.08), rgba(255,45,111,0.04));
+  border: 1px solid rgba(138,43,226,0.2);
+}
+
+.news-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.news-date {
+  color: var(--neon);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.news-card h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.news-card p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.news-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: var(--glass);
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* ======================================================
+   PAGE ACTUALITÉS - Projects & Archives
+   ====================================================== */
+.projects-list {
+  margin-top: 1.5rem;
+}
+
+.project-item {
+  background: rgba(255,255,255,0.02);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.03);
+  margin-bottom: 1rem;
+}
+
+.project-item h4 {
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.status-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.ongoing {
+  background: rgba(0,230,255,0.1);
+  color: var(--neon);
+  border: 1px solid rgba(0,230,255,0.2);
+}
+
+.status-badge.development {
+  background: rgba(138,43,226,0.1);
+  color: var(--accent-1);
+  border: 1px solid rgba(138,43,226,0.2);
+}
+
+.project-item p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.archive-list {
+  margin-top: 1.5rem;
+}
+
+.archive-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  border-left: 3px solid rgba(138,43,226,0.3);
+  margin-bottom: 0.8rem;
+  background: rgba(255,255,255,0.01);
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s;
+}
+
+.archive-item:hover {
+  background: rgba(255,255,255,0.03);
+  border-left-color: var(--accent-1);
+}
+
+.archive-date {
+  min-width: 120px;
+  color: var(--neon);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.archive-item p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background: linear-gradient(135deg, rgba(138,43,226,0.05), rgba(0,230,255,0.03));
+  border: 1px solid rgba(138,43,226,0.1);
+}
+
+.newsletter-section p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.info-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.info-link {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(90deg, rgba(138,43,226,0.2), rgba(255,45,111,0.1));
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.info-link:hover {
+  background: linear-gradient(90deg, rgba(138,43,226,0.3), rgba(255,45,111,0.15));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(138,43,226,0.2);
+}
+
+/* ======================================================
+   PAGE BIOGRAPHIE - Bio Hero
+   ====================================================== */
+.bio-hero {
+  background: linear-gradient(135deg, rgba(138,43,226,0.1), rgba(0,230,255,0.05));
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.bio-hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--neon), var(--accent-1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bio-hero-content .lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ======================================================
+   PAGE BIOGRAPHIE - Timeline
+   ====================================================== */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--accent-1), var(--accent-2));
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2.4rem;
+  top: 0.3rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--neon);
+  box-shadow: 0 0 15px var(--neon);
+}
+
+.timeline-year {
+  font-weight: 700;
+  color: var(--accent-2);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.timeline-content strong {
+  color: var(--text);
+}
+
+/* ======================================================
+   PAGE BIOGRAPHIE - Works Grid
+   ====================================================== */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.work-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(138,43,226,0.2);
+}
+
+.work-year {
+  display: inline-block;
+  background: var(--glass);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--neon);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  border: 1px solid rgba(0,230,255,0.2);
+}
+
+.work-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+}
+
+.work-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ======================================================
+   PAGE BIOGRAPHIE - Influence
+   ====================================================== */
+.influence-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.influence-block {
+  background: rgba(255,255,255,0.02);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.influence-block h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: var(--neon);
+}
+
+.influence-block p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ======================================================
+   PAGE CONTACT - Contact Hero
+   ====================================================== */
+.contact-hero {
+  background: linear-gradient(135deg, rgba(0,230,255,0.1), rgba(138,43,226,0.05));
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.contact-hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--neon), var(--accent-1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contact-hero-content .lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ======================================================
+   PAGE CONTACT - Formulaire
+   ====================================================== */
+.form-intro {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.02);
+  border-left: 3px solid var(--neon);
+  border-radius: 4px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--neon);
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 0 3px rgba(0,230,255,0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23aab6c6' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(138,43,226,0.3);
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(138,43,226,0.4);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.form-message.success {
+  background: rgba(0,230,255,0.1);
+  color: var(--neon);
+  border: 1px solid rgba(0,230,255,0.2);
+}
+
+.form-message.error {
+  background: rgba(255,45,111,0.1);
+  color: var(--accent-2);
+  border: 1px solid rgba(255,45,111,0.2);
+}
+
+/* ======================================================
+   PAGE CONTACT - Links Grid
+   ====================================================== */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.official-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.3s;
+}
+
+.official-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(138,43,226,0.2);
+  border-color: var(--accent-1);
+}
+
+.link-icon {
+  font-size: 2rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.link-content {
+  flex: 1;
+}
+
+.link-content h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+}
+
+.link-content p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.link-arrow {
+  font-size: 1.5rem;
+  color: var(--neon);
+  transition: transform 0.3s;
+}
+
+.official-link:hover .link-arrow {
+  transform: translateX(5px);
+}
+
+/* ======================================================
+   PAGE CONTACT - FAQ
+   ====================================================== */
+.faq-list {
+  margin-top: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.02);
+  transition: all 0.3s;
+}
+
+.faq-item:hover {
+  border-color: rgba(138,43,226,0.2);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s;
+}
+
+.faq-question:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  color: var(--neon);
+  font-weight: 300;
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  transition: max-height 0.4s ease-in;
+}
+
+.faq-answer p {
+  padding: 0 1.2rem 1.2rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* About Section */
+.about-section {
+  background: linear-gradient(135deg, rgba(138,43,226,0.05), rgba(0,230,255,0.02));
+  border: 1px solid rgba(138,43,226,0.1);
+}
+
+.about-section p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
 .site-footer {
   margin-left: -1.75rem;
   margin-right: -1.75rem;
@@ -403,7 +1095,9 @@ header {
   padding-right: 1.75rem;
 }
 
-/* Responsive - Tablette */
+/* ======================================================
+   RESPONSIVE - Tablette (1024px)
+   ====================================================== */
 @media (max-width: 1024px) {
   .hero-anno {
     grid-template-columns: 250px 1fr;
@@ -423,22 +1117,48 @@ header {
   .carousel-slide img {
     height: 350px;
   }
+
+  .news-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .works-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .influence-content {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .links-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
 }
 
-/* Responsive - Mobile */
+/* ======================================================
+   RESPONSIVE - Mobile (768px)
+   ====================================================== */
 @media (max-width: 768px) {
   body {
+    padding: 1rem;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .card {
     padding: 1rem;
   }
 
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .site-nav {
-    width: 100%;
-    justify-content: space-between;
   }
 
   .hero-anno {
@@ -472,9 +1192,96 @@ header {
   .carousel-caption h3 {
     font-size: 1rem;
   }
+
+  .news-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .news-hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .news-hero-content .lead {
+    font-size: 1rem;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-card.featured {
+    grid-column: 1;
+  }
+
+  .archive-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .archive-date {
+    min-width: auto;
+  }
+
+  .info-links {
+    flex-direction: column;
+  }
+
+  .info-link {
+    text-align: center;
+  }
+
+  .bio-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .bio-hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .bio-hero-content .lead {
+    font-size: 1rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 1rem;
+  }
+
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .influence-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-hero-content .lead {
+    font-size: 1rem;
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .official-link {
+    padding: 1rem;
+  }
 }
 
-/* Responsive - Petit mobile */
+/* ======================================================
+   RESPONSIVE - Petit mobile (480px)
+   ====================================================== */
 @media (max-width: 480px) {
   .brand-text h1 {
     font-size: 1.1rem;
@@ -494,11 +1301,58 @@ header {
     height: 220px;
   }
 
-  .section-title {
-    font-size: 1.2rem;
+  .news-hero {
+    padding: 1.5rem 1rem;
   }
 
-  .card {
+  .news-hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .news-card {
     padding: 1rem;
+  }
+
+  .news-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+  .bio-hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .bio-hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .contact-hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .faq-question {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer p {
+    padding: 0 1rem 1rem;
   }
 }
