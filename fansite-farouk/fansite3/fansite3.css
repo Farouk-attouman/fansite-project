@@ -25,7 +25,7 @@ body {
               radial-gradient(900px 500px at 90% 90%, rgba(0,230,255,0.03), transparent 60%),
               linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
   color: var(--text);
-  padding: 1.75rem;
+  padding: 0 1.75rem 1.75rem 1.75rem;
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -51,10 +51,8 @@ body {
 }
 .skip-link:focus { transform: translateY(0); }
 
-/* ======================================================
-   HEADER STICKY UNIFORME
-   ====================================================== */
-.site-header {
+/* Header */
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -66,7 +64,8 @@ body {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.site-nav {
+/* Navigation */
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,8 +74,14 @@ body {
   margin: 0 auto;
 }
 
-/* Logo */
-.site-logo {
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.logo a {
   font-size: 1.8rem;
   font-weight: 700;
   color: rgb(250, 20, 66);
@@ -86,7 +91,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.site-logo:hover {
+.logo a:hover {
   transform: scale(1.05);
   text-shadow: 0 0 20px rgba(251, 106, 21, 0.5);
 }
@@ -102,21 +107,18 @@ body {
   text-align: center;
 }
 
-.site-branding {
+.nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-}
-
-/* Navigation Links */
-.site-nav-links {
-  display: flex;
+  list-style: none;
   gap: 8px;
   flex-wrap: wrap;
 }
 
-.nav-link-item {
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
   display: block;
   padding: 8px 14px;
   text-decoration: none;
@@ -128,7 +130,7 @@ body {
   position: relative;
 }
 
-.nav-link-item::before {
+.nav-links a::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -140,18 +142,14 @@ body {
   transition: width 0.3s ease;
 }
 
-.nav-link-item:hover {
+.nav-links a:hover,
+.nav-links a:focus {
   color: #FB6A15;
   background: rgba(251, 106, 21, 0.08);
 }
 
-.nav-link-item:hover::before {
+.nav-links a:hover::before {
   width: 80%;
-}
-
-.nav-link-item.active {
-  color: #FB6A15;
-  background: rgba(251, 106, 21, 0.12);
 }
 
 /* Hero Header */
@@ -397,88 +395,12 @@ body {
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* ======================================================
-   FOOTER UNIFORME
-   ====================================================== */
+/* Footer - contrer le padding du body pour occuper toute la largeur */
 .site-footer {
-  background: #221C1A;
-  padding: 80px 20px 30px;
-  border-top: 3px solid #FB6A15;
-  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.1);
-  margin-top: 60px;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1.2fr;
-  gap: 80px;
-  margin-bottom: 50px;
-}
-
-.footer-column h4 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #FB6A15;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.footer-description {
-  color: #F8F6F0;
-  opacity: 0.8;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.footer-links {
-  list-style: none;
-}
-
-.footer-links li {
-  margin-bottom: 12px;
-}
-
-.footer-links a {
-  color: #F8F6F0;
-  opacity: 0.8;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.footer-links a:hover {
-  color: #FB6A15;
-  opacity: 1;
-  transform: translateX(5px);
-}
-
-.footer-info {
-  color: #F8F6F0;
-  opacity: 0.7;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(251, 106, 21, 0.3);
-  padding-top: 30px;
-  text-align: center;
-}
-
-.footer-copyright {
-  font-size: 1rem;
-  color: #F8F6F0;
-  opacity: 0.7;
-  margin-bottom: 10px;
-}
-
-.footer-disclaimer {
-  font-size: 0.9rem;
-  color: #F8F6F0;
-  opacity: 0.5;
-  font-style: italic;
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 /* Responsive - Tablette */
@@ -501,20 +423,6 @@ body {
   .carousel-slide img {
     height: 350px;
   }
-
-  .footer-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-
-  .site-nav-links {
-    gap: 5px;
-  }
-
-  .nav-link-item {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
 }
 
 /* Responsive - Mobile */
@@ -523,15 +431,14 @@ body {
     padding: 1rem;
   }
 
-  .site-nav {
+  .header-inner {
     flex-direction: column;
-    gap: 15px;
-    padding: 12px 20px;
+    align-items: flex-start;
   }
 
-  .site-nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
+  .site-nav {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .hero-anno {
@@ -564,19 +471,6 @@ body {
 
   .carousel-caption h3 {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .site-nav-links {
-    flex-direction: column;
-    gap: 8px;
   }
 }
 
