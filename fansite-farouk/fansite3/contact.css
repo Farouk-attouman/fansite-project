@@ -361,6 +361,14 @@ body {
   }
 }
 
+/* Footer - contrer le padding du body pour occuper toute la largeur */
+.site-footer {
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 /* Responsive - Mobile */
 @media (max-width: 768px) {
   body {

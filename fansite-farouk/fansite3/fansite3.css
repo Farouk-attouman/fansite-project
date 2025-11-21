@@ -395,15 +395,12 @@ header {
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* Footer */
+/* Footer - contrer le padding du body pour occuper toute la largeur */
 .site-footer {
-  margin-top: 3rem;
-  border-radius: 12px;
-  padding: 1.5rem;
-  border: 1px solid rgba(255,255,255,0.03);
-  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
-  text-align: center;
-  color: var(--muted);
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 /* Responsive - Tablette */
