@@ -1,128 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="fansite2.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biographie – Jirō Ono</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biographie de Jirō Ono</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="evenements.css">
 </head>
-
 <body>
+    <header class="site-header">
+    <nav class="site-nav">
 
-<!-- ===== HEADER STICKY ===== -->
-<header class="site-header">
-  <nav class="site-nav">
-    <div class="site-branding">
-      <a href="../index.html" class="site-logo">日本</a>
-      <p class="header-tagline">Une exploration de la culture japonaise</p>
-    </div>
-    <div class="site-nav-links">
-      <a href="fansite2.html" class="nav-link-item">Accueil</a>
-      <a href="actualite.html" class="nav-link-item">Actualités</a>
-      <a href="realisations.html" class="nav-link-item">Réalisations</a>
-      <a href="evenements.html" class="nav-link-item">Biographie</a>
-      <a href="media.html" class="nav-link-item">Photos & Vidéos</a>
-      <a href="liens-fans.html" class="nav-link-item">Liens Fans</a>
-      <a href="reseaux-sociaux.html" class="nav-link-item">Réseaux</a>
-      <a href="contact-form.html" class="nav-link-item">Contact</a>
-    </div>
-  </nav>
+        <div class="site-branding">
+            <a href="../index.html" class="site-logo">日本</a>
+            <p class="header-tagline">Une exploration de la culture japonaise</p>
+        </div>
+
+        <div class="site-nav-links">
+            <a href="fansite2.html" class="nav-link-item">Accueil</a>
+            <a href="actualite.html" class="nav-link-item">Actualité</a>
+            <a href="evenements.html" class="nav-link-item">Biographie</a>
+            <a href="media.html" class="nav-link-item">Photos & Vidéos</a>
+            <a href="contact-form.html" class="nav-link-item">Contact</a>
+        </div>
+
+    </nav>
 </header>
-
-<div class="hero-header">
-    <h1>Jirō Ono</h1>
-    <p>Le plus grand maître sushi au monde</p>
-  </div>
-
-<style>
-    /* --- RESET --- */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-    background: url('https://images.squarespace-cdn.com/content/v1/62fbfbed423b4f1bb8caed31/a83c13cd-0d93-4b05-8c1a-13de819f56c6/v2-e1rpl-34vsk.jpg') center/cover no-repeat fixed;
-        color: #fff;
-        line-height: 1.1 rem;
-        padding: 40px;
-    }
-
-    .section {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    .section h2 {
-        text-align: center;
-        color: #ff9f1c;
-        font-size: 3rem;
-        margin-bottom: 50px;
-        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    }
-
-    .bio-card {
-        display: flex;
-        flex-wrap: wrap;
-        background: rgba(30,30,30,0.9);
-        border-radius: 20px;
-        overflow: hidden;
-        margin-bottom: 40px;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.7);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .bio-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 30px 60px rgba(0,0,0,0.8);
-    }
-
-    .bio-card img {
-        width: 100%;
-        max-width: 350px;
-        object-fit: cover;
-        flex: 1 1 350px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .bio-card img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-    }
-
-    .bio-content {
-        flex: 2 1 400px;
-        padding: 30px;
-    }
-
-    .bio-card h3 {
-        color: #ff9f1c;
-        margin-bottom: 20px;
-        font-size: 1.8rem;
-    }
-
-    .bio-card ul {
-        list-style: disc;
-        padding-left: 20px;
-    }
-
-    .bio-card li {
-        margin-bottom: 12px;
-        font-size: 1.6rem;
-    }
-
-    .highlight {
-        color: #ff9f1c;
-        font-weight: bold;
-    }
-
-   
-</style>
-</head>
-<body>
 
 <div class="section" id="biographie">
     <h2>Biographie de Jirō Ono</h2>
@@ -164,57 +67,56 @@
     </div>
 
 </div>
-<button onclick="window.location.href='fansite2.html'" class="retour-btn">⬅ Retour</button>
-
-<!-- Pied de page -->
 <footer class="site-footer">
-  <div class="footer-container">
-    <!-- Colonne 1 : À propos -->
-    <div class="footer-column">
-      <h4>À Propos</h4>
-      <p class="footer-description">
-        Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
-        l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
-      </p>
-    </div>
+        <div class="footer-container">
 
-    <!-- Colonne 2 : Navigation rapide -->
-    <div class="footer-column">
-      <h4>Navigation</h4>
-      <ul class="footer-links">
-        <li><a href="fansite2.html">Accueil</a></li>
-        <li><a href="actualite.html">Actualités</a></li>
-        <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="evenements.html">Biographie</a></li>
-        <li><a href="media.html">Photos & Vidéos</a></li>
-        <li><a href="liens-fans.html">Liens Fans</a></li>
-        <li><a href="reseaux-sociaux.html">Réseaux</a></li>
-        <li><a href="contact-form.html">Contact</a></li>
-      </ul>
-    </div>
+            <!-- Colonne 1 : À propos -->
+             <div class="footer-column">
+                <h4>À Propos</h4>
+                <p class="footer-description">
+                    Un hommage à Jirō Ono, maître sushi d’exception, à travers un voyage culinaire, culturel et artistique.
+                    Découvrez son héritage, ses réalisations et son influence dans le monde de la gastronomie japonaise.
+                </p>
+            </div>
 
-    <!-- Colonne 3 : Le Japon -->
-    <div class="footer-column">
-      <h4>Le Pays du Soleil Levant</h4>
-      <ul class="footer-links">
-        <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-        <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-        <li><span class="footer-info">🎌 Culture unique</span></li>
-        <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
-      </ul>
-    </div>
-  </div>
+            <!-- Colonne 2 : Navigation rapide (mêmes liens que ton header) -->
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="fansite2.html">Accueil</a></li>
+                    <li><a href="actualite.html">Actualité</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="evenements.html">Biographie</a></li>
+                    <li><a href="media.html">Photos & Vidéos</a></li>
+                    <li><a href="liens-fans.html">Liens Fans</a></li>
+                    <li><a href="reseaux-sociaux.html">Réseaux</a></li>
+                    <li><a href="contact-form.html">Contact</a></li>
+                </ul>
+            </div>
 
-  <!-- Barre de copyright -->
-  <div class="footer-bottom">
-    <p class="footer-copyright">
-      © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
-    </p>
-    <p class="footer-disclaimer">
-      Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
-    </p>
-  </div>
-</footer>
+            <!-- Colonne 3 : L’univers de Jirō Ono -->
+            <div class="footer-column">
+                <h4>L’Art du Sushi</h4>
+                <ul class="footer-links">
+                    <li><span class="footer-info">🍣 Excellence gastronomique</span></li>
+                    <li><span class="footer-info">🔪 Techniques millimétrées</span></li>
+                    <li><span class="footer-info">🎌 Tradition japonaise</span></li>
+                    <li><span class="footer-info">🏆 Maître reconnu mondialement</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bas de page -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2025 Jirō Ono – Maître Sushi Légendaire
+            </p>
+            <p class="footer-disclaimer">
+                Site réalisé dans le cadre d’un projet universitaire. Tous les contenus appartiennent à leurs auteurs respectifs.
+            </p>
+        </div>
+    </footer>
 
 </body>
 </html>
