@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/accueil.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
     <!--HEADER-->
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" aria-label="Navigation principale">
             <div class="branding">
-            <a href="../index.html" class="logo">日本</a>
+            <a href="../index.html" class="logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
             <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
             <ul class="nav-links">
@@ -57,7 +58,7 @@
     </header>
 
     <!--HERO-->
-    <main>
+    <main id="main">
         <section class="hero">
             <!--Background Image-->
             <img src="../images/pxfuel.jpg" 
@@ -84,7 +85,7 @@
             <div class="cards">
                 <!-- Card 1 -->
                 <div class="card">
-                    <div class="card-icon">📖</div>
+                    <div class="card-icon" aria-hidden="true">📖</div>
                     <h3>Son Parcours</h3>
                     <p>
                         Découvrez le chemin de Kishimoto, de ses débuts modestes jusqu'à sa renommée mondiale.
@@ -94,7 +95,7 @@
 
                 <!-- Card 2 -->
                 <div class="card">
-                    <div class="card-icon">✏️</div>
+                    <div class="card-icon" aria-hidden="true">✏️</div>
                     <h3>Ses Œuvres</h3>
                     <p>
                         Explorez son univers, de Naruto à Samurai 8 et d'autres travaux moins connus.
@@ -104,7 +105,7 @@
 
                 <!-- Card 3 -->
                 <div class="card">
-                    <div class="card-icon">🎨</div>
+                    <div class="card-icon" aria-hidden="true">🎨</div>
                     <h3>Galerie</h3>
                     <p>
                         Admirez une sélection d'illustrations et d'images créées ou inspirées par Kishimoto.
@@ -164,10 +165,10 @@
             <div class="footer-column">
                 <h4>Informations</h4>
                 <ul class="footer-links">
-                    <li><span class="footer-info">📅 Né le 8 novembre 1974</span></li>
-                    <li><span class="footer-info">📍 Préfecture d'Okayama, Japon</span></li>
-                    <li><span class="footer-info">🏆 Prix Quill Award (2006)</span></li>
-                    <li><span class="footer-info">📚 Plus de 250 millions d'exemplaires vendus</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">📅</span> Né le 8 novembre 1974</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">📍</span> Préfecture d'Okayama, Japon</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Prix Quill Award (2006)</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">📚</span> Plus de 250 millions d'exemplaires vendus</span></li>
                 </ul>
             </div>
         </div>

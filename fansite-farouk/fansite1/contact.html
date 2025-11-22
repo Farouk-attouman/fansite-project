@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="fansite1.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
     <!-- ===== HEADER STICKY ===== -->
     <header class="site-header">
-        <nav class="site-nav">
+        <nav class="site-nav" aria-label="Navigation principale">
             <div class="site-branding">
-                <a href="../index.html" class="site-logo">日本</a>
+                <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
                 <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
             <div class="site-nav-links">
@@ -26,6 +27,7 @@
     </header>
 
     <!-- Page Title -->
+    <main id="main">
     <section class="hero hero-contact">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -41,28 +43,28 @@
                 <div class="contact-info">
                     <h3>Informations de Contact</h3>
                     <div class="contact-item">
-                        <span class="contact-icon">📧</span>
+                        <span class="contact-icon" aria-hidden="true">📧</span>
                         <div>
                             <strong>Email</strong>
                             <p>contact@empereur-japon-fansite.jp</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📱</span>
+                        <span class="contact-icon" aria-hidden="true">📱</span>
                         <div>
                             <strong>Téléphone</strong>
                             <p>+81 3-1234-5678</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📍</span>
+                        <span class="contact-icon" aria-hidden="true">📍</span>
                         <div>
                             <strong>Adresse</strong>
                             <p>Tokyo, Japon</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">⏰</span>
+                        <span class="contact-icon" aria-hidden="true">⏰</span>
                         <div>
                             <strong>Horaires</strong>
                             <p>Lun-Ven : 9h00 - 18h00</p>
@@ -113,6 +115,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Pied de page -->
     <footer class="site-footer">
