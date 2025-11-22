@@ -8,130 +8,134 @@
 </head>
 <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
-    <!-- ===== HEADER STICKY ===== -->
+    
+    <!-- Header -->
     <header class="site-header">
         <nav class="site-nav" aria-label="Navigation principale">
             <div class="site-branding">
                 <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
                 <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
-            <div class="site-nav-links">
-                <a href="fansite1.html" class="nav-link-item">Accueil</a>
-                <a href="actus.html" class="nav-link-item">Actualités</a>
-                <a href="realisations.html" class="nav-link-item">Réalisations</a>
-                <a href="evenements.html" class="nav-link-item">Événements</a>
-                <a href="galerie.html" class="nav-link-item">Médias</a>
-                <a href="contact.html" class="nav-link-item">Contact</a>
-            </div>
+            <ul class="site-nav-links" role="list">
+                <li><a href="fansite1.html" class="nav-link-item">Accueil</a></li>
+                <li><a href="actus.html" class="nav-link-item">Actualités</a></li>
+                <li><a href="realisations.html" class="nav-link-item">Réalisations</a></li>
+                <li><a href="evenements.html" class="nav-link-item">Événements</a></li>
+                <li><a href="galerie.html" class="nav-link-item">Médias</a></li>
+                <li><a href="contact.html" class="nav-link-item" aria-current="page">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Page Title -->
     <main id="main">
-    <section class="hero hero-contact">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Contactez-nous</h1>
-            <p>Nous sommes à votre écoute</p>
-        </div>
-    </section>
+        <!-- Page Title -->
+        <section class="hero hero-contact" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="hero-title">Contactez-nous</h1>
+                <p>Nous sommes à votre écoute</p>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Informations de Contact</h3>
-                    <div class="contact-item">
-                        <span class="contact-icon" aria-hidden="true">📧</span>
-                        <div>
-                            <strong>Email</strong>
-                            <p>contact@empereur-japon-fansite.jp</p>
+        <!-- Contact Section -->
+        <section class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="sr-only">Formulaire et informations de contact</h2>
+                <div class="contact-content">
+                    <aside class="contact-info" aria-label="Informations de contact">
+                        <h3>Informations de Contact</h3>
+                        <address>
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">📧</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p><a href="mailto:contact@empereur-japon-fansite.jp">contact@empereur-japon-fansite.jp</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">📱</span>
+                                <div>
+                                    <strong>Téléphone</strong>
+                                    <p><a href="tel:+81312345678">+81 3-1234-5678</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">📍</span>
+                                <div>
+                                    <strong>Adresse</strong>
+                                    <p>Tokyo, Japon</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">⏰</span>
+                                <div>
+                                    <strong>Horaires</strong>
+                                    <p><time>Lun-Ven : 9h00 - 18h00</time></p>
+                                    <p>Sam-Dim : Fermé</p>
+                                </div>
+                            </div>
+                        </address>
+                    </aside>
+
+                    <form class="contact-form" method="post" action="#" aria-label="Formulaire de contact">
+                        <div class="form-group">
+                            <label for="name">Nom complet <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                            <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon" aria-hidden="true">📱</span>
-                        <div>
-                            <strong>Téléphone</strong>
-                            <p>+81 3-1234-5678</p>
+
+                        <div class="form-group">
+                            <label for="email">Email <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                            <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon" aria-hidden="true">📍</span>
-                        <div>
-                            <strong>Adresse</strong>
-                            <p>Tokyo, Japon</p>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                            <select id="subject" name="subject" required aria-required="true">
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="question">Question générale</option>
+                                <option value="feedback">Retour d'expérience</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Autre</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon" aria-hidden="true">⏰</span>
-                        <div>
-                            <strong>Horaires</strong>
-                            <p>Lun-Ven : 9h00 - 18h00</p>
-                            <p>Sam-Dim : Fermé</p>
+
+                        <div class="form-group">
+                            <label for="message">Message <abbr title="obligatoire" aria-label="obligatoire">*</abbr></label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                         </div>
-                    </div>
+
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
                 </div>
-
-                <form class="contact-form" method="post" action="#">
-                    <div class="form-group">
-                        <label for="name">Nom complet</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <select id="subject" name="subject" required>
-                            <option value="">Sélectionnez un sujet</option>
-                            <option value="question">Question générale</option>
-                            <option value="feedback">Retour d'expérience</option>
-                            <option value="collaboration">Collaboration</option>
-                            <option value="other">Autre</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Envoyer le message</button>
-                </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Map Section (Placeholder) -->
-    <section class="news-section">
-        <div class="container">
-            <h2>Nous Trouver</h2>
-            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 400px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-                📍 Carte Interactive - Tokyo, Japon
+        <!-- Map Section -->
+        <section class="news-section" aria-labelledby="map-heading">
+            <div class="container">
+                <h2 id="map-heading">Nous Trouver</h2>
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 400px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;" role="img" aria-label="Carte interactive de notre localisation à Tokyo, Japon">
+                    <span aria-hidden="true">📍</span> Carte Interactive - Tokyo, Japon
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-container">
-            <!-- Colonne 1 : À propos -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+        <section class="footer-container">
+            <!-- Column 1: About -->
+            <article class="footer-column">
+                <h2>À Propos</h2>
                 <p class="footer-description">
                     Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
                     l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
                 </p>
-            </div>
+            </article>
 
-            <!-- Colonne 2 : Navigation rapide -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick navigation -->
+            <nav class="footer-column" aria-label="Navigation du pied de page">
+                <h2>Navigation</h2>
                 <ul class="footer-links">
                     <li><a href="fansite1.html">Accueil</a></li>
                     <li><a href="actus.html">Actualités</a></li>
@@ -140,29 +144,29 @@
                     <li><a href="galerie.html">Médias</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Colonne 3 : Le Japon -->
-            <div class="footer-column">
-                <h4>Le Pays du Soleil Levant</h4>
+            <!-- Column 3: Japan -->
+            <aside class="footer-column" aria-label="Caractéristiques">
+                <h2>Le Pays du Soleil Levant</h2>
                 <ul class="footer-links">
-                    <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-                    <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-                    <li><span class="footer-info">🎌 Culture unique</span></li>
-                    <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🏯</span> Tradition millénaire</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🍣</span> Gastronomie raffinée</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎌</span> Culture unique</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎨</span> Arts narratifs reconnus</span></li>
                 </ul>
-            </div>
-        </div>
+            </aside>
+        </section>
 
-        <!-- Barre de copyright -->
-        <div class="footer-bottom">
+        <!-- Bottom footer -->
+        <section class="footer-bottom">
             <p class="footer-copyright">
                 © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
             </p>
             <p class="footer-disclaimer">
                 Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
             </p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>

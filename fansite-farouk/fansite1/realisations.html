@@ -8,162 +8,163 @@
 </head>
 <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
-    <!-- ===== HEADER STICKY ===== -->
+    
+    <!-- Header -->
     <header class="site-header">
         <nav class="site-nav" aria-label="Navigation principale">
             <div class="site-branding">
                 <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
                 <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
-            <div class="site-nav-links">
-                <a href="fansite1.html" class="nav-link-item">Accueil</a>
-                <a href="actus.html" class="nav-link-item">Actualités</a>
-                <a href="realisations.html" class="nav-link-item">Réalisations</a>
-                <a href="evenements.html" class="nav-link-item">Événements</a>
-                <a href="galerie.html" class="nav-link-item">Médias</a>
-                <a href="contact.html" class="nav-link-item">Contact</a>
-            </div>
+            <ul class="site-nav-links" role="list">
+                <li><a href="fansite1.html" class="nav-link-item">Accueil</a></li>
+                <li><a href="actus.html" class="nav-link-item">Actualités</a></li>
+                <li><a href="realisations.html" class="nav-link-item" aria-current="page">Réalisations</a></li>
+                <li><a href="evenements.html" class="nav-link-item">Événements</a></li>
+                <li><a href="galerie.html" class="nav-link-item">Médias</a></li>
+                <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Page Title -->
     <main id="main">
-    <section class="hero hero-realisations">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Réalisations Impériales</h1>
-            <p>L'histoire et les accomplissements de l'ère Reiwa</p>
-        </div>
-    </section>
+        <!-- Page Title -->
+        <section class="hero hero-realisations" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="hero-title">Réalisations Impériales</h1>
+                <p>L'histoire et les accomplissements de l'ère Reiwa</p>
+            </div>
+        </section>
 
-    <!-- Achievements Section -->
-    <section class="achievements-section">
-        <div class="container">
-            <h2>Chronologie des Réalisations</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2019</h3>
-                        <h4>Ascension au Trône du Chrysanthème</h4>
-                        <p>Intronisation de l'Empereur Naruhito, inaugurant l'ère Reiwa (Belle Harmonie). Cette cérémonie millénaire a marqué le début d'une nouvelle ère pour le Japon.</p>
-                    </div>
-                </div>
+        <!-- Achievements Section -->
+        <section class="achievements-section" aria-labelledby="timeline-heading">
+            <div class="container">
+                <h2 id="timeline-heading">Chronologie des Réalisations</h2>
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <article class="timeline-content">
+                            <h3><time datetime="2019">2019</time></h3>
+                            <h4>Ascension au Trône du Chrysanthème</h4>
+                            <p>Intronisation de l'Empereur Naruhito, inaugurant l'ère Reiwa (Belle Harmonie). Cette cérémonie millénaire a marqué le début d'une nouvelle ère pour le Japon.</p>
+                        </article>
+                    </li>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2020</h3>
-                        <h4>Leadership durant la Pandémie</h4>
-                        <p>Messages d'encouragement à la nation japonaise pendant la crise sanitaire mondiale. L'Empereur a apporté réconfort et espoir au peuple durant cette période difficile.</p>
-                    </div>
-                </div>
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <article class="timeline-content">
+                            <h3><time datetime="2020">2020</time></h3>
+                            <h4>Leadership durant la Pandémie</h4>
+                            <p>Messages d'encouragement à la nation japonaise pendant la crise sanitaire mondiale. L'Empereur a apporté réconfort et espoir au peuple durant cette période difficile.</p>
+                        </article>
+                    </li>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2021</h3>
-                        <h4>Soutien aux Jeux Olympiques de Tokyo</h4>
-                        <p>Malgré les défis sanitaires, l'Empereur a soutenu l'organisation des Jeux Olympiques et Paralympiques, symbole de résilience et d'unité.</p>
-                    </div>
-                </div>
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <article class="timeline-content">
+                            <h3><time datetime="2021">2021</time></h3>
+                            <h4>Soutien aux Jeux Olympiques de Tokyo</h4>
+                            <p>Malgré les défis sanitaires, l'Empereur a soutenu l'organisation des Jeux Olympiques et Paralympiques, symbole de résilience et d'unité.</p>
+                        </article>
+                    </li>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2022</h3>
-                        <h4>Promotion de la Diplomatie Culturelle</h4>
-                        <p>Renforcement des liens internationaux à travers des échanges culturels et académiques. Visites d'État en Europe et en Asie.</p>
-                    </div>
-                </div>
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <article class="timeline-content">
+                            <h3><time datetime="2022">2022</time></h3>
+                            <h4>Promotion de la Diplomatie Culturelle</h4>
+                            <p>Renforcement des liens internationaux à travers des échanges culturels et académiques. Visites d'État en Europe et en Asie.</p>
+                        </article>
+                    </li>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2023</h3>
-                        <h4>Engagement pour l'Éducation</h4>
-                        <p>Promotion de l'accès à l'éducation et soutien aux programmes éducatifs pour les jeunes générations japonaises.</p>
-                    </div>
-                </div>
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <article class="timeline-content">
+                            <h3><time datetime="2023">2023</time></h3>
+                            <h4>Engagement pour l'Éducation</h4>
+                            <p>Promotion de l'accès à l'éducation et soutien aux programmes éducatifs pour les jeunes générations japonaises.</p>
+                        </article>
+                    </li>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2024</h3>
-                        <h4>Initiatives Environnementales</h4>
-                        <p>Soutien actif aux politiques de développement durable et de protection de l'environnement. Engagement pour la préservation de la biodiversité japonaise.</p>
-                    </div>
+                    <li class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <article class="timeline-content">
+                            <h3><time datetime="2024">2024</time></h3>
+                            <h4>Initiatives Environnementales</h4>
+                            <p>Soutien actif aux politiques de développement durable et de protection de l'environnement. Engagement pour la préservation de la biodiversité japonaise.</p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="news-section" aria-labelledby="values-heading">
+            <div class="container">
+                <h2 id="values-heading">Valeurs et Principes</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-content" style="padding: 2rem;">
+                            <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Tradition</h3>
+                            <p>Préservation des traditions millénaires et des cérémonies impériales qui façonnent l'identité culturelle japonaise.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content" style="padding: 2rem;">
+                            <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Paix</h3>
+                            <p>Engagement constant pour la paix mondiale et la diplomatie internationale, symbole de stabilité et d'harmonie.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content" style="padding: 2rem;">
+                            <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Environnement</h3>
+                            <p>Protection de l'environnement et promotion du développement durable pour les générations futures.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content" style="padding: 2rem;">
+                            <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Éducation</h3>
+                            <p>Soutien à l'éducation et à la recherche scientifique, piliers du progrès de la société japonaise.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content" style="padding: 2rem;">
+                            <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Unité</h3>
+                            <p>Symbole de l'unité nationale et du lien entre tous les citoyens japonais à travers les générations.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-content" style="padding: 2rem;">
+                            <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Culture</h3>
+                            <p>Promotion de la culture japonaise dans le monde et valorisation du patrimoine culturel national.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Values Section -->
-    <section class="news-section">
-        <div class="container">
-            <h2>Valeurs et Principes</h2>
-            <div class="news-grid">
-                <article class="news-card">
-                    <div class="news-content" style="padding: 2rem;">
-                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Tradition</h3>
-                        <p>Préservation des traditions millénaires et des cérémonies impériales qui façonnent l'identité culturelle japonaise.</p>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="news-content" style="padding: 2rem;">
-                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Paix</h3>
-                        <p>Engagement constant pour la paix mondiale et la diplomatie internationale, symbole de stabilité et d'harmonie.</p>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="news-content" style="padding: 2rem;">
-                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Environnement</h3>
-                        <p>Protection de l'environnement et promotion du développement durable pour les générations futures.</p>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="news-content" style="padding: 2rem;">
-                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Éducation</h3>
-                        <p>Soutien à l'éducation et à la recherche scientifique, piliers du progrès de la société japonaise.</p>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="news-content" style="padding: 2rem;">
-                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Unité</h3>
-                        <p>Symbole de l'unité nationale et du lien entre tous les citoyens japonais à travers les générations.</p>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="news-content" style="padding: 2rem;">
-                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">Culture</h3>
-                        <p>Promotion de la culture japonaise dans le monde et valorisation du patrimoine culturel national.</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+        </section>
     </main>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-container">
-            <!-- Colonne 1 : À propos -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+        <section class="footer-container">
+            <!-- Column 1: About -->
+            <article class="footer-column">
+                <h2>À Propos</h2>
                 <p class="footer-description">
                     Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
                     l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
                 </p>
-            </div>
+            </article>
 
-            <!-- Colonne 2 : Navigation rapide -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick navigation -->
+            <nav class="footer-column" aria-label="Navigation du pied de page">
+                <h2>Navigation</h2>
                 <ul class="footer-links">
                     <li><a href="fansite1.html">Accueil</a></li>
                     <li><a href="actus.html">Actualités</a></li>
@@ -172,29 +173,29 @@
                     <li><a href="galerie.html">Médias</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Colonne 3 : Le Japon -->
-            <div class="footer-column">
-                <h4>Le Pays du Soleil Levant</h4>
+            <!-- Column 3: Japan -->
+            <aside class="footer-column" aria-label="Caractéristiques">
+                <h2>Le Pays du Soleil Levant</h2>
                 <ul class="footer-links">
-                    <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-                    <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-                    <li><span class="footer-info">🎌 Culture unique</span></li>
-                    <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🏯</span> Tradition millénaire</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🍣</span> Gastronomie raffinée</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎌</span> Culture unique</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎨</span> Arts narratifs reconnus</span></li>
                 </ul>
-            </div>
-        </div>
+            </aside>
+        </section>
 
-        <!-- Barre de copyright -->
-        <div class="footer-bottom">
+        <!-- Bottom footer -->
+        <section class="footer-bottom">
             <p class="footer-copyright">
                 © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
             </p>
             <p class="footer-disclaimer">
                 Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
             </p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>

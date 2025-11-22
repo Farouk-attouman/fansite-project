@@ -8,176 +8,177 @@
 </head>
 <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
-    <!-- ===== HEADER STICKY ===== -->
+    
+    <!-- Header -->
     <header class="site-header">
         <nav class="site-nav" aria-label="Navigation principale">
             <div class="site-branding">
                 <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
                 <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
-            <div class="site-nav-links">
-                <a href="fansite1.html" class="nav-link-item">Accueil</a>
-                <a href="actus.html" class="nav-link-item">Actualités</a>
-                <a href="realisations.html" class="nav-link-item">Réalisations</a>
-                <a href="evenements.html" class="nav-link-item">Événements</a>
-                <a href="galerie.html" class="nav-link-item">Médias</a>
-                <a href="contact.html" class="nav-link-item">Contact</a>
-            </div>
+            <ul class="site-nav-links" role="list">
+                <li><a href="fansite1.html" class="nav-link-item">Accueil</a></li>
+                <li><a href="actus.html" class="nav-link-item">Actualités</a></li>
+                <li><a href="realisations.html" class="nav-link-item">Réalisations</a></li>
+                <li><a href="evenements.html" class="nav-link-item">Événements</a></li>
+                <li><a href="galerie.html" class="nav-link-item" aria-current="page">Médias</a></li>
+                <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Page Title -->
     <main id="main">
-    <section class="hero hero-galerie">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Galerie Multimédia</h1>
-            <p>Photos et vidéos de la famille impériale</p>
-        </div>
-    </section>
-
-    <!-- Media Section -->
-    <section class="media-section">
-        <div class="container">
-            <h2>Photos et Vidéos</h2>
-
-            <!-- Hidden radio inputs for media tab switching -->
-            <input type="radio" name="media-tab" id="media-photos" class="media-radio" checked>
-            <input type="radio" name="media-tab" id="media-videos" class="media-radio">
-
-            <div class="media-tabs">
-                <label for="media-photos" class="media-tab-btn">Photos</label>
-                <label for="media-videos" class="media-tab-btn">Vidéos</label>
+        <!-- Page Title -->
+        <section class="hero hero-galerie" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="hero-title">Galerie Multimédia</h1>
+                <p>Photos et vidéos de la famille impériale</p>
             </div>
+        </section>
 
-            <div class="media-content">
-                <!-- Photos Gallery -->
-                <div class="media-tab-content" id="photos">
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <img src="../images/Intronisation.jpg" alt="Galerie 1">
-                            <div class="gallery-overlay">
-                                <p>Cérémonie d'intronisation 2019</p>
-                            </div>
+        <!-- Media Section -->
+        <section class="media-section" aria-labelledby="media-heading">
+            <div class="container">
+                <h2 id="media-heading">Photos et Vidéos</h2>
+
+                <!-- Hidden radio inputs for media tab switching -->
+                <input type="radio" name="media-tab" id="media-photos" class="media-radio" checked>
+                <input type="radio" name="media-tab" id="media-videos" class="media-radio">
+
+                <div class="media-tabs" role="tablist" aria-label="Types de médias">
+                    <label for="media-photos" class="media-tab-btn" role="tab" aria-selected="true" aria-controls="photos">Photos</label>
+                    <label for="media-videos" class="media-tab-btn" role="tab" aria-selected="false" aria-controls="videos">Vidéos</label>
+                </div>
+
+                <div class="media-content">
+                    <!-- Photos Gallery -->
+                    <div class="media-tab-content" id="photos" role="tabpanel" aria-labelledby="media-photos">
+                        <div class="gallery-grid">
+                            <figure class="gallery-item">
+                                <img src="../images/Intronisation.jpg" alt="Cérémonie d'intronisation de l'Empereur Naruhito en 2019">
+                                <figcaption class="gallery-overlay">
+                                    <p>Cérémonie d'intronisation 2019</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <img src="../images/" alt="Audience au Palais Impérial avec dignitaires">
+                                <figcaption class="gallery-overlay">
+                                    <p>Audience au Palais Impérial</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <img src="../images/" alt="Visite officielle de l'Empereur en France">
+                                <figcaption class="gallery-overlay">
+                                    <p>Visite officielle en France</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <img src="../images/" alt="Cérémonie traditionnelle japonaise au Palais">
+                                <figcaption class="gallery-overlay">
+                                    <p>Cérémonie traditionnelle</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <img src="../images/" alt="Vue du jardin du Palais Impérial de Tokyo">
+                                <figcaption class="gallery-overlay">
+                                    <p>Jardin du Palais Impérial</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <img src="../images/" alt="Rencontre diplomatique avec des dirigeants étrangers">
+                                <figcaption class="gallery-overlay">
+                                    <p>Rencontre diplomatique</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <img src="../images/" alt="Cérémonie du thé impériale traditionnelle">
+                                <figcaption class="gallery-overlay">
+                                    <p>Cérémonie du thé impériale</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <img src="../images/" alt="Festival des cerisiers au Palais Impérial">
+                                <figcaption class="gallery-overlay">
+                                    <p>Festival des cerisiers</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <img src="../images/" alt="Visite d'État officielle de l'Empereur">
+                                <figcaption class="gallery-overlay">
+                                    <p>Visite d'État</p>
+                                </figcaption>
+                            </figure>
                         </div>
-                        <div class="gallery-item">
-                            <img src="../images/" alt="Galerie 2">
-                            <div class="gallery-overlay">
-                                <p>Audience au Palais Impérial</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/" alt="Galerie 3">
-                            <div class="gallery-overlay">
-                                <p>Visite officielle en France</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/" alt="Galerie 4">
-                            <div class="gallery-overlay">
-                                <p>Cérémonie traditionnelle</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/" alt="Galerie 5">
-                            <div class="gallery-overlay">
-                                <p>Jardin du Palais Impérial</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/" alt="Galerie 6">
-                            <div class="gallery-overlay">
-                                <p>Rencontre diplomatique</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/" alt="Galerie 7">
-                            <div class="gallery-overlay">
-                                <p>Cérémonie du thé impériale</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/" alt="Galerie 8">
-                            <div class="gallery-overlay">
-                                <p>Festival des cerisiers</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/" alt="Galerie 9">
-                            <div class="gallery-overlay">
-                                <p>Visite d'État</p>
-                            </div>
+                    </div>
+
+                    <!-- Videos -->
+                    <div class="media-tab-content" id="videos" role="tabpanel" aria-labelledby="media-videos">
+                        <div class="video-grid">
+                            <article class="video-item">
+                                <div class="video-placeholder" role="img" aria-label="Miniature vidéo">
+                                    <span class="play-icon" aria-hidden="true">▶</span>
+                                </div>
+                                <h3>Cérémonie d'intronisation complète</h3>
+                                <p><time datetime="PT45M30S">Durée : 45:30</time></p>
+                            </article>
+                            <article class="video-item">
+                                <div class="video-placeholder" role="img" aria-label="Miniature vidéo">
+                                    <span class="play-icon" aria-hidden="true">▶</span>
+                                </div>
+                                <h3>Discours du Nouvel An 2024</h3>
+                                <p><time datetime="PT12M15S">Durée : 12:15</time></p>
+                            </article>
+                            <article class="video-item">
+                                <div class="video-placeholder" role="img" aria-label="Miniature vidéo">
+                                    <span class="play-icon" aria-hidden="true">▶</span>
+                                </div>
+                                <h3>Visite au temple Ise</h3>
+                                <p><time datetime="PT23M42S">Durée : 23:42</time></p>
+                            </article>
+                            <article class="video-item">
+                                <div class="video-placeholder" role="img" aria-label="Miniature vidéo">
+                                    <span class="play-icon" aria-hidden="true">▶</span>
+                                </div>
+                                <h3>Rencontre avec les étudiants</h3>
+                                <p><time datetime="PT18M20S">Durée : 18:20</time></p>
+                            </article>
+                            <article class="video-item">
+                                <div class="video-placeholder" role="img" aria-label="Miniature vidéo">
+                                    <span class="play-icon" aria-hidden="true">▶</span>
+                                </div>
+                                <h3>Cérémonie d'automne</h3>
+                                <p><time datetime="PT31M45S">Durée : 31:45</time></p>
+                            </article>
+                            <article class="video-item">
+                                <div class="video-placeholder" role="img" aria-label="Miniature vidéo">
+                                    <span class="play-icon" aria-hidden="true">▶</span>
+                                </div>
+                                <h3>Documentaire : L'ère Reiwa</h3>
+                                <p><time datetime="PT58M12S">Durée : 58:12</time></p>
+                            </article>
                         </div>
                     </div>
                 </div>
-
-                <!-- Videos -->
-                <div class="media-tab-content" id="videos">
-                    <div class="video-grid">
-                        <div class="video-item">
-                            <div class="video-placeholder">
-                                <span class="play-icon">▶</span>
-                            </div>
-                            <h4>Cérémonie d'intronisation complète</h4>
-                            <p>Durée : 45:30</p>
-                        </div>
-                        <div class="video-item">
-                            <div class="video-placeholder">
-                                <span class="play-icon">▶</span>
-                            </div>
-                            <h4>Discours du Nouvel An 2024</h4>
-                            <p>Durée : 12:15</p>
-                        </div>
-                        <div class="video-item">
-                            <div class="video-placeholder">
-                                <span class="play-icon">▶</span>
-                            </div>
-                            <h4>Visite au temple Ise</h4>
-                            <p>Durée : 23:42</p>
-                        </div>
-                        <div class="video-item">
-                            <div class="video-placeholder">
-                                <span class="play-icon">▶</span>
-                            </div>
-                            <h4>Rencontre avec les étudiants</h4>
-                            <p>Durée : 18:20</p>
-                        </div>
-                        <div class="video-item">
-                            <div class="video-placeholder">
-                                <span class="play-icon">▶</span>
-                            </div>
-                            <h4>Cérémonie d'automne</h4>
-                            <p>Durée : 31:45</p>
-                        </div>
-                        <div class="video-item">
-                            <div class="video-placeholder">
-                                <span class="play-icon">▶</span>
-                            </div>
-                            <h4>Documentaire : L'ère Reiwa</h4>
-                            <p>Durée : 58:12</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
     </main>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-container">
-            <!-- Colonne 1 : À propos -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+        <section class="footer-container">
+            <!-- Column 1: About -->
+            <article class="footer-column">
+                <h2>À Propos</h2>
                 <p class="footer-description">
                     Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
                     l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
                 </p>
-            </div>
+            </article>
 
-            <!-- Colonne 2 : Navigation rapide -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick navigation -->
+            <nav class="footer-column" aria-label="Navigation du pied de page">
+                <h2>Navigation</h2>
                 <ul class="footer-links">
                     <li><a href="fansite1.html">Accueil</a></li>
                     <li><a href="actus.html">Actualités</a></li>
@@ -186,29 +187,29 @@
                     <li><a href="galerie.html">Médias</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Colonne 3 : Le Japon -->
-            <div class="footer-column">
-                <h4>Le Pays du Soleil Levant</h4>
+            <!-- Column 3: Japan -->
+            <aside class="footer-column" aria-label="Caractéristiques">
+                <h2>Le Pays du Soleil Levant</h2>
                 <ul class="footer-links">
-                    <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-                    <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-                    <li><span class="footer-info">🎌 Culture unique</span></li>
-                    <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🏯</span> Tradition millénaire</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🍣</span> Gastronomie raffinée</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎌</span> Culture unique</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎨</span> Arts narratifs reconnus</span></li>
                 </ul>
-            </div>
-        </div>
+            </aside>
+        </section>
 
-        <!-- Barre de copyright -->
-        <div class="footer-bottom">
+        <!-- Bottom footer -->
+        <section class="footer-bottom">
             <p class="footer-copyright">
                 © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
             </p>
             <p class="footer-disclaimer">
                 Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
             </p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>

@@ -8,105 +8,106 @@
 </head>
 <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
-    <!-- ===== HEADER STICKY ===== -->
+    
+    <!-- Header -->
     <header class="site-header">
         <nav class="site-nav" aria-label="Navigation principale">
             <div class="site-branding">
                 <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
                 <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
-            <div class="site-nav-links">
-                <a href="fansite1.html" class="nav-link-item">Accueil</a>
-                <a href="actus.html" class="nav-link-item">Actualités</a>
-                <a href="realisations.html" class="nav-link-item">Réalisations</a>
-                <a href="evenements.html" class="nav-link-item">Événements</a>
-                <a href="galerie.html" class="nav-link-item">Médias</a>
-                <a href="contact.html" class="nav-link-item">Contact</a>
-            </div>
+            <ul class="site-nav-links" role="list">
+                <li><a href="fansite1.html" class="nav-link-item" aria-current="page">Accueil</a></li>
+                <li><a href="actus.html" class="nav-link-item">Actualités</a></li>
+                <li><a href="realisations.html" class="nav-link-item">Réalisations</a></li>
+                <li><a href="evenements.html" class="nav-link-item">Événements</a></li>
+                <li><a href="galerie.html" class="nav-link-item">Médias</a></li>
+                <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <main id="main">
-    <section class="hero hero-accueil">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>L'Empereur du Japon</h1>
-            <p>Gardien de la tradition millénaire et symbole de l'unité nationale</p>
-        </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section class="news-section">
-        <div class="container">
-            <h2>Bienvenue</h2>
-            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p style="font-size: 1.2rem; line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                    Découvrez l'histoire, les traditions et l'actualité de l'institution impériale japonaise.
-                    Ce site de fans est dédié à Sa Majesté l'Empereur Naruhito et à la famille impériale du Japon.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; color: #666;">
-                    L'Empereur du Japon est le chef d'État du Japon et le symbole de l'unité du peuple japonais.
-                    La dynastie impériale japonaise est la plus ancienne dynastie héréditaire continue au monde.
-                </p>
+        <!-- Hero Section -->
+        <section class="hero hero-accueil" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="hero-title">L'Empereur du Japon</h1>
+                <p>Gardien de la tradition millénaire et symbole de l'unité nationale</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Latest News Preview -->
-    <section class="news-section">
-        <div class="container">
-            <h2>Dernières Actualités</h2>
-            <div class="news-grid">
-                <article class="news-card">
-                    <img src="../images/emperor-naruhito-and-empress-masako-attend-the-enthronement-news-photo-1571742798.jpg" alt="Actualité 1">
-                    <div class="news-content">
-                        <span class="news-date">15 Novembre 2024</span>
-                        <h3>Cérémonie d'intronisation anniversaire</h3>
-                        <p>L'Empereur Naruhito célèbre le 5ème anniversaire de son intronisation avec une cérémonie traditionnelle au Palais Impérial.</p>
-                        <a href="actus.html" class="read-more">Lire plus →</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <img src="../images/japanese-dignitaries-and-government-representatives-raise-news-photo-1571742988.jpg" alt="Actualité 2">
-                    <div class="news-content">
-                        <span class="news-date">3 Novembre 2024</span>
-                        <h3>Visite officielle en France</h3>
-                        <p>Rencontre historique avec le Président français pour renforcer les liens diplomatiques entre les deux nations.</p>
-                        <a href="actus.html" class="read-more">Lire plus →</a>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <img src="../images/japans-emperor-naruhito-and-empress-masako-depart-akasaka-news-photo-1571751100.jpg" alt="Actualité 3">
-                    <div class="news-content">
-                        <span class="news-date">23 Octobre 2024</span>
-                        <h3>Message impérial pour la paix</h3>
-                        <p>Discours émouvant lors de la commémoration annuelle appelant à l'harmonie mondiale et à la préservation de la paix.</p>
-                        <a href="actus.html" class="read-more">Lire plus →</a>
-                    </div>
-                </article>
+        <!-- Introduction Section -->
+        <section class="news-section" aria-labelledby="welcome-heading">
+            <div class="container">
+                <h2 id="welcome-heading">Bienvenue</h2>
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #555; margin-bottom: 2rem;">
+                        Découvrez l'histoire, les traditions et l'actualité de l'institution impériale japonaise.
+                        Ce site de fans est dédié à Sa Majesté l'Empereur Naruhito et à la famille impériale du Japon.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #666;">
+                        L'Empereur du Japon est le chef d'État du Japon et le symbole de l'unité du peuple japonais.
+                        La dynastie impériale japonaise est la plus ancienne dynastie héréditaire continue au monde.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Latest News Preview -->
+        <section class="news-section" aria-labelledby="news-heading">
+            <div class="container">
+                <h2 id="news-heading">Dernières Actualités</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="../images/emperor-naruhito-and-empress-masako-attend-the-enthronement-news-photo-1571742798.jpg" alt="Cérémonie d'intronisation de l'Empereur Naruhito et l'Impératrice Masako">
+                        <div class="news-content">
+                            <time class="news-date" datetime="2024-11-15">15 Novembre 2024</time>
+                            <h3>Cérémonie d'intronisation anniversaire</h3>
+                            <p>L'Empereur Naruhito célèbre le 5ème anniversaire de son intronisation avec une cérémonie traditionnelle au Palais Impérial.</p>
+                            <a href="actus.html" class="read-more" aria-label="Lire l'article complet sur la cérémonie d'intronisation anniversaire">Lire plus →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <img src="../images/japanese-dignitaries-and-government-representatives-raise-news-photo-1571742988.jpg" alt="Dignitaires japonais et représentants gouvernementaux lors d'une cérémonie officielle">
+                        <div class="news-content">
+                            <time class="news-date" datetime="2024-11-03">3 Novembre 2024</time>
+                            <h3>Visite officielle en France</h3>
+                            <p>Rencontre historique avec le Président français pour renforcer les liens diplomatiques entre les deux nations.</p>
+                            <a href="actus.html" class="read-more" aria-label="Lire l'article complet sur la visite officielle en France">Lire plus →</a>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <img src="../images/japans-emperor-naruhito-and-empress-masako-depart-akasaka-news-photo-1571751100.jpg" alt="L'Empereur Naruhito et l'Impératrice Masako quittant Akasaka">
+                        <div class="news-content">
+                            <time class="news-date" datetime="2024-10-23">23 Octobre 2024</time>
+                            <h3>Message impérial pour la paix</h3>
+                            <p>Discours émouvant lors de la commémoration annuelle appelant à l'harmonie mondiale et à la préservation de la paix.</p>
+                            <a href="actus.html" class="read-more" aria-label="Lire l'article complet sur le message impérial pour la paix">Lire plus →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-container">
-            <!-- Colonne 1 : À propos -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+        <section class="footer-container">
+            <!-- Column 1: About -->
+            <article class="footer-column">
+                <h2>À Propos</h2>
                 <p class="footer-description">
                     Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
                     l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
                 </p>
-            </div>
+            </article>
 
-            <!-- Colonne 2 : Navigation rapide -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick navigation -->
+            <nav class="footer-column" aria-label="Navigation du pied de page">
+                <h2>Navigation</h2>
                 <ul class="footer-links">
                     <li><a href="fansite1.html">Accueil</a></li>
                     <li><a href="actus.html">Actualités</a></li>
@@ -115,29 +116,29 @@
                     <li><a href="galerie.html">Médias</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Colonne 3 : Le Japon -->
-            <div class="footer-column">
-                <h4>Le Pays du Soleil Levant</h4>
+            <!-- Column 3: Japan -->
+            <aside class="footer-column" aria-label="Caractéristiques">
+                <h2>Le Pays du Soleil Levant</h2>
                 <ul class="footer-links">
-                    <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-                    <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-                    <li><span class="footer-info">🎌 Culture unique</span></li>
-                    <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🏯</span> Tradition millénaire</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🍣</span> Gastronomie raffinée</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎌</span> Culture unique</span></li>
+                    <li><span class="footer-info"><span aria-hidden="true">🎨</span> Arts narratifs reconnus</span></li>
                 </ul>
-            </div>
-        </div>
+            </aside>
+        </section>
 
-        <!-- Barre de copyright -->
-        <div class="footer-bottom">
+        <!-- Bottom footer -->
+        <section class="footer-bottom">
             <p class="footer-copyright">
                 © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
             </p>
             <p class="footer-disclaimer">
                 Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
             </p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>

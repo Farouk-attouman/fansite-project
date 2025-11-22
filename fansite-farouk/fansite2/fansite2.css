@@ -1,5 +1,5 @@
 /* ======================================
-   FANSITE2.CSS - Tous les styles du site
+   FANSITE2.CSS - All site styles
    ====================================== */
 
 /* --- RESET --- */
@@ -16,7 +16,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     background: url('https://images.squarespace-cdn.com/content/v1/62fbfbed423b4f1bb8caed31/a83c13cd-0d93-4b05-8c1a-13de819f56c6/v2-e1rpl-34vsk.jpg') center/cover no-repeat fixed;
-    padding-top: 80px; /* Espace pour le header fixed */
+    padding-top: 80px; /* Space for fixed header */
 }
 
 /* ============================
@@ -81,11 +81,16 @@ body {
 }
 
 /* ============================
-   NAV LINKS
+   NAV LINKS - Updated for <ul> structure
    ============================ */
 .site-nav-links {
     display: flex;
     gap: 10px;
+    list-style: none; /* Remove list bullets */
+}
+
+.site-nav-links li {
+    display: inline-block;
 }
 
 .nav-link-item {
@@ -100,7 +105,7 @@ body {
     position: relative;
 }
 
-/* Soulignement anime */
+/* Animated underline */
 .nav-link-item::before {
     content: '';
     position: absolute;
@@ -122,14 +127,33 @@ body {
     width: 80%;
 }
 
-/* Lien actif */
+/* Active link - Updated for aria-current */
+.nav-link-item[aria-current="page"],
 .nav-link-item.active {
     color: #f77f00;
     background: rgba(247, 127, 0, 0.18);
 }
 
 /* ============================
-   FOOTER
+   SKIP LINK - Accessibility
+   ============================ */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10000;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ============================
+   FOOTER - Updated for semantic tags
    ============================ */
 .site-footer {
     background: #221C1A;
@@ -148,6 +172,7 @@ body {
     margin-bottom: 50px;
 }
 
+.footer-column h2,
 .footer-column h4 {
     font-size: 1.5rem;
     margin-bottom: 20px;
@@ -213,7 +238,63 @@ body {
 }
 
 /* ============================
-   PAGE ACCUEIL (fansite2.html)
+   RESPONSIVE FOOTER
+   ============================ */
+
+/* Middle screens 768px - 1599px */
+@media (min-width: 768px) and (max-width: 1599px) {
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+    }
+}
+
+/* Smartphone <= 767px */
+@media (max-width: 767px) {
+    .site-footer {
+        padding: 50px 15px 20px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center; 
+    }
+    
+    .footer-column,
+    .footer-description,
+    .footer-links,
+    .footer-info {
+        text-align: center; 
+    }
+    
+    .footer-column h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .footer-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .footer-links a,
+    .footer-info {
+        font-size: 0.95rem;
+    }
+    
+    .footer-copyright {
+        font-size: 0.9rem;
+    }
+    
+    .footer-disclaimer {
+        font-size: 0.8rem;
+    }
+}
+
+/* ============================
+   PAGE HOME (fansite2.html)
    ============================ */
 main {
     padding: 40px 20px;
@@ -241,6 +322,8 @@ main {
     box-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
 
+/* Updated for h1 and h2 */
+.section h1,
 .section h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -248,7 +331,6 @@ main {
     color: #f77f00;
     text-shadow: 1px 1px 4px #000;
 }
-
 
 /* ============================
    PAGE MEDIA (media.html)
@@ -266,10 +348,15 @@ main {
     margin-bottom: 30px;
 }
 
+/* Updated gallery for figure tags */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+}
+
+.gallery figure {
+    margin: 0;
 }
 
 .gallery img {
@@ -304,7 +391,7 @@ main {
 }
 
 /* ============================
-   PAGE ACTUALITE (actualite.html)
+   PAGE NEWS (actualite.html)
    ============================ */
 .actualite-section {
     padding: 80px 20px;
@@ -312,6 +399,7 @@ main {
     text-align: center;
 }
 
+.actualite-section h1,
 .actualite-section h2 {
     font-size: 3rem;
     color: #ff9f1c;
@@ -324,14 +412,14 @@ main {
     opacity: 0.9;
 }
 
-/* Grid des cartes */
+/* News grid */
 .news-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
 }
 
-/* Cartes stylees */
+/* Updated for article tags */
 .news-card {
     display: flex;
     flex-direction: column;
@@ -364,6 +452,8 @@ main {
     text-align: left;
 }
 
+/* Updated for h2 in news cards */
+.news-text h2,
 .news-text h3 {
     color: #ffd166;
     font-size: 1.5rem;
@@ -375,14 +465,17 @@ main {
     margin-bottom: 10px;
 }
 
-.news-text .date {
+/* Updated for time tag */
+.news-text .date,
+.news-text time {
     font-size: 0.85rem;
     opacity: 0.7;
     font-style: italic;
+    display: block;
 }
 
 /* ============================
-   PAGE BIOGRAPHIE (evenements.html)
+   PAGE BIOGRAPHY (evenements.html)
    ============================ */
 .bio-card {
     display: flex;
@@ -418,6 +511,8 @@ main {
     padding: 30px;
 }
 
+/* Updated for h2 in bio cards */
+.bio-card h2,
 .bio-card h3 {
     color: #ff9f1c;
     margin-bottom: 20px;
@@ -445,6 +540,10 @@ main {
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
 }
 
 label {
@@ -518,6 +617,7 @@ button:hover {
         padding: 80px 40px;
     }
     
+    .section h1,
     .section h2 {
         font-size: 3rem;
     }
@@ -543,7 +643,7 @@ button:hover {
 }
 
 /* ============================
-   Midle screens 768px - 1599px
+   Middle screens 768px - 1599px
    ============================ */
 @media (min-width: 768px) and (max-width: 1599px) {
     body {
@@ -572,6 +672,7 @@ button:hover {
         margin-bottom: 25px;
     }
     
+    .section h1,
     .section h2 {
         font-size: 2.2rem;
     }
@@ -622,7 +723,7 @@ button:hover {
         padding-top: 140px;
     }
     
-    /* Header mobile */
+    /* Mobile header */
     .site-header {
         padding: 10px 0;
     }
@@ -667,6 +768,7 @@ button:hover {
         border-radius: 10px;
     }
     
+    .section h1,
     .section h2 {
         font-size: 1.8rem;
         margin-bottom: 15px;
@@ -676,7 +778,7 @@ button:hover {
         font-size: 1rem;
     }
     
-    /* Footer mobile */
+    /* Mobile footer */
     .site-footer {
         padding: 50px 15px 20px;
     }
@@ -686,6 +788,7 @@ button:hover {
         gap: 40px;
     }
     
+    .footer-column h2,
     .footer-column h4 {
         font-size: 1.3rem;
         margin-bottom: 15px;
@@ -709,7 +812,7 @@ button:hover {
         font-size: 0.8rem;
     }
     
-    /* Gallery mobile */
+    /* Mobile gallery */
     .gallery {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -720,7 +823,7 @@ button:hover {
         border-radius: 10px;
     }
     
-    /* News grid mobile */
+    /* Mobile news grid */
     .news-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -738,6 +841,7 @@ button:hover {
         padding: 15px;
     }
     
+    .news-text h2,
     .news-text h3 {
         font-size: 1.3rem;
     }
@@ -746,7 +850,7 @@ button:hover {
         font-size: 0.95rem;
     }
     
-    /* Bio cards mobile */
+    /* Mobile bio cards */
     .bio-card {
         flex-direction: column;
         border-radius: 15px;
@@ -763,6 +867,7 @@ button:hover {
         padding: 20px 15px;
     }
     
+    .bio-card h2,
     .bio-card h3 {
         font-size: 1.5rem;
         margin-bottom: 15px;
@@ -773,13 +878,13 @@ button:hover {
         margin-bottom: 10px;
     }
     
-    /* Video container mobile */
+    /* Mobile video container */
     .video-container {
         margin: 25px 0;
         border-radius: 12px;
     }
     
-    /* Contact form mobile */
+    /* Mobile contact form */
     .contact-form {
         padding: 0 10px;
     }
@@ -806,7 +911,7 @@ button:hover {
 }
 
 /* ============================
-   little screens <= 480px
+   Small screens <= 480px
    ============================ */
 @media (max-width: 480px) {
     body {
@@ -826,6 +931,7 @@ button:hover {
         font-size: 0.8rem;
     }
     
+    .section h1,
     .section h2 {
         font-size: 1.5rem;
     }
@@ -834,8 +940,8 @@ button:hover {
         font-size: 1rem;
     }
     
+    .news-text h2,
     .news-text h3 {
         font-size: 1.2rem;
     }
 }
-

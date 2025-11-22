@@ -3,55 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Œuvres - Masashi Kishimoto</title>
-    <meta name="description" content="Découvrez toutes les œuvres de Masashi Kishimoto, créateur de Naruto">
+    <title>Works - Masashi Kishimoto</title>
+    <meta name="description" content="Discover all the works of Masashi Kishimoto, creator of Naruto">
     <link rel="stylesheet" href="css/oeuvres.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
-    <!--HEADER-->
-    <header class="header">
-        <nav class="nav" aria-label="Navigation principale">
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
             <div class="header-content">
                 <div class="branding">
-                <a href="../index.html" class="logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
-                <p class="header-tagline">Une exploration de la culture japonaise</p>
+                    <a href="../index.html" class="logo" aria-label="Home page">日本</a>
+                    <p class="header-tagline">Une exploration de la culture japonaise</p>
                 </div>
             </div>
             <ul class="nav-links">
                 <li>
                     <a href="accueil.html">
-                        <img src="../images/kunai.jpg" alt="Kunai" class="nav-icon">
+                        <img src="../images/kunai.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Accueil
                     </a>
                 </li>
                 <li>
                     <a href="actualites.html">
-                        <img src="../images/uzumaki.jpg" alt="Uzumaki" class="nav-icon">
-                        Actualités
+                        <img src="../images/uzumaki.jpg" alt="" class="nav-icon" aria-hidden="true">
+                        Actualites
                     </a>
                 </li>
                 <li>
                     <a href="biographie.html">
-                        <img src="../images/uchiha.png" alt="Uchiha" class="nav-icon">
+                        <img src="../images/uchiha.png" alt="" class="nav-icon" aria-hidden="true">
                         Biographie
                     </a>
                 </li>
                 <li>
-                    <a href="oeuvres.html" class="active">
-                        <img src="../images/Akatsuki-Logo.png" alt="Akatsuki" class="nav-icon">
-                        Œuvres
+                    <a href="oeuvres.html" class="active" aria-current="page">
+                        <img src="../images/Akatsuki-Logo.png" alt="" class="nav-icon" aria-hidden="true">
+                        Oeuvres
                     </a>
                 </li>
                 <li>
                     <a href="galerie.html">
-                        <img src="../images/shiruken.png" alt="Shuriken" class="nav-icon">
+                        <img src="../images/shiruken.png" alt="" class="nav-icon" aria-hidden="true">
                         Galerie
                     </a>
                 </li>
                 <li>
                     <a href="contact.html">
-                        <img src="../images/sceau.jpg" alt="Sceau" class="nav-icon">
+                        <img src="../images/sceau.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Contact
                     </a>
                 </li>
@@ -59,225 +58,226 @@
         </nav>
     </header>
 
-    <!--main content-->
-    <main id="main">
+    <!-- MAIN CONTENT -->
+    <main role="main">
         <!-- Page Header -->
-        <section class="page-header">
+        <section class="page-header" aria-labelledby="page-title">
             <div class="container">
-                <h1>Les Œuvres de Masashi Kishimoto</h1>
+                <h1 id="page-title">Les Oeuvres de Masashi Kishimoto</h1>
                 <p class="subtitle">Une carrière prolifique dans le monde du manga</p>
             </div>
         </section>
 
-        <!-- works section -->
-        <section class="works-section">
+        <!-- WORKS SECTION -->
+        <section class="works-section" aria-labelledby="works-title">
             <div class="container">
+                <h2 id="works-title" class="visually-hidden">Liste chronologique des oeuvres</h2>
                 
                 <!-- 2023 Boruto - Two Blue Vortex -->
-                <div class="work-card">
-                    <div class="work-year">2023</div>
+                <article class="work-card" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2023</div>
                     <div class="work-image">
-                        <img src="../images/boruto1cover.webp" alt="Boruto - Two Blue Vortex">
+                        <img src="../images/boruto1cover.webp" alt="Boruto - Two Blue Vortex manga cover featuring Boruto Uzumaki in his new design" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Boruto - Two Blue Vortex</h2>
+                        <h3>Boruto - Two Blue Vortex</h3>
                         <p class="work-meta">Manga • Supervision</p>
                         <p class="work-description">
                             La suite directe de Boruto, explorant une nouvelle ère après un saut temporel. 
                             Kishimoto supervise le scénario tandis que Mikio Ikemoto assure le dessin.
                         </p>
                     </div>
-                </div>
+                </article>
                 
-                <!--2023 Naruto Gaiden - Uzu no Naka no Tsumuji Kaze -->
-                <div class="work-card">
-                    <div class="work-year">2023</div>
+                <!-- 2023 Naruto Gaiden - Uzu no Naka no Tsumuji Kaze -->
+                <article class="work-card" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2023</div>
                     <div class="work-image">
-                        <img src="../images/narutoGaiden-Uzu.webp" alt="Naruto Gaiden - Uzu no Naka no Tsumuji Kaze">
+                        <img src="../images/narutoGaiden-Uzu.webp" alt="Naruto Gaiden - Uzu no Naka no Tsumuji Kaze one-shot cover" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Naruto Gaiden - Uzu no Naka no Tsumuji Kaze</h2>
-                        <p class="work-meta">One-shot • Histoire courte</p>
+                        <h3>Naruto Gaiden - Uzu no Naka no Tsumuji Kaze</h3>
+                        <p class="work-meta">One-shot • histoire courte</p>
                         <p class="work-description">
                             Une histoire complémentaire explorant l'univers de Naruto avec de nouveaux personnages 
                             et des révélations sur le monde ninja.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2022 Naruto - Sasuke Retsuden -->
-                <div class="work-card">
-                    <div class="work-year">2022</div>
+                <article class="work-card" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2022</div>
                     <div class="work-image">
-                        <img src="../images/retsuden.webp" alt="Naruto - Sasuke Retsuden">
+                        <img src="../images/retsuden.webp" alt="Naruto - Sasuke Retsuden light novel adaptation cover featuring Sasuke Uchiha" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Naruto - Sasuke Retsuden</h2>
+                        <h3>Naruto - Sasuke Retsuden</h3>
                         <p class="work-meta">Light Novel adapté en manga • Supervision</p>
                         <p class="work-description">
                             Une aventure centrée sur Sasuke Uchiha, explorant son voyage après la guerre 
                             et ses efforts pour protéger le village de Konoha.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2022 Naruto - Konoha Shinden -->
-                <div class="work-card">
-                    <div class="work-year">2022</div>
+                <article class="work-card" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2022</div>
                     <div class="work-image">
-                        <img src="../images/Shinden.webp" alt="Naruto - Konoha Shinden">
+                        <img src="../images/Shinden.webp" alt="Naruto - Konoha Shinden light novel cover showing Konoha village scenes" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Naruto - Konoha Shinden</h2>
+                        <h3>Naruto - Konoha Shinden</h3>
                         <p class="work-meta">Light Novel • Histoire complémentaire</p>
                         <p class="work-description">
                             Des histoires se déroulant à Konoha, mettant en lumière la vie quotidienne 
                             des ninjas après les grands conflits.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2019 Samurai 8 - La Légende de Hachimaru -->
-                <div class="work-card featured" id="samurai8">
-                    <div class="work-year">2019</div>
+                <article class="work-card featured" id="samurai8" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2019</div>
                     <div class="work-image">
-                        <img src="../images/samurai_8_-_la_legende_de_hachimaru_9741.webp" alt="Samurai 8 - La Légende de Hachimaru">
+                        <img src="../images/samurai_8_-_la_legende_de_hachimaru_9741.webp" alt="Samurai 8 - The Legend of Hachimaru manga cover featuring Hachimaru in sci-fi samurai armor" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Samurai 8 - La Légende de Hachimaru</h2>
+                        <h3>Samurai 8 - The Legend of Hachimaru</h3>
                         <p class="work-meta">Manga • Série complète (5 tomes)</p>
                         <p class="work-description">
-                            Une aventure de science-fiction mêlant l'univers des samouraïs et de la technologie. 
-                            Kishimoto signe le scénario tandis qu'Akira Okubo réalise les dessins. Série arrêtée en 2020.
+                           Une aventure de science-fiction mêlant l'univers des samouraïs et de la technologie. 
+                           Kishimoto signe le scénario tandis qu'Akira Okubo réalise les dessins. Série arrêtée en 2020.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2016 Boruto - Naruto Next Generations -->
-                <div class="work-card featured" id="boruto">
-                    <div class="work-year">2016</div>
+                <article class="work-card featured" id="boruto" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2016</div>
                     <div class="work-image">
-                        <img src="../images/boruto_-_naruto_next_generations_5910.webp" alt="Boruto - Naruto Next Generations">
+                        <img src="../images/boruto_-_naruto_next_generations_5910.webp" alt="Boruto - Naruto Next Generations manga cover featuring Boruto Uzumaki and the next generation characters" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Boruto - Naruto Next Generations</h2>
-                        <p class="work-meta">Manga • En cours • Supervision</p>
+                        <h3>Boruto - Naruto Next Generations</h3>
+                        <p class="work-meta">Manga • Terminé • Supervision</p>
                         <p class="work-description">
                             La suite de Naruto suivant les aventures de Boruto Uzumaki, le fils de Naruto. 
                             Kishimoto supervise l'histoire écrite par Ukyō Kodachi puis reprise par lui-même, 
-                            avec les dessins de Mikio Ikemoto.
+                            avant d'être délaissé à Ikemoto son assistant avec les dessins de Mikio Ikemoto.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2015 Naruto Gaiden - Le 7e Hokage et la Lune écarlate -->
-                <div class="work-card">
-                    <div class="work-year">2015</div>
+                <article class="work-card" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2015</div>
                     <div class="work-image">
-                        <img src="../images/naruto_gaiden_-_le_7e_hokage_et_la_lune_ecarlate_4579.webp" alt="Naruto Gaiden - Le 7e Hokage et la Lune écarlate">
+                        <img src="../images/naruto_gaiden_-_le_7e_hokage_et_la_lune_ecarlate_4579.webp" alt="Naruto Gaiden - The 7th Hokage and the Scarlet Spring mini-series cover featuring Sarada Uchiha" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Naruto Gaiden - Le 7e Hokage et la Lune écarlate</h2>
-                        <p class="work-meta">Mini-série • 10 chapitres</p>
+                        <h3>Naruto Gaiden - Le 7e Hokage et la Lune écarlate</h3>
+                        <p class="work-meta">Mini-series • 10 chapitres</p>
                         <p class="work-description">
                             Une histoire courte se déroulant après la fin de Naruto, centré sur Sarada Uchiha 
                             et ses interrogations sur son père Sasuke.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2014 Uchiha Sasuke no Sharingan Den -->
-                <div class="work-card">
-                    <div class="work-year">2014</div>
+                <article class="work-card" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2014</div>
                     <div class="work-image">
-                        <img src="../images/uchiha_sasuke_no_sharingan_den_4852.webp" alt="Uchiha Sasuke no Sharingan Den">
+                        <img src="../images/uchiha_sasuke_no_sharingan_den_4852.webp" alt="Uchiha Sasuke no Sharingan Den one-shot cover featuring Sasuke Uchiha and Sharingan eyes" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Uchiha Sasuke no Sharingan Den</h2>
+                        <h3>Uchiha Sasuke no Sharingan Den</h3>
                         <p class="work-meta">One-shot • Histoire courte</p>
                         <p class="work-description">
                             Un récit centré sur Sasuke Uchiha et l'histoire du clan Uchiha, 
-                            explorant le pouvoir légendaire du Sharingan.
+                            explorant le pouvoir du Sharingan.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2013 Mario -->
-                <div class="work-card">
-                    <div class="work-year">2013</div>
+                <article class="work-card" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2013</div>
                     <div class="work-image">
-                        <img src="../images/mario_16027.webp" alt="Mario">
+                        <img src="../images/mario_16027.webp" alt="Mario one-shot cover showing Kishimoto's unique character designs" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Mario</h2>
+                        <h3>Mario</h3>
                         <p class="work-meta">One-shot • Histoire courte</p>
                         <p class="work-description">
                             Un one-shot publié dans le Weekly Shonen Jump, démontrant la polyvalence 
                             de Kishimoto au-delà de l'univers ninja.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 2010 Rock Lee - Les péripéties d'un ninja en herbe -->
-                <div class="work-card">
-                    <div class="work-year">2010</div>
+                <article class="work-card" role="listitem">
+                    <div class="work-year" aria-label="Publication year">2010</div>
                     <div class="work-image">
-                        <img src="../images/rock_lee_-_les_peripeties_d_un_ninja_en_herbe_1460.webp" alt="Rock Lee - Les péripéties d'un ninja en herbe">
+                        <img src="../images/rock_lee_-_les_peripeties_d_un_ninja_en_herbe_1460.webp" alt="Rock Lee - The Springtime of Youth spin-off manga cover featuring Rock Lee" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Rock Lee - Les péripéties d'un ninja en herbe</h2>
+                        <h3>Rock Lee - Les péripéties d'un ninja en herbe</h3>
                         <p class="work-meta">Manga spin-off • Supervision</p>
                         <p class="work-description">
                             Un spin-off humoristique de Naruto centré sur Rock Lee. 
                             Dessiné par Kenji Taira sous la supervision de Kishimoto.
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- 1999 - NARUTO -->
-                <div class="work-card masterpiece" id="naruto">
-                    <div class="work-year">1999-2014</div>
+                <article class="work-card masterpiece" id="naruto" role="listitem">
+                    <div class="work-year" aria-label="Publication period">1999-2014</div>
                     <div class="work-image">
-                        <img src="../images/naruto_109.webp" alt="Naruto">
+                        <img src="../images/naruto_109.webp" alt="Naruto manga cover volume 1 featuring Naruto Uzumaki in his original outfit" loading="lazy">
                     </div>
                     <div class="work-content">
-                        <h2>Naruto</h2>
-                        <p class="work-meta">Manga • Série complète (72 tomes) • Œuvre majeure</p>
+                        <h3>Naruto</h3>
+                        <p class="work-meta">Manga • Série complète (72 volumes) • Masterpiece</p>
                         <p class="work-description">
                             L'œuvre phare de Kishimoto qui a révolutionné le monde du manga. L'histoire de Naruto Uzumaki, 
                             un jeune ninja rêvant de devenir Hokage. Publié de 1999 à 2014 dans le Weekly Shonen Jump, 
                             avec plus de 250 millions d'exemplaires vendus dans le monde. Une saga devenue culte qui a marqué 
                             toute une génération et inspiré de nombreuses adaptations (anime, films, jeux vidéo).
                         </p>
-                        <div class="work-stats">
-                            <span class="stat-item"><span aria-hidden="true">📚</span> 72 tomes</span>
-                            <span class="stat-item"><span aria-hidden="true">🌍</span> 250M+ exemplaires</span>
-                            <span class="stat-item"><span aria-hidden="true">⏱️</span> 15 ans de publication</span>
-                            <span class="stat-item"><span aria-hidden="true">🏆</span> Prix Quill Award 2006</span>
+                        <div class="work-stats" role="list" aria-label="Naruto statistics">
+                            <span class="stat-item">📚 72 tomes</span>
+                            <span class="stat-item">🌍 250M+ exemplaires</span>
+                            <span class="stat-item">⏱️ 15 ans de publication</span>
+                            <span class="stat-item">🏆 Prix Quill Award 2006</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
             </div>
         </section>
     </main>
 
-    <!--FOOTER-->
-    <footer class="site-footer">
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Column 1 : about -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+            <!-- Column 1: About -->
+            <section class="footer-column" aria-labelledby="about-title">
+                <h4 id="about-title">À Propos</h4>
                 <p class="footer-description">
                     Fansite non officiel dédié à Masashi Kishimoto, créateur du légendaire manga Naruto. 
                     Créé par des fans, pour les fans.
                 </p>
-                <div class="footer-logo">岸本斉史</div>
-            </div>
+                <div class="footer-logo" aria-hidden="true">岸本斉史</div>
+            </section>
 
-            <!-- Column 2 : Quick Navigation -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick Navigation -->
+            <nav class="footer-column" aria-labelledby="navigation-title">
+                <h4 id="navigation-title">Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="biographie.html">Biographie</a></li>
@@ -286,34 +286,34 @@
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Column 3 : main work -->
-            <div class="footer-column">
-                <h4>Œuvres Majeures</h4>
+            <!-- Column 3: Main Works -->
+            <section class="footer-column" aria-labelledby="works-footer-title">
+                <h4 id="works-footer-title">Oeuvres Majeures</h4>
                 <ul class="footer-links">
                     <li><a href="oeuvres.html#naruto">Naruto (1999-2014)</a></li>
                     <li><a href="oeuvres.html#boruto">Boruto (supervision)</a></li>
                     <li><a href="oeuvres.html#samurai8">Samurai 8 (2019-2020)</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Column 4 : Informations -->
-            <div class="footer-column">
-                <h4>Informations</h4>
+            <!-- Column 4: Information -->
+            <section class="footer-column" aria-labelledby="info-title">
+                <h4 id="info-title">Information</h4>
                 <ul class="footer-links">
-                    <li><span class="footer-info"><span aria-hidden="true">📅</span> Né le 8 novembre 1974</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📍</span> Préfecture d'Okayama, Japon</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Prix Quill Award (2006)</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📚</span> Plus de 250 millions d'exemplaires vendus</span></li>
+                    <li><span class="footer-info">📅 Né le 8 novembre 1974</span></li>
+                    <li><span class="footer-info">📍 Préfecture d'Okayama, Japon</span></li>
+                    <li><span class="footer-info">🏆 Prix Quill Award (2006)</span></li>
+                    <li><span class="footer-info">📚 Plus de 250 millions d'exemplaires vendus</span></li>
                 </ul>
-            </div>
+            </section>
         </div>
 
-        <!--copyright -->
+        <!-- COPYRIGHT -->
         <div class="footer-bottom">
             <p class="footer-copyright">
-                © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire
+                 © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire
             </p>
             <p class="footer-disclaimer">
                 Naruto © Masashi Kishimoto / Shueisha Inc. Toutes les œuvres appartiennent à leurs auteurs respectifs.

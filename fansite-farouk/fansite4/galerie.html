@@ -3,53 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie - Masashi Kishimoto</title>
-    <meta name="description" content="Découvrez les plus belles planches et illustrations de Masashi Kishimoto">
+    <title>Gallery - Masashi Kishimoto</title>
+    <meta name="description" content="Discover the most beautiful artwork and illustrations by Masashi Kishimoto">
     <link rel="stylesheet" href="css/galerie.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
     <!-- ===== HEADER ===== -->
-    <header class="header">
-        <nav class="nav" aria-label="Navigation principale">
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
             <div class="branding">
-                <a href="../index.html" class="logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
+                <a href="../index.html" class="logo" aria-label="Home page">日本</a>
                 <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
             <ul class="nav-links">
                 <li>
                     <a href="accueil.html">
-                        <img src="../images/kunai.jpg" alt="Kunai" class="nav-icon">
+                        <img src="../images/kunai.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Accueil
                     </a>
                 </li>
                 <li>
                     <a href="actualites.html">
-                        <img src="../images/uzumaki.jpg" alt="Uzumaki" class="nav-icon">
+                        <img src="../images/uzumaki.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Actualités
                     </a>
                 </li>
                 <li>
                     <a href="biographie.html">
-                        <img src="../images/uchiha.png" alt="Uchiha" class="nav-icon">
+                        <img src="../images/uchiha.png" alt="" class="nav-icon" aria-hidden="true">
                         Biographie
                     </a>
                 </li>
                 <li>
                     <a href="oeuvres.html">
-                        <img src="../images/Akatsuki-Logo.png" alt="Akatsuki" class="nav-icon">
-                        Œuvres
+                        <img src="../images/Akatsuki-Logo.png" alt="" class="nav-icon" aria-hidden="true">
+                        Oeuvres
                     </a>
                 </li>
                 <li>
-                    <a href="galerie.html" class="active">
-                        <img src="../images/shiruken.png" alt="Shuriken" class="nav-icon">
+                    <a href="galerie.html" class="active" aria-current="page">
+                        <img src="../images/shiruken.png" alt="" class="nav-icon" aria-hidden="true">
                         Galerie
                     </a>
                 </li>
                 <li>
                     <a href="contact.html">
-                        <img src="../images/sceau.jpg" alt="Sceau" class="nav-icon">
+                        <img src="../images/sceau.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Contact
                     </a>
                 </li>
@@ -58,284 +57,293 @@
     </header>
 
     <!-- ===== MAIN CONTENT ===== -->
-    <main id="main">
+    <main role="main">
         <!-- Page Header -->
-        <section class="page-header">
+        <section class="page-header" aria-labelledby="page-title">
             <div class="container">
-                <h1>Galerie Multimédia</h1>
+                <h1 id="page-title">Galerie Multimédia</h1>
                 <p class="subtitle">Les plus belles planches et vidéos de Masashi Kishimoto</p>
             </div>
         </section>
 
-        <!-- YouTube Video Section-->
-        <section class="video-section">
+        <!-- YouTube Video Section -->
+        <section class="video-section" aria-labelledby="video-section-title">
             <div class="container">
-                <h2 class="section-title"><span aria-hidden="true">🎬</span> Videos Exclusives</h2>
+                <h2 id="video-section-title" class="section-title">🎬 Vidéos Exclusives</h2>
                 
-                <div class="video-grid">
+                <div class="video-grid" role="list">
                     <!-- Video 1 -->
-                    <div class="video-card">
+                    <article class="video-card" role="listitem">
                         <div class="video-container">
                             <iframe 
                                 width="560" 
                                 height="315" 
-                                src="https://www.youtube.com/embed/I0_951_MPE0?si=tlfubxht65UDB5DX" 
-                                title="YouTube video player" 
+                                src="https://www.youtube.com/embed/4TO2Iabafdk?si=XNCbiGB36B4QZPKZ" 
+                                title="Masashi Kishimoto Interview - Naruto Creation Secrets" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
+                                allowfullscreen
+                                loading="lazy">
                             </iframe>
                         </div>
                         <div class="video-info">
                             <h3>Interview de Masashi Kishimoto</h3>
                             <p>Découvrez les secrets de création de Naruto par son auteur</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Video 2 -->
-                    <div class="video-card">
+                    <article class="video-card" role="listitem">
                         <div class="video-container">
                             <iframe 
-                                src="https://geo.dailymotion.com/player.html?video=x8snguw&autoplay=0"
-                                style="width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; border:none;"
-                                allowfullscreentitle="Dailymotion Video Player"
-                                allow="web-share">
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/4TO2Iabafdk?si=XNCbiGB36B4QZPKZ" 
+                                title="Naruto Making-of - Behind the Scenes of the Cult Manga" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen
+                                loading="lazy">
                             </iframe>
                         </div>
                         <div class="video-info">
                             <h3>Le Making-of de Naruto</h3>
                             <p>Plongez dans les coulisses de la création du manga culte</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Video 3 -->
-                    <div class="video-card">
+                    <article class="video-card" role="listitem">
                         <div class="video-container">
                            <iframe 
-                                width="560" height="315" 
-                                src="https://www.youtube.com/embed/I0_951_MPE0?si=mrnV6PTSWSa4AJwp" 
-                                title="YouTube video player" 
+                                width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/4TO2Iabafdk?si=XNCbiGB36B4QZPKZ" 
+                                title="Kishimoto Drawing Techniques - Learn from the Manga Master" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin' 
-                                allowfullscreen>
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen
+                                loading="lazy">
                             </iframe>
                         </div>
                         <div class="video-info">
                             <h3>Techniques de dessin de Kishimoto</h3>
                             <p>Apprenez les techniques du maître manga</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Images Sections -->
-        <section class="images-section">
-    <div class="container">
-        <h2 class="section-title"><span aria-hidden="true">🎨</span> Planches & Illustrations</h2>
-    </div>
-</section>
-
-    <!-- Gallery -->
-    <section class="gallery-section">
-        <div class="container">
-            <div class="gallery-grid">
-
-                <!-- NARUTO - 7 pictures -->
-                <div class="gallery-item naruto">
-                    <img src="../images/image webp/e1.webp" alt="Naruto - Planche 1">
-                    <div class="gallery-overlay">
-                        <h3>Naruto</h3>
-                        <p>Combat épique</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item naruto">
-                    <img src="../images/image webp/e2.webp" alt="Naruto - Planche 2">
-                    <div class="gallery-overlay">
-                        <h3>Naruto</h3>
-                        <p>Vallée de la fin</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item naruto">
-                    <img src="../images/image webp/n1.webp" alt="Naruto - Planche 3">
-                    <div class="gallery-overlay">
-                        <h3>Naruto Shippuden</h3>
-                        <p>Naruto de retour à Konoha</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item naruto">
-                    <img src="../images/image webp/n2.webp" alt="Naruto - Planche 4">
-                    <div class="gallery-overlay">
-                        <h3>Naruto Shippuden</h3>
-                        <p>Sasuke Hebi</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item naruto">
-                    <img src="../images/image webp/n3.webp" alt="Naruto - Planche 5">
-                    <div class="gallery-overlay">
-                        <h3>Naruto Shippuden</h3>
-                        <p>Pain</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item naruto">
-                    <img src="../images/image webp/n4.webp" alt="Naruto - Planche 6">
-                    <div class="gallery-overlay">
-                        <h3>Naruto Shippuden</h3>
-                        <p>Itachi</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item naruto">
-                    <img src="../images/image webp/n5.webp" alt="Naruto - Planche 7">
-                    <div class="gallery-overlay">
-                        <h3>Naruto Shippuden</h3>
-                        <p>Sasuke de retour à Konooha</p>
-                    </div>
-                </div>
-
-                <!-- BORUTO - 5 pictures -->
-                <div class="gallery-item boruto">
-                    <img src="../images/image webp/b1.webp" alt="Boruto - Planche 1">
-                    <div class="gallery-overlay">
-                        <h3>Boruto : Naruto Next Generation</h3>
-                        <p>Momoshiki Ototsuki</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item boruto">
-                    <img src="../images/image webp/b2.webp" alt="Boruto - Planche 2">
-                    <div class="gallery-overlay">
-                        <h3>Boruto Two Blue Vortex</h3>
-                        <p>Le retour !</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item boruto">
-                    <img src="../images/image webp/b3.webp" alt="Boruto - Planche 3">
-                    <div class="gallery-overlay">
-                        <h3>Boruto : Naruto Next Generation</h3>
-                        <p>Famille Uzumaki déjeunant</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item boruto">
-                    <img src="../images/image webp/b4.webp" alt="Boruto - Planche 4">
-                    <div class="gallery-overlay">
-                        <h3>Boruto : Naruto Next Generation</h3>
-                        <p>Next Generation</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item boruto">
-                    <img src="../images/image webp/b5.webp" alt="Boruto - Planche 5">
-                    <div class="gallery-overlay">
-                        <h3>Boruto Two Blue Vortex</h3>
-                        <p>Himawari Uzumaki</p>
-                    </div>
-                </div>
-
-                <!-- SAMURAI 8 - 4 pictures -->
-                <div class="gallery-item samurai8">
-                    <img src="../images/image webp/s1.webp" alt="Samurai 8 - Planche 1">
-                    <div class="gallery-overlay">
-                        <h3>Samurai 8</h3>
-                        <p>Cavalier</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item samurai8">
-                    <img src="../images/image webp/s2.webp" alt="Samurai 8 - Planche 2">
-                    <div class="gallery-overlay">
-                        <h3>Samurai 8</h3>
-                        <p>Hachimaru</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item samurai8">
-                    <img src="../images/image webp/s3.webp" alt="Samurai 8 - Planche 3">
-                    <div class="gallery-overlay">
-                        <h3>Samurai 8</h3>
-                        <p>Action spectaculaire</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item samurai8">
-                    <img src="../images/image webp/s4.webp" alt="Samurai 8 - Planche 4">
-                    <div class="gallery-overlay">
-                        <h3>Samurai 8</h3>
-                        <p>Hachimaru Samuraï</p>
-                    </div>
-                </div>
-
-                <!-- MARIO - 5 pictures -->
-                <div class="gallery-item mario">
-                    <img src="../images/image webp/mario1.webp" alt="Mario - Planche 1">
-                    <div class="gallery-overlay">
-                        <h3>Mario</h3>
-                        <p>Tu t'es pris un sacré vent !</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item mario">
-                    <img src="../images/image webp/mario2.webp" alt="Mario - Planche 2">
-                    <div class="gallery-overlay">
-                        <h3>Mario</h3>
-                        <p>Suprise Mother Father</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item mario">
-                    <img src="../images/image webp/mario3.webp" alt="Mario - Planche 3">
-                    <div class="gallery-overlay">
-                        <h3>Mario</h3>
-                        <p>Le café</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item mario">
-                    <img src="../images/image webp/mario4.webp" alt="Mario - Planche 4">
-                    <div class="gallery-overlay">
-                        <h3>Mario</h3>
-                        <p>Fumé nuit à la santé - Ceci est un message du gouvernement</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item mario">
-                    <img src="../images/image webp/mario5.webp" alt="Mario - Planche 3">
-                    <div class="gallery-overlay">
-                        <h3>Mario</h3>
-                        <p>Aura Farmer</p>
-                    </div>
-                </div>
-
+        <section class="images-section" aria-labelledby="images-section-title">
+            <div class="container">
+                <h2 id="images-section-title" class="section-title">🎨 Planches & Illustrations</h2>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery-section" aria-labelledby="gallery-title">
+            <div class="container">
+                <h3 id="gallery-title" class="visually-hidden">Artwork Gallery</h3>
+                <div class="gallery-grid" role="list" aria-label="Artwork gallery">
+
+                    <!-- NARUTO - 7 pictures -->
+                    <figure class="gallery-item naruto" role="listitem">
+                        <img src="../images/image webp/e1.webp" alt="Naruto artwork - Epic battle scene featuring Naruto Uzumaki in action" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Naruto</h4>
+                            <p>Combat épique</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item naruto" role="listitem">
+                        <img src="../images/image webp/e2.webp" alt="Naruto artwork - Valley of the End landscape with Naruto and Sasuke statues" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Naruto</h4>
+                            <p>Vallée de la fin</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item naruto" role="listitem">
+                        <img src="../images/image webp/n1.webp" alt="Naruto Shippuden artwork - Naruto returns to Konoha village" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Naruto Shippuden</h4>
+                            <p>Naruto de retour à konoha</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item naruto" role="listitem">
+                        <img src="../images/image webp/n2.webp" alt="Naruto Shippuden artwork - Sasuke in his Hebi outfit with snake theme" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Naruto Shippuden</h4>
+                            <p>Sasuke Hebi</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item naruto" role="listitem">
+                        <img src="../images/image webp/n3.webp" alt="Naruto Shippuden artwork - Pain character with Rinnegan eyes" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Naruto Shippuden</h4>
+                            <p>Pain</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item naruto" role="listitem">
+                        <img src="../images/image webp/n4.webp" alt="Naruto Shippuden artwork - Itachi Uchiha in his Akatsuki cloak" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Naruto Shippuden</h4>
+                            <p>Itachi</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item naruto" role="listitem">
+                        <img src="../images/image webp/n5.webp" alt="Naruto Shippuden artwork - Sasuke returns to Konoha village" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Naruto Shippuden</h4>
+                            <p>Sasuke retourne à konoha</p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- BORUTO - 5 pictures -->
+                    <figure class="gallery-item boruto" role="listitem">
+                        <img src="../images/image webp/b1.webp" alt="Boruto artwork - Momoshiki Otsutsuki villain character design" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Boruto: Naruto Next Generations</h4>
+                            <p>Momoshiki Otsutsuki</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item boruto" role="listitem">
+                        <img src="../images/image webp/b2.webp" alt="Boruto Two Blue Vortex artwork - Boruto's new design and return" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Boruto Two Blue Vortex</h4>
+                            <p>Le retour !</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item boruto" role="listitem">
+                        <img src="../images/image webp/b3.webp" alt="Boruto artwork - Uzumaki family having breakfast together" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Famille Uzumaki déjeunant</h4>
+                            <p></p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item boruto" role="listitem">
+                        <img src="../images/image webp/b4.webp" alt="Boruto artwork - Next generation characters group shot" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Boruto: Naruto Next Generations</h4>
+                            <p>Next Generation</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item boruto" role="listitem">
+                        <img src="../images/image webp/b5.webp" alt="Boruto Two Blue Vortex artwork - Himawari Uzumaki character illustration" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Boruto Two Blue Vortex</h4>
+                            <p>Himawari Uzumaki</p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- SAMURAI 8 - 4 pictures -->
+                    <figure class="gallery-item samurai8" role="listitem">
+                        <img src="../images/image webp/s1.webp" alt="Samurai 8 artwork - Knight character in sci-fi samurai armor" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Samurai 8</h4>
+                            <p>Cavalier</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item samurai8" role="listitem">
+                        <img src="../images/image webp/s2.webp" alt="Samurai 8 artwork - Hachimaru main character design" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Samurai 8</h4>
+                            <p>Hachimaru</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item samurai8" role="listitem">
+                        <img src="../images/image webp/s3.webp" alt="Samurai 8 artwork - Spectacular action scene with dynamic composition" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Samurai 8</h4>
+                            <p>Spectacular action</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item samurai8" role="listitem">
+                        <img src="../images/image webp/s4.webp" alt="Samurai 8 artwork - Hachimaru transformed into full samurai" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Samurai 8</h4>
+                            <p>Hachimaru Samurai</p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- MARIO - 5 pictures -->
+                    <figure class="gallery-item mario" role="listitem">
+                        <img src="../images/image webp/mario1.webp" alt="Mario artwork - Character caught in strong wind" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Mario</h4>
+                            <p>Tu t'es pris un sacré vent !</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item mario" role="listitem">
+                        <img src="../images/image webp/mario2.webp" alt="Mario artwork - Surprise scene with humorous twist" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Mario</h4>
+                            <p>Surprise Mother Father</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item mario" role="listitem">
+                        <img src="../images/image webp/mario3.webp" alt="Mario artwork - Coffee scene with characters" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Mario</h4>
+                            <p>le café </p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item mario" role="listitem">
+                        <img src="../images/image webp/mario4.webp" alt="Mario artwork - Anti-smoking message in humorous context" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Mario</h4>
+                            <p>Fumé nuit à la santé - Ceci est un message du gouvernement</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="gallery-item mario" role="listitem">
+                        <img src="../images/image webp/mario5.webp" alt="Mario artwork - Aura Farmer character illustration" loading="lazy">
+                        <figcaption class="gallery-overlay">
+                            <h4>Mario</h4>
+                            <p>Aura Farmer</p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Column 1 : about -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+            <!-- Column 1: About -->
+            <section class="footer-column" aria-labelledby="about-title">
+                <h4 id="about-title">À Propos</h4>
                 <p class="footer-description">
                     Fansite non officiel dédié à Masashi Kishimoto, créateur du légendaire manga Naruto. 
                     Créé par des fans, pour les fans.
                 </p>
-                <div class="footer-logo">岸本斉史</div>
-            </div>
+                <div class="footer-logo" aria-hidden="true">岸本斉史</div>
+            </section>
 
-            <!-- Column : Quick navigation -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick Navigation -->
+            <nav class="footer-column" aria-labelledby="navigation-title">
+                <h4 id="navigation-title">Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="biographie.html">Biographie</a></li>
@@ -344,31 +352,31 @@
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Column 3 : Œuvres principales -->
-            <div class="footer-column">
-                <h4>Œuvres Majeures</h4>
+            <!-- Column 3: Major Works -->
+            <section class="footer-column" aria-labelledby="works-title">
+                <h4 id="works-title">Oeuvres majeures</h4>
                 <ul class="footer-links">
                     <li><a href="oeuvres.html#naruto">Naruto (1999-2014)</a></li>
                     <li><a href="oeuvres.html#boruto">Boruto (supervision)</a></li>
                     <li><a href="oeuvres.html#samurai8">Samurai 8 (2019-2020)</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Column 4 : Informations -->
-            <div class="footer-column">
-                <h4>Informations</h4>
+            <!-- Column 4: Information -->
+            <section class="footer-column" aria-labelledby="info-title">
+                <h4 id="info-title">Information</h4>
                 <ul class="footer-links">
-                    <li><span class="footer-info"><span aria-hidden="true">📅</span> Né le 8 novembre 1974</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📍</span> Préfecture d'Okayama, Japon</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Prix Quill Award (2006)</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📚</span> Plus de 250 millions d'exemplaires vendus</span></li>
+                    <li><span class="footer-info">📅 Né le 8 novembre 1974</span></li>
+                    <li><span class="footer-info">📍 Préfecture d'Okayama, Japon</span></li>
+                    <li><span class="footer-info">🏆 Prix Quill Award (2006)</span></li>
+                    <li><span class="footer-info">📚 Plus de 250 millions d'exemplaires vendus</span></li>
                 </ul>
-            </div>
+            </section>
         </div>
 
-        <!--copyright -->
+        <!-- COPYRIGHT -->
         <div class="footer-bottom">
             <p class="footer-copyright">
                 © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire

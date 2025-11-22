@@ -1,12 +1,60 @@
-/* ======================================================
-   FANSITE3.CSS - Hideaki Anno / Evangelion
-   Style harmonisé avec fansite2 (Jirō Ono)
-   Version améliorée avec support des balises sémantiques
-   ====================================================== */
+/* ============================
+   RESPONSIVE FOOTER
+   ============================ */
 
-/* ======================================================
-   BASE - Variables et Reset
-   ====================================================== */
+/* Middle screens 768px - 1599px */
+@media (min-width: 768px) and (max-width: 1599px) {
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+    }
+}
+
+/* Smartphone <= 767px */
+@media (max-width: 767px) {
+    .site-footer {
+        padding: 50px 15px 20px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center; 
+    }
+    
+    .footer-column,
+    .footer-description,
+    .footer-links,
+    .footer-info {
+        text-align: center; 
+    }
+    
+    .footer-column h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .footer-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .footer-links a,
+    .footer-info {
+        font-size: 0.95rem;
+    }
+    
+    .footer-copyright {
+        font-size: 0.9rem;
+    }
+    
+    .footer-disclaimer {
+        font-size: 0.8rem;
+    }
+}
+
+/* BASE - Variables and Reset */
 :root {
   --bg-1: #07060b;
   --bg-2: #0f0820;
@@ -45,7 +93,7 @@ body {
   padding-top: 100px;
 }
 
-/* Accessibilité */
+/* Accessibility */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -74,7 +122,7 @@ body {
   transform: translateY(0); 
 }
 
-/* Container principal */
+/* Main container */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -82,7 +130,7 @@ body {
 }
 
 /* ============================
-   HEADER STICKY (style fansite2)
+   STICKY HEADER (fansite2 style)
    ============================ */
 .site-header {
   position: fixed;
@@ -142,7 +190,7 @@ body {
 }
 
 /* ============================
-   NAV LINKS - Liste sémantique
+   NAV LINKS - Semantic list
    ============================ */
 .site-nav-links {
   display: flex;
@@ -189,14 +237,14 @@ body {
   width: 80%;
 }
 
-/* Lien actif avec aria-current */
+/* Active link with aria-current */
 .nav-link-item[aria-current="page"] {
   color: #f77f00;
   background: rgba(247, 127, 0, 0.18);
 }
 
 /* ============================
-   FOOTER (style fansite2)
+   FOOTER (fansite2 style)
    ============================ */
 .site-footer {
   background: #221C1A;
@@ -321,7 +369,7 @@ body {
   background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
 }
 
-/* Hgroup pour les titres groupés */
+/* Hgroup for grouped titles */
 hgroup {
   margin-bottom: 1rem;
 }
@@ -335,7 +383,7 @@ hgroup p {
 }
 
 /* ======================================================
-   PAGE ACCUEIL - Hero Header
+   HOME PAGE - Hero Header
    ====================================================== */
 .hero-header {
   text-align: center;
@@ -566,7 +614,7 @@ hgroup p {
   text-align: center;
 }
 
-/* Utilisation d'hgroup pour le héros */
+/* Using hgroup for hero sections */
 .news-hero-content h1,
 .news-hero-content h2,
 .bio-hero-content h1,
@@ -598,7 +646,7 @@ hgroup p {
   margin-top: 1.5rem;
 }
 
-/* Articles sémantiques */
+/* Semantic articles */
 article.news-card {
   background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
   border-radius: 10px;
@@ -655,7 +703,7 @@ article.news-card p {
   margin-bottom: 1rem;
 }
 
-/* Footer de l'article pour les tags */
+/* Article footer for tags */
 footer.news-tags {
   display: flex;
   gap: 0.5rem;
@@ -726,7 +774,7 @@ article.project-item p {
   line-height: 1.6;
 }
 
-/* Archives avec nav sémantique */
+/* Archives with semantic nav */
 nav.archive-list {
   margin-top: 1.5rem;
 }
@@ -759,7 +807,7 @@ article.archive-item p {
   line-height: 1.6;
 }
 
-/* Newsletter Section - Aside sémantique */
+/* Newsletter Section - Semantic aside */
 aside.newsletter-section {
   background: linear-gradient(135deg, rgba(138,43,226,0.05), rgba(0,230,255,0.03));
   border: 1px solid rgba(138,43,226,0.1);
@@ -796,7 +844,7 @@ nav.info-links {
 }
 
 /* ======================================================
-   TIMELINE (Biographie) - Liste ordonnée
+   TIMELINE (Biography) - Ordered list
    ====================================================== */
 ol.timeline {
   position: relative;
@@ -853,7 +901,7 @@ time.timeline-year {
 }
 
 /* ======================================================
-   WORKS GRID - Articles sémantiques
+   WORKS GRID - Semantic articles
    ====================================================== */
 .works-grid {
   display: grid;
@@ -900,7 +948,7 @@ article.work-card p {
 }
 
 /* ======================================================
-   INFLUENCE - Articles sémantiques
+   INFLUENCE - Semantic articles
    ====================================================== */
 .influence-content {
   display: grid;
@@ -928,7 +976,7 @@ article.influence-block p {
 }
 
 /* ======================================================
-   CONTACT FORM - Formulaire sémantique
+   CONTACT FORM - Semantic form
    ====================================================== */
 aside.form-intro {
   color: var(--muted);
@@ -972,7 +1020,7 @@ legend {
   font-size: 0.95rem;
 }
 
-/* Indicateur de champ obligatoire */
+/* Required field indicator */
 abbr[title] {
   color: var(--accent-2);
   text-decoration: none;
@@ -981,7 +1029,6 @@ abbr[title] {
 }
 
 .form-group input,
-.form-group select,
 .form-group textarea {
   width: 100%;
   padding: 0.8rem 1rem;
@@ -994,6 +1041,32 @@ abbr[title] {
   transition: all 0.3s;
 }
 
+/* Specific styles for select */
+.form-group select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: rgba(255,255,255,0.08); /* Lighter background */
+  border: 1px solid rgba(255,255,255,0.3); /* More visible border */
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23aab6c6' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+/* Select options */
+.form-group select option {
+  background: var(--bg-2);
+  color: var(--text);
+  padding: 0.5rem;
+}
+
 /* Placeholders */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
@@ -1002,7 +1075,6 @@ abbr[title] {
 }
 
 .form-group input:focus,
-.form-group select:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--neon);
@@ -1010,7 +1082,21 @@ abbr[title] {
   box-shadow: 0 0 0 3px rgba(0,230,255,0.1);
 }
 
-/* État invalide */
+/* Specific focus for select */
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent-1); /* Violet instead of neon */
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 0 0 3px rgba(138,43,226,0.2); /* Violet shadow */
+}
+
+/* Hover effect for select */
+.form-group select:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.4);
+}
+
+/* Invalid state */
 .form-group input:invalid:not(:placeholder-shown),
 .form-group select:invalid:not(:placeholder-shown),
 .form-group textarea:invalid:not(:placeholder-shown) {
@@ -1059,7 +1145,7 @@ abbr[title] {
   cursor: not-allowed;
 }
 
-/* Output pour les messages de formulaire */
+/* Output for form messages */
 output.form-message {
   margin-top: 1rem;
   padding: 1rem;
@@ -1081,7 +1167,7 @@ output.form-message.error {
 }
 
 /* ======================================================
-   LINKS GRID - Nav sémantique
+   LINKS GRID - Semantic nav
    ====================================================== */
 .links-intro {
   color: var(--muted);
@@ -1216,7 +1302,7 @@ summary.faq-question:hover {
   margin: 0;
 }
 
-/* About Section - Aside sémantique */
+/* About Section - Semantic aside */
 aside.about-section {
   background: linear-gradient(135deg, rgba(138,43,226,0.05), rgba(0,230,255,0.02));
   border: 1px solid rgba(138,43,226,0.1);
@@ -1239,7 +1325,7 @@ aside.about-section p.disclaimer {
    ============================ */
 
 /* ============================
-   GRAND ÉCRAN >= 1600px
+   LARGE SCREEN >= 1600px
    ============================ */
 @media (min-width: 1600px) {
   body {
@@ -1317,7 +1403,7 @@ aside.about-section p.disclaimer {
 }
 
 /* ============================
-   TABLETTE 768px - 1599px
+   TABLET 768px - 1599px
    ============================ */
 @media (min-width: 768px) and (max-width: 1599px) {
   body {
@@ -1434,7 +1520,7 @@ aside.about-section p.disclaimer {
     padding-top: 140px;
   }
   
-  /* Header mobile */
+  /* Mobile header */
   .site-header {
     padding: 10px 0;
   }
@@ -1694,11 +1780,20 @@ aside.about-section p.disclaimer {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 40px;
+    text-align: center; 
+  }
+  
+  .footer-column,
+  .footer-description,
+  .footer-links,
+  .footer-info {
+    text-align: center; 
   }
   
   .footer-column h4 {
     font-size: 1.3rem;
     margin-bottom: 15px;
+    text-align: center;
   }
   
   .footer-description {
@@ -1720,10 +1815,8 @@ aside.about-section p.disclaimer {
   }
 }
 
-
-
 /* ============================
-   TRÈS PETIT MOBILE <= 480px
+   VERY SMALL MOBILE <= 480px
    ============================ */
 @media (max-width: 480px) {
   body {
@@ -1781,7 +1874,7 @@ aside.about-section p.disclaimer {
    ANIMATIONS & TRANSITIONS
    ============================ */
 
-/* Animation de chargement */
+/* Loading animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1797,7 +1890,7 @@ aside.about-section p.disclaimer {
   animation: fadeIn 0.6s ease-out;
 }
 
-/* Animation au survol des cartes */
+/* Card hover animation */
 @keyframes pulse {
   0%, 100% {
     box-shadow: 0 6px 28px rgba(2,6,23,0.5);
@@ -1807,7 +1900,7 @@ aside.about-section p.disclaimer {
   }
 }
 
-/* Focus amélioré pour l'accessibilité */
+/* Enhanced focus for accessibility */
 *:focus-visible {
   outline: 2px solid var(--neon);
   outline-offset: 2px;

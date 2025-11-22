@@ -105,6 +105,11 @@ body {
     background: rgba(251, 106, 21, 0.08);
 }
 
+.nav-links li a.active {
+    background: rgba(251, 106, 21, 0.12);
+    color: #FB6A15;
+}
+
 .nav-links li a:hover::before {
     width: 80%;
 }

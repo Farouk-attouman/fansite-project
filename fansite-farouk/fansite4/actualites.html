@@ -3,53 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualités - Masashi Kishimoto</title>
-    <meta name="description" content="Toutes les actualités et dernières nouvelles concernant Masashi Kishimoto et ses œuvres.">
+    <title>News - Masashi Kishimoto</title>
+    <meta name="description" content="All the latest news and updates about Masashi Kishimoto and his works.">
     <link rel="stylesheet" href="css/actualites.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
     <!-- HEADER -->
-    <header class="header">
-        <nav class="nav" aria-label="Navigation principale">
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
             <div class="branding">
-            <a href="../index.html" class="logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
-            <p class="header-tagline">Une exploration de la culture japonaise</p>
+                <a href="../index.html" class="logo" aria-label="Home page">日本</a>
+                <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
             <ul class="nav-links">
                 <li>
                     <a href="accueil.html">
-                        <img src="../images/kunai.jpg" alt="Kunai" class="nav-icon">
+                        <img src="../images/kunai.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Accueil
                     </a>
                 </li>
                 <li>
-                    <a href="actualites.html" class="active">
-                        <img src="../images/uzumaki.jpg" alt="Uzumaki" class="nav-icon">
+                    <a href="actualites.html" class="active" aria-current="page">
+                        <img src="../images/uzumaki.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Actualités
                     </a>
                 </li>
                 <li>
                     <a href="biographie.html">
-                        <img src="../images/uchiha.png" alt="Uchiha" class="nav-icon">
+                        <img src="../images/uchiha.png" alt="" class="nav-icon" aria-hidden="true">
                         Biographie
                     </a>
                 </li>
                 <li>
                     <a href="oeuvres.html">
-                        <img src="../images/fuma.jpg" alt="Fuma" class="nav-icon">
-                        Œuvres
+                        <img src="../images/fuma.jpg" alt="" class="nav-icon" aria-hidden="true">
+                        Oeuvres
                     </a>
                 </li>
                 <li>
                     <a href="galerie.html">
-                        <img src="../images/shiruken.png" alt="Shuriken" class="nav-icon">
+                        <img src="../images/shiruken.png" alt="" class="nav-icon" aria-hidden="true">
                         Galerie
                     </a>
                 </li>
                 <li>
                     <a href="contact.html">
-                        <img src="../images/sceau.jpg" alt="Sceau" class="nav-icon">
+                        <img src="../images/sceau.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Contact
                     </a>
                 </li>
@@ -57,28 +56,29 @@
         </nav>
     </header>
 
-    <!-- hero News -->
-    <main id="main">
-        <section class="hero-news">
-            <div class="hero-overlay"></div>
+    <!-- MAIN CONTENT -->
+    <main role="main">
+        <!-- HERO NEWS SECTION -->
+        <section class="hero-news" aria-labelledby="hero-news-title">
+            <div class="hero-overlay" aria-hidden="true"></div>
             <div class="hero-content">
-                <h1>Actualités</h1>
+                <h1 id="hero-news-title">Actualités</h1>
                 <p class="hero-subtitle">Suivez les dernières nouvelles de Masashi Kishimoto</p>
             </div>
         </section>
 
-        <!-- MAIN ARTICLE (FEATURED) -->
-        <section class="featured-article">
+        <!-- FEATURED ARTICLE -->
+        <section class="featured-article" aria-labelledby="featured-article-title">
             <div class="container">
-                <div class="featured-badge">À LA UNE</div>
+                <div class="featured-badge" aria-label="Featured article">À LA UNE</div>
                 <article class="featured-content">
                     <div class="featured-image">
-                        <img src="../images/boruto_news.webp" alt="Boruto Two Blue Vortex">
-                        <span class="article-date">15 Novembre 2025</span>
+                        <img src="../images/boruto_news.webp" alt="Boruto Two Blue Vortex couverture manga">
+                        <span class="article-date">15 November, 2025</span>
                     </div>
                     <div class="featured-text">
                         <div class="article-category">BORUTO</div>
-                        <h2>Kishimoto annonce un arc majeur pour Boruto: Two Blue Vortex</h2>
+                        <h2 id="featured-article-title">Kishimoto annonce un arc majeur pour Boruto: Two Blue Vortex</h2>
                         <p class="article-excerpt">
                             Masashi Kishimoto a récemment révélé lors d'une interview exclusive que le manga 
                             <strong>Boruto: Two Blue Vortex</strong> entrera bientôt dans un arc narratif majeur 
@@ -98,20 +98,20 @@
             </div>
         </section>
 
-        <!-- New Grid -->
-        <section class="news-grid-section">
+        <!-- NEWS GRID -->
+        <section class="news-grid-section" aria-labelledby="news-grid-title">
             <div class="container">
-                <h2 class="section-title">Dernières actualités</h2>
+                <h2 id="news-grid-title" class="section-title">Dernières actualités</h2>
 
-                <div class="news-grid">
-                    <!-- New 1 -->
-                    <article class="news-card">
+                <div class="news-grid" role="list">
+                    <!-- News 1 -->
+                    <article class="news-card" role="listitem">
                         <div class="news-image">
-                            <img src="../images/naruto_newYork.webp" alt="Exposition Kishimoto">
-                            <span class="news-date">10 Novembre 2025</span>
+                            <img src="../images/naruto_newYork.webp" alt="Naruto artwork exhibition in New York featuring original Kishimoto drawings">
+                            <span class="news-date">10 November, 2025</span>
                         </div>
                         <div class="news-content">
-                            <div class="news-category">ÉVÉNEMENT</div>
+                            <div class="news-category">EVENT</div>
                             <h3>Exposition exceptionnelle à New York</h3>
                             <p>
                                 Une grande exposition consacrée aux 25 ans de Naruto ouvrira ses portes 
@@ -122,11 +122,11 @@
                         </div>
                     </article>
 
-                    <!-- New 2 -->
-                    <article class="news-card">
+                    <!-- News 2 -->
+                    <article class="news-card" role="listitem">
                         <div class="news-image">
-                            <img src="../images/interview.webp" alt="Interview Kishimoto">
-                            <span class="news-date">05 Novembre 2025</span>
+                            <img src="../images/interview.webp" alt="Masashi Kishimoto giving an interview about his creative process">
+                            <span class="news-date">5 November, 2025</span>
                         </div>
                         <div class="news-content">
                             <div class="news-category">INTERVIEW</div>
@@ -136,18 +136,18 @@
                                 revient sur ses influences artistiques et révèle les secrets de création 
                                 de certains personnages emblématiques de Naruto.
                             </p>
-                            <a href="#" class="news-link">Lire plus →</a>
+                            <a href="#" class="news-link">lire plus →</a>
                         </div>
                     </article>
 
-                    <!-- New 3 -->
-                    <article class="news-card">
+                    <!-- News 3 -->
+                    <article class="news-card" role="listitem">
                         <div class="news-image">
-                            <img src="../images/secret.webp" alt="Nouveau projet Naruto">
-                            <span class="news-date">28 Octobre 2025</span>
+                            <img src="../images/secret.webp" alt="Teaser image for new Naruto animation project">
+                            <span class="news-date">28 October, 2025</span>
                         </div>
                         <div class="news-content">
-                            <div class="news-category">PROJET</div>
+                            <div class="news-category">PROJECT</div>
                             <h3>Un nouveau projet d'animation en développement</h3>
                             <p>
                                 Studio Pierrot a annoncé être en discussions avec Kishimoto pour un 
@@ -158,11 +158,11 @@
                         </div>
                     </article>
 
-                    <!-- New 4 -->
-                    <article class="news-card">
+                    <!-- News 4 -->
+                    <article class="news-card" role="listitem">
                         <div class="news-image">
-                            <img src="../images/enfant.webp" alt="25 ans de Naruto">
-                            <span class="news-date">21 Octobre 2025</span>
+                            <img src="../images/enfant.webp" alt="Naruto manga volumes celebrating 25th anniversary">
+                            <span class="news-date">21 October, 2025</span>
                         </div>
                         <div class="news-content">
                             <div class="news-category">ANNIVERSAIRE</div>
@@ -176,11 +176,11 @@
                         </div>
                     </article>
 
-                    <!-- New 5 -->
-                    <article class="news-card">
+                    <!-- News 5 -->
+                    <article class="news-card" role="listitem">
                         <div class="news-image">
-                            <img src="../images/narutoOnepiece.webp" alt="Collaboration">
-                            <span class="news-date">15 Octobre 2025</span>
+                            <img src="../images/narutoOnepiece.webp" alt="Collaboration artwork between Naruto and One Piece universes">
+                            <span class="news-date">15 October, 2025</span>
                         </div>
                         <div class="news-content">
                             <div class="news-category">COLLABORATION</div>
@@ -194,14 +194,14 @@
                         </div>
                     </article>
 
-                    <!-- New 6 -->
-                    <article class="news-card">
+                    <!-- News 6 -->
+                    <article class="news-card" role="listitem">
                         <div class="news-image">
-                            <img src="../images/figurine.webp" alt="Merchandising Naruto">
-                            <span class="news-date">08 Octobre 2025</span>
+                            <img src="../images/figurine.webp" alt="Collector figurines of Naruto characters supervised by Kishimoto">
+                            <span class="news-date">8 October, 2025</span>
                         </div>
                         <div class="news-content">
-                            <div class="news-category">MERCHANDISING</div>
+                            <div class="news-category">BOUTIQUE</div>
                             <h3>Nouvelle ligne de figurines collector</h3>
                             <p>
                                 Bandai annonce le lancement d'une nouvelle collection de figurines 
@@ -213,27 +213,27 @@
                     </article>
                 </div>
 
-                <!-- Paging -->
-                <div class="pagination">
-                    <button class="page-btn active">1</button>
-                    <button class="page-btn">2</button>
-                    <button class="page-btn">3</button>
-                    <button class="page-btn">4</button>
-                    <button class="page-btn">→</button>
-                </div>
+                <!-- PAGINATION -->
+                <nav class="pagination" aria-label="Actualites pagination">
+                    <button class="page-btn active" aria-current="page" aria-label="Page 1">1</button>
+                    <button class="page-btn" aria-label="Page 2">2</button>
+                    <button class="page-btn" aria-label="Page 3">3</button>
+                    <button class="page-btn" aria-label="Page 4">4</button>
+                    <button class="page-btn" aria-label="Next page">→</button>
+                </nav>
             </div>
         </section>
 
-        <!-- Newletter Section -->
-        <section class="newsletter-section">
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter-section" aria-labelledby="newsletter-title">
             <div class="container">
                 <div class="newsletter-box">
                     <div class="newsletter-icon" aria-hidden="true">📰</div>
-                    <h2>Restez informé</h2>
+                    <h2 id="newsletter-title">Restez informé</h2>
                     <p>Inscrivez-vous à notre newsletter pour recevoir les dernières actualités sur Masashi Kishimoto</p>
-                    <form class="newsletter-form">
-                        <label for="newsletter-email" class="visually-hidden">Votre adresse email</label>
-                        <input type="email" id="newsletter-email" placeholder="Votre adresse email" required>
+                    <form class="newsletter-form" aria-labelledby="newsletter-title">
+                        <label for="newsletter-email" class="visually-hidden">Votre Adresse email</label>
+                        <input type="email" id="newsletter-email" placeholder="adresse email" required>
                         <button type="submit">S'inscrire</button>
                     </form>
                     <p class="newsletter-notice">Nous respectons votre vie privée. Pas de spam, désinscription facile.</p>
@@ -243,21 +243,21 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Column 1 : About -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+            <!-- Column 1: About -->
+            <section class="footer-column" aria-labelledby="about-title">
+                <h4 id="about-title">À Propos</h4>
                 <p class="footer-description">
                     Fansite non officiel dédié à Masashi Kishimoto, créateur du légendaire manga Naruto. 
                     Créé par des fans, pour les fans.
                 </p>
-                <div class="footer-logo">岸本斉史</div>
-            </div>
+                <div class="footer-logo" aria-hidden="true">岸本斉史</div>
+            </section>
 
-            <!-- Column 2 : Quick Navigation -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick Navigation -->
+            <nav class="footer-column" aria-labelledby="navigation-title">
+                <h4 id="navigation-title">Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="biographie.html">Biographie</a></li>
@@ -266,34 +266,34 @@
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Column 3 : Main Works -->
-            <div class="footer-column">
-                <h4>Œuvres Majeures</h4>
+            <!-- Column 3: Main Works -->
+            <section class="footer-column" aria-labelledby="works-title">
+                <h4 id="works-title">Oeuvres majeures</h4>
                 <ul class="footer-links">
                     <li><a href="oeuvres.html#naruto">Naruto (1999-2014)</a></li>
                     <li><a href="oeuvres.html#boruto">Boruto (supervision)</a></li>
                     <li><a href="oeuvres.html#samurai8">Samurai 8 (2019-2020)</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Column 4 : Informations -->
-            <div class="footer-column">
-                <h4>Informations</h4>
+            <!-- Column 4: Information -->
+            <section class="footer-column" aria-labelledby="info-title">
+                <h4 id="info-title">Information</h4>
                 <ul class="footer-links">
-                    <li><span class="footer-info"><span aria-hidden="true">📅</span> Né le 8 novembre 1974</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📍</span> Préfecture d'Okayama, Japon</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Prix Quill Award (2006)</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📚</span> Plus de 250 millions d'exemplaires vendus</span></li>
+                    <li><span class="footer-info">📅 Né le 8 novembre 1974</span></li>
+                    <li><span class="footer-info">📍 Préfecture d'Okayama, Japon</span></li>
+                    <li><span class="footer-info">🏆 Prix Quill Award (2006)</span></li>
+                    <li><span class="footer-info">📚 Plus de 250 millions d'exemplaires vendus</span></li>
                 </ul>
-            </div>
+            </section>
         </div>
 
-        <!-- copyright -->
+        <!-- COPYRIGHT -->
         <div class="footer-bottom">
             <p class="footer-copyright">
-                © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire
+                &copy; 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire
             </p>
             <p class="footer-disclaimer">
                 Naruto © Masashi Kishimoto / Shueisha Inc. Toutes les œuvres appartiennent à leurs auteurs respectifs.

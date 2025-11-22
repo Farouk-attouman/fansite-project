@@ -17,109 +17,110 @@
             <p class="header-tagline">Une exploration de la culture japonaise</p>
         </div>
 
-        <div class="site-nav-links">
-            <a href="fansite2.html" class="nav-link-item">Accueil</a>
-            <a href="actualite.html" class="nav-link-item">Actualité</a>
-            <a href="evenements.html" class="nav-link-item">Biographie</a>
-            <a href="media.html" class="nav-link-item">Photos & Vidéos</a>
-            <a href="contact-form.html" class="nav-link-item">Contact</a>
-        </div>
+        <ul class="site-nav-links" role="list">
+            <li><a href="fansite2.html" class="nav-link-item">Accueil</a></li>
+            <li><a href="actualite.html" class="nav-link-item">Actualité</a></li>
+            <li><a href="evenements.html" class="nav-link-item" aria-current="page">Biographie</a></li>
+            <li><a href="media.html" class="nav-link-item">Photos & Vidéos</a></li>
+            <li><a href="contact-form.html" class="nav-link-item">Contact</a></li>
+        </ul>
 
     </nav>
 </header>
 
 <main id="main">
-<div class="section" id="biographie">
-    <h2>Biographie de Jirō Ono</h2>
+<section class="section" id="biographie" aria-labelledby="bio-heading">
+    <h1 id="bio-heading">Biographie de Jirō Ono</h1>
 
-    <div class="bio-card">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.RRX5nQjoVSZbH6nsdIyheAHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Jirō Ono">
+    <article class="bio-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.RRX5nQjoVSZbH6nsdIyheAHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Portrait de Jirō Ono">
         <div class="bio-content">
-            <h3>Informations personnelles</h3>
+            <h2>Informations personnelles</h2>
             <ul>
                 <li><strong>Nom :</strong> Jirō Ono (小野 二郎)</li>
                 <li><strong>Date de naissance :</strong> 27 octobre 1925</li>
                 <li><strong>Lieu de naissance :</strong> Tenryū, Japon</li>
             </ul>
         </div>
-    </div>
+    </article>
 
-    <div class="bio-card">
-        <img src="https://th.bing.com/th/id/R.1047abc74a3f20b6afa7e4884d08ce0e?rik=Mm2WAWSCfaAWtg&riu=http%3a%2f%2fwww.journaldujapon.com%2fwp-content%2fuploads%2f2018%2f10%2fjiro-ono-restaurant.jpg&ehk=77RjQnxIIlEYNUI1cnIjPp7WeEZ9OyqEj4tvXEXvR5s%3d&risl=&pid=ImgRaw&r=0" alt="Sukiyabashi Jirō">
+    <article class="bio-card">
+        <img src="https://th.bing.com/th/id/R.1047abc74a3f20b6afa7e4884d08ce0e?rik=Mm2WAWSCfaAWtg&riu=http%3a%2f%2fwww.journaldujapon.com%2fwp-content%2fuploads%2f2018%2f10%2fjiro-ono-restaurant.jpg&ehk=77RjQnxIIlEYNUI1cnIjPp7WeEZ9OyqEj4tvXEXvR5s%3d&risl=&pid=ImgRaw&r=0" alt="Restaurant Sukiyabashi Jirō à Ginza">
         <div class="bio-content">
-            <h3>Carrière</h3>
+            <h2>Carrière</h2>
             <ul>
                 <li>Propriétaire du célèbre restaurant <span class="highlight">Sukiyabashi Jirō</span> à Ginza, Tokyo</li>
                 <li>Premier maître sushi à obtenir <span class="highlight">3 étoiles au Guide Michelin</span></li>
                 <li>Plus de 75 ans de carrière consacrés à la perfection du sushi</li>
             </ul>
         </div>
-    </div>
+    </article>
 
-    <div class="bio-card">
-        <img src="https://th.bing.com/th/id/OIP.BM6UT8FZGNzkJ7ApnhPjmQAAAA?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Jiro Dreams of Sushi">
+    <article class="bio-card">
+        <img src="https://th.bing.com/th/id/OIP.BM6UT8FZGNzkJ7ApnhPjmQAAAA?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Affiche du documentaire Jiro Dreams of Sushi">
         <div class="bio-content">
-            <h3>Héritage et influence</h3>
+            <h2>Héritage et influence</h2>
             <ul>
                 <li>Reconnu pour sa discipline, sa précision et la qualité des ingrédients</li>
-                <li>Documentaire : <em>Jiro Dreams of Sushi</em> (2011)</li>
+                <li>Documentaire : <cite>Jiro Dreams of Sushi</cite> (2011)</li>
                 <li>Ses disciples, comme Hachirō Mizutani, perpétuent son savoir-faire</li>
             </ul>
         </div>
-    </div>
+    </article>
 
-</div>
+</section>
 </main>
+
 <footer class="site-footer">
-        <div class="footer-container">
+    <section class="footer-container">
 
-            <!-- Colonne 1 : À propos -->
-             <div class="footer-column">
-                <h4>À Propos</h4>
-                <p class="footer-description">
-                    Un hommage à Jirō Ono, maître sushi d’exception, à travers un voyage culinaire, culturel et artistique.
-                    Découvrez son héritage, ses réalisations et son influence dans le monde de la gastronomie japonaise.
-                </p>
-            </div>
-
-            <!-- Colonne 2 : Navigation rapide (mêmes liens que ton header) -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
-                <ul class="footer-links">
-                    <li><a href="fansite2.html">Accueil</a></li>
-                    <li><a href="actualite.html">Actualité</a></li>
-                    <li><a href="realisations.html">Réalisations</a></li>
-                    <li><a href="evenements.html">Biographie</a></li>
-                    <li><a href="media.html">Photos & Vidéos</a></li>
-                    <li><a href="liens-fans.html">Liens Fans</a></li>
-                    <li><a href="reseaux-sociaux.html">Réseaux</a></li>
-                    <li><a href="contact-form.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Colonne 3 : L’univers de Jirō Ono -->
-            <div class="footer-column">
-                <h4>L’Art du Sushi</h4>
-                <ul class="footer-links">
-                    <li><span class="footer-info"><span aria-hidden="true">🍣</span> Excellence gastronomique</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🔪</span> Techniques millimétrées</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🎌</span> Tradition japonaise</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Maître reconnu mondialement</span></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <!-- Bas de page -->
-        <div class="footer-bottom">
-            <p class="footer-copyright">
-                © 2025 Jirō Ono – Maître Sushi Légendaire
+        <!-- Column 1: About -->
+        <article class="footer-column">
+            <h2>À Propos</h2>
+            <p class="footer-description">
+                Un hommage à Jirō Ono, maître sushi d'exception, à travers un voyage culinaire, culturel et artistique.
+                Découvrez son héritage, ses réalisations et son influence dans le monde de la gastronomie japonaise.
             </p>
-            <p class="footer-disclaimer">
-                Site réalisé dans le cadre d’un projet universitaire. Tous les contenus appartiennent à leurs auteurs respectifs.
-            </p>
-        </div>
-    </footer>
+        </article>
+
+        <!-- Column 2: Quick navigation -->
+        <nav class="footer-column" aria-label="Navigation du pied de page">
+            <h2>Navigation</h2>
+            <ul class="footer-links">
+                <li><a href="fansite2.html">Accueil</a></li>
+                <li><a href="actualite.html">Actualité</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="evenements.html">Biographie</a></li>
+                <li><a href="media.html">Photos & Vidéos</a></li>
+                <li><a href="liens-fans.html">Liens Fans</a></li>
+                <li><a href="reseaux-sociaux.html">Réseaux</a></li>
+                <li><a href="contact-form.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Column 3: Jirō Ono's universe -->
+        <aside class="footer-column" aria-label="Caractéristiques">
+            <h2>L'Art du Sushi</h2>
+            <ul class="footer-links">
+                <li><span class="footer-info"><span aria-hidden="true">🍣</span> Excellence gastronomique</span></li>
+                <li><span class="footer-info"><span aria-hidden="true">🔪</span> Techniques millimétrées</span></li>
+                <li><span class="footer-info"><span aria-hidden="true">🎌</span> Tradition japonaise</span></li>
+                <li><span class="footer-info"><span aria-hidden="true">🏆</span> Maître reconnu mondialement</span></li>
+            </ul>
+        </aside>
+
+    </section>
+
+    <!-- Bottom footer -->
+    <section class="footer-bottom">
+        <p class="footer-copyright">
+            © 2025 Jirō Ono – Maître Sushi Légendaire
+        </p>
+        <p class="footer-disclaimer">
+            Site réalisé dans le cadre d'un projet universitaire. Tous les contenus appartiennent à leurs auteurs respectifs.
+        </p>
+    </section>
+</footer>
 
 </body>
 </html>

@@ -3,53 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biographie - Masashi Kishimoto</title>
-    <meta name="description" content="Découvrez la vie et le parcours de Masashi Kishimoto, créateur du manga légendaire Naruto.">
+    <title>Biography - Masashi Kishimoto</title>
+    <meta name="description" content="Discover the life and journey of Masashi Kishimoto, creator of the legendary Naruto manga.">
     <link rel="stylesheet" href="css/biographie.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav" aria-label="Navigation principale">
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
             <div class="branding">
-            <a href="../index.html" class="logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
-            <p class="header-tagline">Une exploration de la culture japonaise</p>
+                <a href="../index.html" class="logo" aria-label="Home page">日本</a>
+                <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
             <ul class="nav-links">
                 <li>
                     <a href="accueil.html">
-                        <img src="../images/kunai.jpg" alt="Clan Uzumaki" class="nav-icon">
+                        <img src="../images/kunai.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Accueil
                     </a>
                 </li>
                 <li>
                     <a href="actualites.html">
-                        <img src="../images/uzumaki.jpg" alt="Clan Uchiha" class="nav-icon">
+                        <img src="../images/uzumaki.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Actualités
                     </a>
                 </li>
                 <li>
-                    <a href="biographie.html">
-                        <img src="../images/uchiha.png" alt="Clan Senju" class="nav-icon">
+                    <a href="biographie.html" class="active" aria-current="page">
+                        <img src="../images/uchiha.png" alt="" class="nav-icon" aria-hidden="true">
                         Biographie
                     </a>
                 </li>
                 <li>
                     <a href="oeuvres.html">
-                        <img src="../images/Akatsuki-Logo.png" alt="Clan Sarutobi" class="nav-icon">
-                        Œuvres
+                        <img src="../images/Akatsuki-Logo.png" alt="" class="nav-icon" aria-hidden="true">
+                        Oeuvres
                     </a>
                 </li>
                 <li>
                     <a href="galerie.html">
-                        <img src="../images/shiruken.png" alt="Clan Hyuga" class="nav-icon">
+                        <img src="../images/shiruken.png" alt="" class="nav-icon" aria-hidden="true">
                         Galerie
                     </a>
                 </li>
                 <li>
                     <a href="contact.html">
-                        <img src="../images/sceau.jpg" alt="Clan Fuma" class="nav-icon">
+                        <img src="../images/sceau.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Contact
                     </a>
                 </li>
@@ -57,34 +56,36 @@
         </nav>
     </header>
 
-    <!-- Hero biography -->
-    <main id="main">
-        <section class="hero-bio">
+    <!-- MAIN CONTENT -->
+    <main role="main">
+        <!-- HERO BIOGRAPHY SECTION -->
+        <section class="hero-bio" aria-labelledby="hero-bio-title">
             <img src="../images/masashi_upscaled.png" 
-                 alt="Masashi Kishimoto" 
-                 class="hero-background">
+                 alt="Masashi Kishimoto portrait illustration" 
+                 class="hero-background"
+                 role="presentation">
             
-            <div class="hero-overlay"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
             
             <div class="hero-content">
-                <h1>Masashi Kishimoto</h1>
+                <h1 id="hero-bio-title">Masashi Kishimoto</h1>
                 <p class="hero-subtitle">岸本斉史</p>
                 <p class="hero-quote">"Je veux créer des histoires qui donnent de l'espoir et du courage aux gens"</p>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="bio-about">
+        <!-- ABOUT SECTION -->
+        <section class="bio-about" aria-labelledby="about-title">
             <div class="container">
                 <div class="about-content">
-                    <div class="about-image">
+                    <figure class="about-image">
                         <img src="../images/masashi-kishimoto-2766303985.jpg" 
-                             alt="Masashi Kishimoto portrait">
-                        <div class="image-caption">Le créateur de Naruto</div>
-                    </div>
+                             alt="Masashi Kishimoto professional portrait">
+                        <figcaption class="image-caption">Le créateur de Naruto</figcaption>
+                    </figure>
                     
                     <div class="about-text">
-                        <h2>À propos de l'auteur</h2>
+                        <h2 id="about-title">À propos de l'auteur</h2>
                         <div class="text-highlight">
                             <p>
                                 <strong>Masashi Kishimoto</strong> est un mangaka japonais mondialement reconnu, 
@@ -115,16 +116,16 @@
                             à travers le monde.
                         </p>
 
-                        <div class="stats-box">
-                            <div class="stat-item">
+                        <div class="stats-box" role="list" aria-label="Author statistics">
+                            <div class="stat-item" role="listitem">
                                 <span class="stat-number">250M+</span>
                                 <span class="stat-label">Exemplaires vendus</span>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-item" role="listitem">
                                 <span class="stat-number">700</span>
                                 <span class="stat-label">Chapitres de Naruto</span>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-item" role="listitem">
                                 <span class="stat-number">15 ans</span>
                                 <span class="stat-label">De publication</span>
                             </div>
@@ -134,150 +135,151 @@
             </div>
         </section>
 
-        <!-- Chronology -->
-        <section class="timeline-section">
-    <div class="container">
-        <h2 class="section-title">Chronologie</h2>
-        <p class="section-subtitle">Le parcours d'un mangaka légendaire</p>
-
-        <div class="timeline-alt">
-            
-            <!-- Event 1: Image on the left-->
-            <div class="timeline-item-alt left">
-                <div class="timeline-image">
-                    <img src="../images/masashi 1997.jpg" alt="Jeune Kishimoto">
-                </div>
-                <div class="timeline-text">
-                    <div class="timeline-badge">
-                        <span class="badge-number">1</span>
-                        <span class="badge-year">1995</span>
-                    </div>
-                    <h3>Jeunesse</h3>
-                    <p>
-                        Masashi Kishimoto naît le <strong>8 novembre 1974</strong> dans la préfecture 
-                        d'Okayama, au Japon. Il grandit avec son frère jumeau Seishi, qui deviendra 
-                        également mangaka. Dès son plus jeune âge, il développe une passion dévorante 
-                        pour le dessin et les histoires. Les deux frères passent leur enfance à créer 
-                        leurs propres mangas et à s'inspirer mutuellement.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Event 2: Image on the right -->
-            <div class="timeline-item-alt right">
-                <div class="timeline-text">
-                    <div class="timeline-badge">
-                        <span class="badge-number">2</span>
-                        <span class="badge-year">1996</span>
-                    </div>
-                    <h3>Premiers pas</h3>
-                    <p>
-                        Kishimoto publie son premier one-shot <em>'Karakuri'</em> qui remporte un prix 
-                        au concours Hop Step Award et l'encourage à poursuivre sa carrière de mangaka. 
-                        Ce succès initial lui donne la confiance nécessaire pour persévérer dans ce 
-                        métier exigeant. Cette période marque le début de sa collaboration avec 
-                        l'éditeur Shueisha.
-                    </p>
-                </div>
-                <div class="timeline-image">
-                    <img src="../images/karakuri.jpg" alt="Karakuki">
-                </div>
-            </div>
-
-            <!-- Event 3: Image on the left -->
-            <div class="timeline-item-alt left">
-                <div class="timeline-image">
-                    <img src="../images/naruto_109.webp" alt="Début de Naruto">
-                </div>
-                <div class="timeline-text">
-                    <div class="timeline-badge">
-                        <span class="badge-number">3</span>
-                        <span class="badge-year">1999</span>
-                    </div>
-                    <h3>Naissance de Naruto</h3>
-                    <p>
-                        Le premier chapitre de <em>Naruto</em> est publié dans le Weekly Shōnen Jump 
-                        le 21 septembre 1999. Le manga connaît rapidement un succès phénoménal au Japon 
-                        et dans le monde entier. L'histoire du jeune ninja orphelin, rejeté par son 
-                        village mais déterminé à devenir Hokage, touche le cœur de millions de lecteurs. 
-                        Le personnage de Naruto Uzumaki devient rapidement une icône culturelle mondiale.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Event 4: Image on the right -->
-            <div class="timeline-item-alt right">
-                <div class="timeline-text">
-                    <div class="timeline-badge">
-                        <span class="badge-number">4</span>
-                        <span class="badge-year">2014</span>
-                    </div>
-                    <h3>Fin de Naruto</h3>
-                    <p>
-                        Après 15 ans de publication ininterrompue, Naruto se termine le 10 novembre 2014 
-                        avec le chapitre 700. Le manga aura marqué toute une génération de lecteurs à 
-                        travers le monde, devenant l'un des "Big Three" du shōnen aux côtés de One Piece 
-                        et Bleach. Un moment hautement émotionnel pour les fans et pour Kishimoto lui-même.
-                    </p>
-                </div>
-                <div class="timeline-image">
-                    <img src="../images/naruto&masashi.jpg" alt="Fin de Naruto">
-                </div>
-            </div>
-
-            <!-- Event 5: Image on the rleft -->
-            <div class="timeline-item-alt left">
-                <div class="timeline-image">
-                    <img src="../images/samurai8.jpg" alt="Samurai 8">
-                </div>
-                <div class="timeline-text">
-                    <div class="timeline-badge">
-                        <span class="badge-number">5</span>
-                        <span class="badge-year">2019</span>
-                    </div>
-                    <h3>Samurai 8</h3>
-                    <p>
-                        Lancement de sa nouvelle série <em>'Samurai 8: La Légende de Hachimaru'</em> 
-                        en collaboration avec Akira Okubo au dessin. Kishimoto prend cette fois le rôle 
-                        de scénariste, permettant à un nouvel artiste de donner vie à son univers. 
-                        Bien que la série se soit terminée en 2020, le projet témoigne de sa créativité 
-                        continue et de son désir d'explorer de nouveaux univers.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Event 6: Image on the right -->
-            <div class="timeline-item-alt right">
-                <div class="timeline-text">
-                    <div class="timeline-badge">
-                        <span class="badge-number">✦</span>
-                        <span class="badge-year">Aujourd'hui</span>
-                    </div>
-                    <h3>Un héritage vivant</h3>
-                    <p>
-                        Kishimoto continue de superviser la série <em>Boruto: Naruto Next Generations</em>, 
-                        dessinée par Mikio Ikemoto, qui suit les aventures du fils de Naruto. Il participe 
-                        également à divers projets d'animation, d'expositions artistiques et de rencontres 
-                        avec ses fans à travers le monde. Son influence sur l'industrie du manga reste 
-                        immense.
-                    </p>
-                </div>
-                <div class="timeline-image">
-                    <img src="../images/boruto.png" alt="Kishimoto aujourd'hui">
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-        <!-- Influence Section -->
-        <section class="influences-section">
+        <!-- CHRONOLOGY SECTION -->
+        <section class="timeline-section" aria-labelledby="timeline-title">
             <div class="container">
-                <h2 class="section-title">Influences & Style</h2>
+                <h2 id="timeline-title" class="section-title">Chronologie</h2>
+                <p class="section-subtitle">Le parcours d'un mangaka légendaire</p>
+
+                <div class="timeline-alt" role="list">
+                    
+                    <!-- Event 1: Image on the left -->
+                    <article class="timeline-item-alt left" role="listitem">
+                        <div class="timeline-image">
+                            <img src="../images/masashi 1997.jpg" alt="Young Kishimoto in his early years">
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-badge">
+                                <span class="badge-number">1</span>
+                                <span class="badge-year">1995</span>
+                            </div>
+                            <h3>jeunesse</h3>
+                            <p>
+                                Masashi Kishimoto naît le <strong>8 novembre 1974</strong> dans la préfecture 
+                                d'Okayama, au Japon. Il grandit avec son frère jumeau Seishi, qui deviendra 
+                                également mangaka. Dès son plus jeune âge, il développe une passion dévorante 
+                                pour le dessin et les histoires. Les deux frères passent leur enfance à créer 
+                                leurs propres mangas et à s'inspirer mutuellement.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Event 2: Image on the right -->
+                    <article class="timeline-item-alt right" role="listitem">
+                        <div class="timeline-text">
+                            <div class="timeline-badge">
+                                <span class="badge-number">2</span>
+                                <span class="badge-year">1996</span>
+                            </div>
+                            <h3>Premiers pas</h3>
+                            <p>
+                                Kishimoto publie son premier one-shot <em>'Karakuri'</em> qui remporte un prix 
+                                au concours Hop Step Award et l'encourage à poursuivre sa carrière de mangaka. 
+                                Ce succès initial lui donne la confiance nécessaire pour persévérer dans ce 
+                                métier exigeant. Cette période marque le début de sa collaboration avec 
+                                l'éditeur Shueisha.
+                            </p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="../images/karakuri.jpg" alt="Karakuri one-shot manga cover">
+                        </div>
+                    </article>
+
+                    <!-- Event 3: Image on the left -->
+                    <article class="timeline-item-alt left" role="listitem">
+                        <div class="timeline-image">
+                            <img src="../images/naruto_109.webp" alt="First Naruto manga volume cover">
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-badge">
+                                <span class="badge-number">3</span>
+                                <span class="badge-year">1999</span>
+                            </div>
+                            <h3>Naissance de Naruto</h3>
+                            <p>
+                                Le premier chapitre de <em>Naruto</em> est publié dans le Weekly Shōnen Jump 
+                                le 21 septembre 1999. Le manga connaît rapidement un succès phénoménal au Japon 
+                                et dans le monde entier. L'histoire du jeune ninja orphelin, rejeté par son 
+                                village mais déterminé à devenir Hokage, touche le cœur de millions de lecteurs. 
+                                Le personnage de Naruto Uzumaki devient rapidement une icône culturelle mondiale.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Event 4: Image on the right -->
+                    <article class="timeline-item-alt right" role="listitem">
+                        <div class="timeline-text">
+                            <div class="timeline-badge">
+                                <span class="badge-number">4</span>
+                                <span class="badge-year">2014</span>
+                            </div>
+                            <h3>Fin de Naruto</h3>
+                            <p>
+                                Après 15 ans de publication ininterrompue, Naruto se termine le 10 novembre 2014 
+                                avec le chapitre 700. Le manga aura marqué toute une génération de lecteurs à 
+                                travers le monde, devenant l'un des "Big Three" du shōnen aux côtés de One Piece 
+                                et Bleach. Un moment hautement émotionnel pour les fans et pour Kishimoto lui-même.
+                            </p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="../images/naruto&masashi.jpg" alt="Kishimoto with final Naruto chapter artwork">
+                        </div>
+                    </article>
+
+                    <!-- Event 5: Image on the left -->
+                    <article class="timeline-item-alt left" role="listitem">
+                        <div class="timeline-image">
+                            <img src="../images/samurai8.jpg" alt="Samurai 8 manga cover">
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-badge">
+                                <span class="badge-number">5</span>
+                                <span class="badge-year">2019</span>
+                            </div>
+                            <h3>Samurai 8</h3>
+                            <p>
+                                Lancement de sa nouvelle série <em>'Samurai 8: La Légende de Hachimaru'</em> 
+                                en collaboration avec Akira Okubo au dessin. Kishimoto prend cette fois le rôle 
+                                de scénariste, permettant à un nouvel artiste de donner vie à son univers. 
+                                Bien que la série se soit terminée en 2020, le projet témoigne de sa créativité 
+                                continue et de son désir d'explorer de nouveaux univers.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Event 6: Image on the right -->
+                    <article class="timeline-item-alt right" role="listitem">
+                        <div class="timeline-text">
+                            <div class="timeline-badge">
+                                <span class="badge-number">✦</span>
+                                <span class="badge-year">Today</span>
+                            </div>
+                            <h3>Un héritage vivant</h3>
+                            <p>
+                                Kishimoto continue de superviser la série <em>Boruto: Naruto Next Generations</em>, 
+                                dessinée par Mikio Ikemoto, qui suit les aventures du fils de Naruto. Il participe 
+                                également à divers projets d'animation, d'expositions artistiques et de rencontres 
+                                avec ses fans à travers le monde. Son influence sur l'industrie du manga reste 
+                                immense.
+                            </p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="../images/boruto.png" alt="Boruto manga supervised by Kishimoto">
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- INFLUENCES SECTION -->
+        <section class="influences-section" aria-labelledby="influences-title">
+            <div class="container">
+                <h2 id="influences-title" class="section-title">Influences & Style</h2>
                 <p class="section-subtitle">Les inspirations qui ont façonné son art</p>
 
-                <div class="influences-grid">
-                    <div class="influence-card">
+                <div class="influences-grid" role="list">
+                    <article class="influence-card" role="listitem">
                         <div class="influence-icon" aria-hidden="true">🐉</div>
                         <h3>Akira Toriyama</h3>
                         <p>
@@ -285,27 +287,27 @@
                             son style dynamique, ses compositions de combat et sa capacité à créer des 
                             personnages inoubliables.
                         </p>
-                    </div>
+                    </article>
 
-                    <div class="influence-card">
+                    <article class="influence-card" role="listitem">
                         <div class="influence-icon" aria-hidden="true">🎬</div>
                         <h3>Cinéma d'action</h3>
                         <p>
                             Grand amateur de films, particulièrement de Matrix et des films de Jackie Chan, 
                             Kishimoto intègre des chorégraphies cinématographiques dans ses combats de ninja.
                         </p>
-                    </div>
+                    </article>
 
-                    <div class="influence-card">
+                    <article class="influence-card" role="listitem">
                         <div class="influence-icon" aria-hidden="true">🏯</div>
                         <h3>Culture japonaise</h3>
                         <p>
                             Les légendes ninjas, la mythologie japonaise et l'histoire féodale du Japon 
                             constituent la base de l'univers de Naruto, revisités avec une touche moderne.
                         </p>
-                    </div>
+                    </article>
 
-                    <div class="influence-card">
+                    <article class="influence-card" role="listitem">
                         <div class="influence-icon" aria-hidden="true">✍️</div>
                         <h3>Style unique</h3>
                         <p>
@@ -313,28 +315,28 @@
                             détaillés, et un système de combat basé sur les jutsus et le chakra qui 
                             révolutionne le genre shōnen.
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Column 1 : About -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+            <!-- Column 1: About -->
+            <section class="footer-column" aria-labelledby="about-footer-title">
+                <h4 id="about-footer-title">À Propos</h4>
                 <p class="footer-description">
                     Fansite non officiel dédié à Masashi Kishimoto, créateur du légendaire manga Naruto. 
                     Créé par des fans, pour les fans.
                 </p>
-                <div class="footer-logo">岸本斉史</div>
-            </div>
+                <div class="footer-logo" aria-hidden="true">岸本斉史</div>
+            </section>
 
-            <!-- Column 3 : Quick Navigation -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick Navigation -->
+            <nav class="footer-column" aria-labelledby="navigation-footer-title">
+                <h4 id="navigation-footer-title">Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="biographie.html">Biographie</a></li>
@@ -343,31 +345,31 @@
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Column 3 : Main Works -->
-            <div class="footer-column">
-                <h4>Œuvres Majeures</h4>
+            <!-- Column 3: Main Works -->
+            <section class="footer-column" aria-labelledby="works-footer-title">
+                <h4 id="works-footer-title">Oeuvres majeures</h4>
                 <ul class="footer-links">
                     <li><a href="oeuvres.html#naruto">Naruto (1999-2014)</a></li>
                     <li><a href="oeuvres.html#boruto">Boruto (supervision)</a></li>
                     <li><a href="oeuvres.html#samurai8">Samurai 8 (2019-2020)</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Column 4 : Informations -->
-            <div class="footer-column">
-                <h4>Informations</h4>
+            <!-- Column 4: Information -->
+            <section class="footer-column" aria-labelledby="info-footer-title">
+                <h4 id="info-footer-title">Information</h4>
                 <ul class="footer-links">
-                    <li><span class="footer-info"><span aria-hidden="true">📅</span> Né le 8 novembre 1974</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📍</span> Préfecture d'Okayama, Japon</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Prix Quill Award (2006)</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📚</span> Plus de 250 millions d'exemplaires vendus</span></li>
+                    <li><span class="footer-info">📅 Né le 8 novembre 1974</span></li>
+                    <li><span class="footer-info">📍 Préfecture d'Okayama, Japon</span></li>
+                    <li><span class="footer-info">🏆 Prix Quill Award (2006)</span></li>
+                    <li><span class="footer-info">📚 Plus de 250 millions d'exemplaires vendus</span></li>
                 </ul>
-            </div>
+            </section>
         </div>
 
-        <!-- copyright -->
+        <!-- COPYRIGHT -->
         <div class="footer-bottom">
             <p class="footer-copyright">
                 © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire

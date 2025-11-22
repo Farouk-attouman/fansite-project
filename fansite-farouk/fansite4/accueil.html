@@ -3,53 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fansite Masashi Kishimoto - Créateur de Naruto</title>
-    <meta name="description" content="Fansite dédié à Masashi Kishimoto, créateur du manga Naruto. Découvrez sa biographie, ses œuvres et son parcours exceptionnel.">
+    <title>Fansite Masashi Kishimoto - Creator of Naruto</title>
+    <meta name="description" content="Fansite dedicated to Masashi Kishimoto, creator of the Naruto manga. Discover his biography, works and exceptional career.">
     <link rel="stylesheet" href="css/accueil.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
-    <!--HEADER-->
-    <header class="header">
-        <nav class="nav" aria-label="Navigation principale">
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
             <div class="branding">
-            <a href="../index.html" class="logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
-            <p class="header-tagline">Une exploration de la culture japonaise</p>
+                <a href="../index.html" class="logo" aria-label="Home page">日本</a>
+                <p class="header-tagline">Une exploration de la culture japonaise</p>
             </div>
             <ul class="nav-links">
                 <li>
-                    <a href="accueil.html">
-                        <img src="../images/kunai.jpg" alt="Clan Uzumaki" class="nav-icon">
+                    <a href="accueil.html" class="active" aria-current="page">
+                        <img src="../images/kunai.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Accueil
                     </a>
                 </li>
                 <li>
                     <a href="actualites.html">
-                        <img src="../images/uzumaki.jpg" alt="Clan Uchiha" class="nav-icon">
+                        <img src="../images/uzumaki.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Actualités
                     </a>
                 </li>
                 <li>
                     <a href="biographie.html">
-                        <img src="../images/uchiha.png" alt="Clan Senju" class="nav-icon">
+                        <img src="../images/uchiha.png" alt="" class="nav-icon" aria-hidden="true">
                         Biographie
                     </a>
                 </li>
                 <li>
                     <a href="oeuvres.html">
-                        <img src="../images/Akatsuki-Logo.png" alt="Clan Sarutobi" class="nav-icon">
-                        Œuvres
+                        <img src="../images/Akatsuki-Logo.png" alt="" class="nav-icon" aria-hidden="true">
+                        Oeuvres
                     </a>
                 </li>
                 <li>
                     <a href="galerie.html">
-                        <img src="../images/shiruken.png" alt="Clan Hyuga" class="nav-icon">
+                        <img src="../images/shiruken.png" alt="" class="nav-icon" aria-hidden="true">
                         Galerie
                     </a>
                 </li>
                 <li>
                     <a href="contact.html">
-                        <img src="../images/sceau.jpg" alt="Clan Fuma" class="nav-icon">
+                        <img src="../images/sceau.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Contact
                     </a>
                 </li>
@@ -57,90 +56,94 @@
         </nav>
     </header>
 
-    <!--HERO-->
-    <main id="main">
-        <section class="hero">
-            <!--Background Image-->
+    <!-- MAIN CONTENT -->
+    <main role="main">
+        <!-- HERO SECTION -->
+        <section class="hero" aria-labelledby="hero-title">
+            <!-- Background Image -->
             <img src="../images/pxfuel.jpg" 
-                 alt="Valley of the end" 
-                 class="hero-background">
+                 alt="Vallée de la fin - Lieu du combat final entre Naruto et Sasuke" 
+                 class="hero-background"
+                 role="presentation">
             
-            <div class="hero-overlay"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
             
             <div class="hero-content">
-                <h1>Masashi Kishimoto</h1>
+                <h1 id="hero-title">Masashi Kishimoto</h1>
                 <p class="hero-subtitle">岸本斉史</p>
                 <p>Créateur de Naruto, l'un des mangas les plus influents de tous les temps</p>
-                <a href="biographie.html" class="hero-button">Découvrir son histoire</a>
+                <a href="biographie.html" class="hero-button">Découvrez son histoire</a>
             </div>
         </section>
 
-        <!--INTRODUCTION-->
-        <section class="introduction container">
-            <h2>Bienvenue sur le fansite officieux</h2>
+        <!-- INTRODUCTION SECTION -->
+        <section class="introduction container" aria-labelledby="introduction-title">
+            <h2 id="introduction-title">Bienvenue sur le site de fans non officiel</h2>
             <p class="intro-text">
                 Plongez dans l'univers de Masashi Kishimoto, mangaka légendaire qui a marqué des générations entières avec ses créations épiques.
             </p>
             
-            <div class="cards">
+            <div class="cards" role="list">
                 <!-- Card 1 -->
-                <div class="card">
+                <article class="card" role="listitem">
                     <div class="card-icon" aria-hidden="true">📖</div>
-                    <h3>Son Parcours</h3>
+                    <h3>Son parcours</h3>
                     <p>
-                        Découvrez le chemin de Kishimoto, de ses débuts modestes jusqu'à sa renommée mondiale.
+                       Découvrez le chemin de Kishimoto, de ses débuts modestes jusqu'à sa renommée mondiale.
+                    </p>
                     </p>
                     <a href="biographie.html" class="card-button">En savoir plus</a>
-                </div>
+                </article>
 
                 <!-- Card 2 -->
-                <div class="card">
+                <article class="card" role="listitem">
                     <div class="card-icon" aria-hidden="true">✏️</div>
-                    <h3>Ses Œuvres</h3>
+                    <h3>Ses Oeuvres</h3>
                     <p>
                         Explorez son univers, de Naruto à Samurai 8 et d'autres travaux moins connus.
                     </p>
-                    <a href="oeuvres.html" class="card-button">Voir les œuvres</a>
-                </div>
+                    </p>
+                    <a href="oeuvres.html" class="card-button">Voir les oeuvres</a>
+                </article>
 
                 <!-- Card 3 -->
-                <div class="card">
+                <article class="card" role="listitem">
                     <div class="card-icon" aria-hidden="true">🎨</div>
-                    <h3>Galerie</h3>
+                    <h3>Gallery</h3>
                     <p>
                         Admirez une sélection d'illustrations et d'images créées ou inspirées par Kishimoto.
                     </p>
                     <a href="galerie.html" class="card-button">Voir la galerie</a>
-                </div>
+                </article>
             </div>
 
-            <!-- ===== CTA News ===== -->
-            <div class="cta">
-                <h3>Restez Informé</h3>
+            <!-- CTA NEWS -->
+            <aside class="cta" aria-labelledby="cta-title">
+                <h3 id="cta-title">Restez informé</h3>
                 <p>
-                    Consultez les actualités et annonces concernant Masashi Kishimoto et ses projets.
+                    Consultez les actualités et annonces concernant Masashi Kishimoto et ses projets
                 </p>
                 <a href="actualites.html" class="cta-button">Voir les actualités</a>
-            </div>
+            </aside>
         </section>
     </main>
 
-    <!--FOOTER-->
-    <footer class="footer">
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Column 1 : About -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+            <!-- Column 1: About -->
+            <section class="footer-column" aria-labelledby="about-title">
+                <h4 id="about-title">À propos</h4>
                 <p class="footer-description">
                     Fansite non officiel dédié à Masashi Kishimoto, créateur du légendaire manga Naruto. 
                     Créé par des fans, pour les fans.
                 </p>
-                <div class="footer-logo">岸本斉史</div>
-            </div>
+                <div class="footer-logo" aria-hidden="true">岸本斉史</div>
+            </section>
 
-            <!-- Column 2 : Quick navigation -->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Quick navigation -->
+            <nav class="footer-column" aria-labelledby="navigation-title">
+                <h4 id="navigation-title">Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="biographie.html">Biographie</a></li>
@@ -149,37 +152,37 @@
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Column 3 : Main Works -->
-            <div class="footer-column">
-                <h4>Œuvres Majeures</h4>
+            <!-- Column 3: Main Works -->
+            <section class="footer-column" aria-labelledby="works-title">
+                <h4 id="works-title">Oeuvres Majeures</h4>
                 <ul class="footer-links">
                     <li><a href="oeuvres.html#naruto">Naruto (1999-2014)</a></li>
                     <li><a href="oeuvres.html#boruto">Boruto (supervision)</a></li>
                     <li><a href="oeuvres.html#samurai8">Samurai 8 (2019-2020)</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Column 4 : Informations -->
-            <div class="footer-column">
-                <h4>Informations</h4>
+            <!-- Column 4: Information -->
+            <section class="footer-column" aria-labelledby="info-title">
+                <h4 id="info-title">Information</h4>
                 <ul class="footer-links">
-                    <li><span class="footer-info"><span aria-hidden="true">📅</span> Né le 8 novembre 1974</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📍</span> Préfecture d'Okayama, Japon</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Prix Quill Award (2006)</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📚</span> Plus de 250 millions d'exemplaires vendus</span></li>
+                    <li><span class="footer-info">📅 Né le 8 novembre 1974</span></li>
+                    <li><span class="footer-info">📍 Préfecture d'Okayama, Japon</span></li>
+                    <li><span class="footer-info">🏆 Prix Quill Award (2006)</span></li>
+                    <li><span class="footer-info">📚 Plus de 250 millions d'exemplaires vendus</span></li>
                 </ul>
-            </div>
+            </section>
         </div>
 
-        <!--copyright -->
+        <!-- COPYRIGHT -->
         <div class="footer-bottom">
             <p class="footer-copyright">
-                © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire
+                 © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet 
             </p>
             <p class="footer-disclaimer">
-                Naruto © Masashi Kishimoto / Shueisha Inc. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+                 Naruto © Masashi Kishimoto / Shueisha Inc. Toutes les œuvres appartiennent à leurs auteurs respectifs.
             </p>
         </div>
     </footer>

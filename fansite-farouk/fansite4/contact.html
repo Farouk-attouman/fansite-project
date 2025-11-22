@@ -4,42 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Masashi Kishimoto</title>
-    <meta name="description" content="Contactez-nous pour toute question concernant le fansite de Masashi Kishimoto.">
+    <meta name="description" content="Contact us for any questions regarding the Masashi Kishimoto fansite.">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
-    <!--HEADER-->
-    <header class="site-header">
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
         <div class="container">
             <div class="header-content">
                 <div class="branding">
-                <a href="index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
-                <p class="header-tagline">Une exploration de la culture japonaise</p>
+                    <a href="../index.html" class="site-logo" aria-label="Home - Land of the Rising Sun">日本</a>
+                    <p class="header-tagline">Une exploration de la culture japonaise</p>
                 </div>
-                <nav class="nav-menu" aria-label="Navigation principale">
+                <nav class="nav-menu" role="navigation" aria-label="Main navigation">
                     <a href="accueil.html" class="nav-link">
-                        <img src="../images/kunai.jpg" alt="Kunai" class="nav-icon">
+                        <img src="../images/kunai.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Accueil
                     </a>
                     <a href="actualites.html" class="nav-link">
-                        <img src="../images/uzumaki.jpg" alt="Uzumaki" class="nav-icon">
+                        <img src="../images/uzumaki.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Actualités
                     </a>
                     <a href="biographie.html" class="nav-link">
-                        <img src="../images/uchiha.png" alt="Uchiha" class="nav-icon">
+                        <img src="../images/uchiha.png" alt="" class="nav-icon" aria-hidden="true">
                         Biographie
                     </a>
                     <a href="oeuvres.html" class="nav-link">
-                        <img src="../images/fuma.jpg" alt="Fuma" class="nav-icon">
-                        Œuvres
+                        <img src="../images/fuma.jpg" alt="" class="nav-icon" aria-hidden="true">
+                        Oeuvres
                     </a>
                     <a href="galerie.html" class="nav-link">
-                        <img src="../images/shiruken.png" alt="Shuriken" class="nav-icon">
+                        <img src="../images/shiruken.png" alt="" class="nav-icon" aria-hidden="true">
                         Galerie
                     </a>
-                    <a href="contact.html" class="nav-link active">
-                        <img src="../images/sceau.jpg" alt="Sceau" class="nav-icon">
+                    <a href="contact.html" class="nav-link active" aria-current="page">
+                        <img src="../images/sceau.jpg" alt="" class="nav-icon" aria-hidden="true">
                         Contact
                     </a>
                 </nav>
@@ -47,22 +46,22 @@
         </div>
     </header>
 
-    <!--MAIN CONTENT-->
-    <main id="main">
+    <!-- MAIN CONTENT -->
+    <main id="main" role="main">
         <!-- Page Header -->
-        <header class="page-header">
+        <header class="page-header" aria-labelledby="page-title">
             <div class="container">
-                <h1>Contact</h1>
+                <h1 id="page-title">Contact</h1>
                 <p class="subtitle">Envoyez-nous un message</p>
             </div>
         </header>
 
         <!-- Contact Section -->
-        <section class="contact-section container">
+        <section class="contact-section container" aria-labelledby="contact-title">
             <div class="contact-wrapper">
                 <div class="contact-card">
                     <div class="contact-intro">
-                        <h2>Contactez-nous</h2>
+                        <h2 id="contact-title">Contactez-nous</h2>
                         <p class="muted-text">
                             Ce fansite est géré par des passionnés de l'œuvre de Masashi Kishimoto. 
                             Si vous avez des questions, des suggestions ou souhaitez partager votre 
@@ -70,10 +69,10 @@
                         </p>
                     </div>
 
-                    <form id="contactForm" class="contact-form" aria-label="Formulaire de contact">
+                    <form id="contactForm" class="contact-form" aria-labelledby="contact-title">
                         <div class="form-group">
                             <label for="name" class="form-label">
-                                Nom complet <span class="required" aria-label="requis">*</span>
+                                Nom complet <span class="required" aria-label="required">*</span>
                             </label>
                             <input
                                 type="text"
@@ -88,14 +87,14 @@
 
                         <div class="form-group">
                             <label for="email" class="form-label">
-                                Email <span class="required" aria-label="requis">*</span>
+                                Email <span class="required" aria-label="required">*</span>
                             </label>
                             <input
                                 type="email"
                                 id="email"
                                 name="email"
                                 class="form-input"
-                                placeholder="votre.email@exemple.com"
+                                placeholder="adresse.email@example.com"
                                 required
                                 aria-required="true"
                             />
@@ -103,9 +102,9 @@
 
                         <div class="form-group">
                             <label for="subject" class="form-label">
-                                Sujet <span class="required" aria-label="requis">*</span>
+                                Sujet <span class="required" aria-label="required">*</span>
                             </label>
-                            <select id="subject" name="subject" class="form-input" required>
+                            <select id="subject" name="subject" class="form-input" required aria-required="true">
                                 <option value="">Sélectionnez un sujet</option>
                                 <option value="question">Question générale</option>
                                 <option value="suggestion">Suggestion d'amélioration</option>
@@ -117,7 +116,7 @@
 
                         <div class="form-group">
                             <label for="message" class="form-label">
-                                Message <span class="required" aria-label="requis">*</span>
+                                Message <span class="required" aria-label="required">*</span>
                             </label>
                             <textarea
                                 id="message"
@@ -143,23 +142,24 @@
                     </form>
                 </div>
 
-                <div class="contact-info">
+                <aside class="contact-info" aria-labelledby="contact-info-title">
+                    <h3 id="contact-info-title" class="visually-hidden">Contact information</h3>
                     <div class="info-box">
                         <div class="info-icon" aria-hidden="true">📧</div>
-                        <h3>Email</h3>
+                        <h4>Email</h4>
                         <p>contact@kishimoto-fansite.com</p>
                         <span class="info-note">Réponse sous 24-48h</span>
                     </div>
 
                     <div class="info-box">
                         <div class="info-icon" aria-hidden="true">⏰</div>
-                        <h3>Disponibilité</h3>
+                        <h4>Disponibilité</h4>
                         <p>Lundi - Vendredi</p>
-                        <span class="info-note">9h - 18h (UTC+1)</span>
+                        <span class="info-note">9h - 17h (UTC+1)</span>
                     </div>
-                </div>
+                </aside>
 
-                <div class="contact-note">
+                <div class="contact-note" role="note">
                     <p>
                         <strong>Note :</strong> Ce site est un fansite non officiel créé par des fans 
                         dans le cadre d'un projet La Plateforme. Pour les demandes professionnelles 
@@ -171,22 +171,22 @@
         </section>
     </main>
 
-    <!--FOOTER-->
-    <footer class="site-footer">
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Column 1 : About -->
-            <div class="footer-column">
-                <h4>À Propos</h4>
+            <!-- Column 1: About -->
+            <section class="footer-column" aria-labelledby="about-title">
+                <h4 id="about-title">À Propos</h4>
                 <p class="footer-description">
                     Fansite non officiel dédié à Masashi Kishimoto, créateur du légendaire manga Naruto. 
                     Créé par des fans, pour les fans.
                 </p>
-                <div class="footer-logo">岸本斉史</div>
-            </div>
+                <div class="footer-logo" aria-hidden="true">岸本斉史</div>
+            </section>
 
-            <!-- Column 2 : Navigation-->
-            <div class="footer-column">
-                <h4>Navigation</h4>
+            <!-- Column 2: Navigation -->
+            <nav class="footer-column" aria-labelledby="navigation-title">
+                <h4 id="navigation-title">Navigation</h4>
                 <ul class="footer-links">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="biographie.html">Biographie</a></li>
@@ -195,31 +195,31 @@
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
 
-            <!-- Column 3 : Main works -->
-            <div class="footer-column">
-                <h4>Œuvres Majeures</h4>
+            <!-- Column 3: Main Works -->
+            <section class="footer-column" aria-labelledby="works-title">
+                <h4 id="works-title">Oeuvres majeures</h4>
                 <ul class="footer-links">
                     <li><a href="oeuvres.html#naruto">Naruto (1999-2014)</a></li>
                     <li><a href="oeuvres.html#boruto">Boruto (supervision)</a></li>
                     <li><a href="oeuvres.html#samurai8">Samurai 8 (2019-2020)</a></li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Colum n 4 : Informations -->
-            <div class="footer-column">
-                <h4>Informations</h4>
+            <!-- Column 4: Information -->
+            <section class="footer-column" aria-labelledby="info-title">
+                <h4 id="info-title">Information</h4>
                 <ul class="footer-links">
-                    <li><span class="footer-info"><span aria-hidden="true">📅</span> Né le 8 novembre 1974</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📍</span> Préfecture d'Okayama, Japon</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">🏆</span> Prix Quill Award (2006)</span></li>
-                    <li><span class="footer-info"><span aria-hidden="true">📚</span> Plus de 250 millions d'exemplaires vendus</span></li>
+                    <li><span class="footer-info">📅 Né le 8 novembre 1974</span></li>
+                    <li><span class="footer-info">📍 Préfecture d'Okayama, Japon</span></li>
+                    <li><span class="footer-info">🏆 Prix Quill Award (2006)</span></li>
+                    <li><span class="footer-info">📚 Plus de 250 millions d'exemplaires vendus</span></li>
                 </ul>
-            </div>
+            </section>
         </div>
 
-        <!--copyright -->
+        <!-- COPYRIGHT -->
         <div class="footer-bottom">
             <p class="footer-copyright">
                 © 2025 Fansite Masashi Kishimoto – Site non officiel créé par des fans dans le cadre d'un projet universitaire

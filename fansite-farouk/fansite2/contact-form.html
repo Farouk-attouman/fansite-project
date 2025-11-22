@@ -10,57 +10,63 @@
 <body>
 <a class="skip-link" href="#main">Aller au contenu</a>
 
-<!-- ===== HEADER STICKY ===== -->
+<!-- Header -->
 <header class="site-header">
   <nav class="site-nav" aria-label="Navigation principale">
     <div class="site-branding">
       <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
       <p class="header-tagline">Une exploration de la culture japonaise</p>
     </div>
-    <div class="site-nav-links">
-      <a href="fansite2.html" class="nav-link-item">Accueil</a>
-      <a href="actualite.html" class="nav-link-item">Actualités</a>
-      <a href="evenements.html" class="nav-link-item">Biographie</a>
-      <a href="media.html" class="nav-link-item">Photos & Vidéos</a>
-      <a href="contact-form.html" class="nav-link-item">Contact</a>
-    </div>
+    <ul class="site-nav-links" role="list">
+      <li><a href="fansite2.html" class="nav-link-item">Accueil</a></li>
+      <li><a href="actualite.html" class="nav-link-item">Actualités</a></li>
+      <li><a href="evenements.html" class="nav-link-item">Biographie</a></li>
+      <li><a href="media.html" class="nav-link-item">Photos & Vidéos</a></li>
+      <li><a href="contact-form.html" class="nav-link-item" aria-current="page">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
 <main id="main">
-<section class="section">
-    <h2>Envoyer un message</h2>
+<section class="section" aria-labelledby="contact-heading">
+    <h1 id="contact-heading">Envoyer un message</h1>
 
-    <form action="#" method="POST" class="contact-form">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+    <form action="#" method="POST" class="contact-form" aria-label="Formulaire de contact">
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required aria-required="true">
+        </div>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" placeholder="Votre email" required>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required aria-required="true">
+        </div>
 
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" placeholder="message" required></textarea>
+        <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="6" placeholder="Votre message" required aria-required="true"></textarea>
+        </div>
 
         <button type="submit">Envoyer</button>
     </form>
 </section>
 </main>
 
-<!-- Pied de page -->
+<!-- Footer -->
 <footer class="site-footer">
-  <div class="footer-container">
-    <!-- Colonne 1 : À propos -->
-    <div class="footer-column">
-      <h4>À Propos</h4>
+  <section class="footer-container">
+    <!-- Column 1: About -->
+    <article class="footer-column">
+      <h2>À Propos</h2>
       <p class="footer-description">
         Une exploration passionnante de la culture japonaise à travers ses figures emblématiques :
         l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
       </p>
-    </div>
+    </article>
 
-    <!-- Colonne 2 : Navigation rapide -->
-    <div class="footer-column">
-      <h4>Navigation</h4>
+    <!-- Column 2: Quick navigation -->
+    <nav class="footer-column" aria-label="Navigation du pied de page">
+      <h2>Navigation</h2>
       <ul class="footer-links">
         <li><a href="fansite2.html">Accueil</a></li>
         <li><a href="actualite.html">Actualités</a></li>
@@ -68,29 +74,29 @@
         <li><a href="media.html">Photos & Vidéos</a></li>
         <li><a href="contact-form.html">Contact</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <!-- Colonne 3 : Le Japon -->
-    <div class="footer-column">
-      <h4>Le Pays du Soleil Levant</h4>
+    <!-- Column 3: Japan -->
+    <aside class="footer-column" aria-label="Caractéristiques">
+      <h2>Le Pays du Soleil Levant</h2>
       <ul class="footer-links">
         <li><span class="footer-info"><span aria-hidden="true">🏯</span> Tradition millenaire</span></li>
         <li><span class="footer-info"><span aria-hidden="true">🍣</span> Gastronomie raffinee</span></li>
         <li><span class="footer-info"><span aria-hidden="true">🎌</span> Culture unique</span></li>
         <li><span class="footer-info"><span aria-hidden="true">🎨</span> Arts narratifs reconnus</span></li>
       </ul>
-    </div>
-  </div>
+    </aside>
+  </section>
 
-  <!-- Barre de copyright -->
-  <div class="footer-bottom">
+  <!-- Bottom footer -->
+  <section class="footer-bottom">
     <p class="footer-copyright">
       © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
     </p>
     <p class="footer-disclaimer">
       Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
     </p>
-  </div>
+  </section>
 </footer>
 
 </body>
