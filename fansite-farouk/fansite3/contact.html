@@ -5,56 +5,88 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact - Hideaki Anno</title>
   <meta name="description" content="Contactez-nous et découvrez les liens officiels vers les projets d'Hideaki Anno." />
-  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="fansite3.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
 
   <header class="site-header">
-    <nav class="site-nav">
-      <div class="site-branding">
-        <a href="../index.html" class="site-logo">日本</a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <section class="site-branding">
+        <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
         <p class="header-tagline">Une exploration de la culture japonaise</p>
-      </div>
-      <div class="site-nav-links">
-        <a href="fansite3.html" class="nav-link-item">Accueil</a>
-        <a href="actualites.html" class="nav-link-item">Actualités</a>
-        <a href="biographie.html" class="nav-link-item">Biographie</a>
-        <a href="contact.html" class="nav-link-item">Contact</a>
-      </div>
+      </section>
+      <ul class="site-nav-links" role="list">
+        <li><a href="fansite3.html" class="nav-link-item">Accueil</a></li>
+        <li><a href="actualites.html" class="nav-link-item">Actualités</a></li>
+        <li><a href="biographie.html" class="nav-link-item">Biographie</a></li>
+        <li><a href="contact.html" class="nav-link-item" aria-current="page">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <main id="main">
-      <!-- Hero contact -->
-      <section class="contact-hero">
-        <div class="contact-hero-content">
-          <h2>Contactez-nous</h2>
-          <p class="lead">Des questions sur ce site hommage ? Envoyez-nous un message</p>
-        </div>
+  <main id="main">
+    <!-- Hero contact -->
+    <header class="contact-hero">
+      <section class="contact-hero-content">
+        <h1>Contactez-nous</h1>
+        <p class="lead">Des questions sur ce site hommage ? Envoyez-nous un message</p>
       </section>
+    </header>
 
-      <!-- Formulaire de contact -->
-      <section class="card">
-        <h3 class="section-title">Formulaire de Contact</h3>
-        <p class="form-intro">Ce site est un hommage non officiel à Hideaki Anno. Pour toute question officielle concernant ses œuvres, veuillez contacter directement Studio Khara.</p>
-        
-        <div class="contact-form" id="contactForm">
+    <!-- Contact Formular -->
+    <section class="card" aria-labelledby="form-title">
+      <h2 class="section-title" id="form-title">Formulaire de Contact</h2>
+      <p class="form-intro">Ce site est un hommage non officiel à Hideaki Anno. Pour toute question officielle concernant ses œuvres, veuillez contacter directement Studio Khara.</p>
+      
+      <form class="contact-form" id="contactForm" method="post" action="#" novalidate>
+        <fieldset>
+          <legend class="visually-hidden">Informations de contact</legend>
+          
           <div class="form-group">
-            <label for="name">Nom complet</label>
-            <input type="text" id="name" name="name" required>
+            <label for="name">
+              Nom complet
+              <abbr title="requis" aria-label="champ requis">*</abbr>
+            </label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required 
+              aria-required="true"
+              autocomplete="name"
+              placeholder="Votre nom complet">
+            <span class="error-message" id="name-error" role="alert" aria-live="polite"></span>
           </div>
 
           <div class="form-group">
-            <label for="email">Adresse e-mail</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">
+              Adresse e-mail
+              <abbr title="requis" aria-label="champ requis">*</abbr>
+            </label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              aria-required="true"
+              autocomplete="email"
+              placeholder="votre.email@exemple.com"
+              aria-describedby="email-hint">
+            <span class="form-hint" id="email-hint">Nous ne partagerons jamais votre e-mail</span>
+            <span class="error-message" id="email-error" role="alert" aria-live="polite"></span>
           </div>
 
           <div class="form-group">
-            <label for="subject">Sujet</label>
-            <select id="subject" name="subject" required>
+            <label for="subject">
+              Sujet
+              <abbr title="requis" aria-label="champ requis">*</abbr>
+            </label>
+            <select 
+              id="subject" 
+              name="subject" 
+              required 
+              aria-required="true">
               <option value="">Sélectionnez un sujet</option>
               <option value="question">Question générale</option>
               <option value="suggestion">Suggestion pour le site</option>
@@ -62,228 +94,200 @@
               <option value="collaboration">Proposition de collaboration</option>
               <option value="other">Autre</option>
             </select>
+            <span class="error-message" id="subject-error" role="alert" aria-live="polite"></span>
           </div>
 
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <label for="message">
+              Message
+              <abbr title="requis" aria-label="champ requis">*</abbr>
+            </label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="6" 
+              required 
+              aria-required="true"
+              placeholder="Écrivez votre message ici..."
+              aria-describedby="message-hint"></textarea>
+            <span class="form-hint" id="message-hint">Minimum 10 caractères</span>
+            <span class="error-message" id="message-error" role="alert" aria-live="polite"></span>
           </div>
 
           <button type="submit" class="submit-btn" id="submitBtn">
             <span class="btn-text">Envoyer le message</span>
-            <span class="btn-icon">→</span>
+            <span class="btn-icon" aria-hidden="true">→</span>
           </button>
+        </fieldset>
 
-          <div class="form-message" id="formMessage" style="display: none;"></div>
-        </div>
-      </section>
+        <output class="form-message" id="formMessage" role="status" aria-live="polite" aria-atomic="true" hidden></output>
+      </form>
+    </section>
 
-      <!-- Liens officiels -->
-      <section class="card">
-        <h3 class="section-title">Liens Officiels</h3>
-        <p style="color: var(--muted); margin-bottom: 1.5rem;">Pour contacter officiellement Studio Khara ou découvrir les projets d'Hideaki Anno, visitez les sites suivants :</p>
-        
-        <div class="links-grid">
-          <a href="https://www.khara.co.jp/" target="_blank" rel="noopener" class="official-link">
-            <div class="link-icon">🏢</div>
-            <div class="link-content">
-              <h4>Studio Khara</h4>
-              <p>Site officiel du studio fondé par Hideaki Anno</p>
-            </div>
-            <div class="link-arrow">→</div>
-          </a>
+    <!-- Officials links -->
+    <section class="card" aria-labelledby="links-title">
+      <h2 class="section-title" id="links-title">Liens Officiels</h2>
+      <p style="color: var(--muted); margin-bottom: 1.5rem;">Pour contacter officiellement Studio Khara ou découvrir les projets d'Hideaki Anno, visitez les sites suivants :</p>
+      
+      <nav class="links-grid" aria-label="Liens externes officiels">
+        <a href="https://www.khara.co.jp/" target="_blank" rel="noopener noreferrer" class="official-link">
+          <span class="link-icon" aria-hidden="true">🏢</span>
+          <span class="link-content">
+            <strong>Studio Khara</strong>
+            <span class="link-description">Site officiel du studio fondé par Hideaki Anno</span>
+          </span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+          <span class="visually-hidden">(ouvre dans un nouvel onglet)</span>
+        </a>
 
-          <a href="https://www.evangelion.co.jp/" target="_blank" rel="noopener" class="official-link">
-            <img src="Neon_Genesis_Evangelion.svg.png" alt="Logo Evangelion" class="link-icon">
-            <div class="link-content">
-              <h4>Evangelion Official</h4>
-              <p>Site officiel de la franchise Evangelion</p>
-            </div>
-            <div class="link-arrow">→</div>
-          </a>
+        <a href="https://www.evangelion.co.jp/" target="_blank" rel="noopener noreferrer" class="official-link">
+          <img src="Neon_Genesis_Evangelion.svg.png" alt="" class="link-icon" aria-hidden="true">
+          <span class="link-content">
+            <strong>Evangelion Official</strong>
+            <span class="link-description">Site officiel de la franchise Evangelion</span>
+          </span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+          <span class="visually-hidden">(ouvre dans un nouvel onglet)</span>
+        </a>
 
-          <a href="https://twitter.com/khara_inc" target="_blank" rel="noopener" class="official-link">
-            <img src="twitter.png" alt="Logo Evangelion" class="link-icon">
-            <div class="link-content">
-              <h4>Twitter Studio Khara</h4>
-              <p>Actualités et annonces officielles</p>
-            </div>
-            <div class="link-arrow">→</div>
-          </a>
+        <a href="https://twitter.com/khara_inc" target="_blank" rel="noopener noreferrer" class="official-link">
+          <img src="twiter.png" alt="" class="link-icon" aria-hidden="true">
+          <span class="link-content">
+            <strong>Twitter Studio Khara</strong>
+            <span class="link-description">Actualités et annonces officielles</span>
+          </span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+          <span class="visually-hidden">(ouvre dans un nouvel onglet)</span>
+        </a>
 
-          <a href="https://www.youtube.com/@khara_inc" target="_blank" rel="noopener" class="official-link">
-            <div class="link-icon">📺</div>
-            <div class="link-content">
-              <h4>YouTube Khara</h4>
-              <p>Bandes-annonces et contenus vidéo officiels</p>
-            </div>
-            <div class="link-arrow">→</div>
-          </a>
-        </div>
-      </section>
+        <a href="https://www.youtube.com/@khara_inc" target="_blank" rel="noopener noreferrer" class="official-link">
+          <span class="link-icon" aria-hidden="true">📺</span>
+          <span class="link-content">
+            <strong>YouTube Khara</strong>
+            <span class="link-description">Bandes-annonces et contenus vidéo officiels</span>
+          </span>
+          <span class="link-arrow" aria-hidden="true">→</span>
+          <span class="visually-hidden">(ouvre dans un nouvel onglet)</span>
+        </a>
+      </nav>
+    </section>
 
-      <!-- FAQ -->
-      <section class="card">
-        <h3 class="section-title">Questions Fréquentes</h3>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Ce site est-il officiel ?</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Non, ce site est un hommage personnel et non officiel créé par un admirateur de l'œuvre d'Hideaki Anno. Pour toute information officielle, veuillez consulter les sites de Studio Khara et Evangelion mentionnés ci-dessus.</p>
-            </div>
-          </div>
+    <!-- FAQ -->
+    <<section class="card" aria-labelledby="faq-title">
+  <h2 class="section-title" id="faq-title">Questions Fréquentes</h2>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span>Ce site est-il officiel ?</span>
+      </summary>
+      <div class="faq-answer">
+        <p>Non, ce site est un hommage personnel et non officiel créé par un admirateur de l'œuvre d'Hideaki Anno. 
+          Pour toute information officielle, veuillez consulter les sites de Studio Khara et Evangelion mentionnés ci-dessus.</p>
+      </div>
+    </details>
 
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Comment puis-je contacter Hideaki Anno directement ?</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Pour des demandes professionnelles, vous devez passer par Studio Khara. Les coordonnées sont disponibles sur leur site officiel. Notez qu'Hideaki Anno ne répond généralement pas aux messages de fans individuels.</p>
-            </div>
-          </div>
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span>Comment puis-je contacter Hideaki Anno directement ?</span>
+      </summary>
+      <div class="faq-answer">
+        <p>Pour des demandes professionnelles, vous devez passer par Studio Khara. 
+          Les coordonnées sont disponibles sur leur site officiel. Notez qu'Hideaki Anno ne répond généralement pas aux messages de fans individuels.</p>
+      </div>
+    </details>
 
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Où puis-je regarder les œuvres d'Anno ?</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Neon Genesis Evangelion et les films Rebuild sont disponibles sur Netflix dans de nombreux pays. Les autres œuvres peuvent être trouvées sur diverses plateformes de streaming ou en édition physique. Vérifiez la disponibilité dans votre région.</p>
-            </div>
-          </div>
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span>Où puis-je regarder les œuvres d'Anno ?</span>
+      </summary>
+      <div class="faq-answer">
+        <p>Neon Genesis Evangelion et les films Rebuild sont disponibles sur Netflix dans de nombreux pays. 
+          Les autres œuvres peuvent être trouvées sur diverses plateformes de streaming ou en édition physique. 
+          Vérifiez la disponibilité dans votre région.</p>
+      </div>
+    </details>
 
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Puis-je utiliser les images de ce site ?</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Toutes les images appartiennent à leurs propriétaires respectifs (Studio Khara, Gainax, etc.). Ce site les utilise dans un cadre éducatif et d'hommage. Pour toute utilisation commerciale, contactez directement les ayants droit.</p>
-            </div>
-          </div>
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span>Puis-je utiliser les images de ce site ?</span>
+      </summary>
+      <div class="faq-answer">
+        <p> 
+          Toutes les images appartiennent à leurs propriétaires respectifs (Studio Khara, Gainax, etc.). 
+          Ce site les utilise dans un cadre éducatif et d'hommage. 
+          Pour toute utilisation commerciale, contactez directement les ayants droit.
+        </p>
+      </div>
+    </details>
 
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Y a-t-il une communauté de fans d'Anno ?</span>
-              <span class="faq-toggle">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Oui ! Il existe de nombreuses communautés en ligne dédiées à Evangelion et aux œuvres d'Anno sur Reddit, Discord, et divers forums spécialisés en animation japonaise. Recherchez "Evangelion community" ou "Anno fans" pour les trouver.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- A propos -->
-      <section class="card about-section">
-        <h3 class="section-title">À Propos de Ce Site</h3>
-        <p>Ce site web est un projet personnel créé avec passion pour rendre hommage à Hideaki Anno, l'un des créateurs les plus influents de l'animation japonaise. Il a été développé en utilisant HTML et CSS modernes, avec un design responsive qui s'adapte à tous les appareils.</p>
-        <p style="margin-top: 1rem;">L'objectif de ce site est de partager l'histoire, les œuvres et l'impact d'Anno avec les fans existants et de faire découvrir son travail à de nouveaux admirateurs. Toutes les informations sont compilées à partir de sources publiques et de documentation officielle.</p>
-        <p style="margin-top: 1rem; font-style: italic; color: var(--muted);">Ce site n'est pas affilié à Studio Khara, Gainax ou Hideaki Anno. C'est un hommage de fan à fan.</p>
-      </section>
-    </main>
-
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span>Y a-t-il une communauté de fans d'Anno ?</span>
+      </summary>
+      <div class="faq-answer">
+        <p>Oui ! Il existe de nombreuses communautés en ligne dédiées à Evangelion et aux œuvres d'Anno sur Reddit, 
+          Discord, et divers forums spécialisés en animation japonaise. Recherchez "Evangelion community" ou "Anno fans" pour les trouver.</p>
+      </div>
+    </details>
   </div>
+</section>
 
-  <!-- Pied de page -->
+    <!-- About -->
+    <aside class="card about-section" aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title">À Propos de Ce Site</h2>
+      <p>Ce site web est un projet personnel créé avec passion pour rendre hommage à Hideaki Anno, l'un des créateurs les plus influents de l'animation japonaise. Il a été développé en utilisant <abbr title="HyperText Markup Language">HTML</abbr> et <abbr title="Cascading Style Sheets">CSS</abbr> modernes, avec un design responsive qui s'adapte à tous les appareils.</p>
+      <p style="margin-top: 1rem;">L'objectif de ce site est de partager l'histoire, les œuvres et l'impact d'Anno avec les fans existants et de faire découvrir son travail à de nouveaux admirateurs. Toutes les informations sont compilées à partir de sources publiques et de documentation officielle.</p>
+      <p style="margin-top: 1rem; font-style: italic; color: var(--muted);">
+        <strong>Avertissement :</strong> Ce site n'est pas affilié à Studio Khara, Gainax ou Hideaki Anno. C'est un hommage de fan à fan.
+      </p>
+    </aside>
+  </main>
+
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-container">
-      <!-- Colonne 1 : À propos -->
-      <div class="footer-column">
-        <h4>À Propos</h4>
+    <section class="footer-container">
+      <!-- Column 1 : about -->
+      <section class="footer-column">
+        <h2>À Propos</h2>
         <p class="footer-description">
           Une exploration passionnante de la culture japonaise à travers ses figures emblématiques : 
           l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
         </p>
-      </div>
+      </section>
 
-      <!-- Colonne 2 : Navigation rapide -->
-      <div class="footer-column">
-        <h4>Navigation</h4>
-        <ul class="footer-links">
+      <!-- Column 2 : Quick Navigation -->
+      <nav class="footer-column" aria-label="Navigation secondaire">
+        <h2>Navigation</h2>
+        <ul class="footer-links" role="list">
           <li><a href="fansite3.html">Accueil</a></li>
           <li><a href="actualites.html">Actualités</a></li>
           <li><a href="biographie.html">Biographie</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <!-- Colonne 3 : Le Japon -->
-      <div class="footer-column">
-        <h4>Le Pays du Soleil Levant</h4>
-        <ul class="footer-links">
-          <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-          <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-          <li><span class="footer-info">🎌 Culture unique</span></li>
-          <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+      <!-- Column 3 : Japan -->
+      <aside class="footer-column">
+        <h2>Le Pays du Soleil Levant</h2>
+        <ul class="footer-links" role="list">
+          <li><span class="footer-info"><span aria-hidden="true">🏯</span> Tradition millénaire</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🍣</span> Gastronomie raffinée</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🎌</span> Culture unique</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🎨</span> Arts narratifs reconnus</span></li>
         </ul>
-      </div>
-    </div>
+      </aside>
+    </section>
 
-    <!-- Barre de copyright -->
-    <div class="footer-bottom">
+    <!-- copyright -->
+    <section class="footer-bottom">
       <p class="footer-copyright">
-        © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+        <small>© <time datetime="2025">2025</time> Le Pays du Soleil Levant – Une exploration de la culture japonaise</small>
       </p>
       <p class="footer-disclaimer">
-        Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+        <small>Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.</small>
       </p>
-    </div>
+    </section>
   </footer>
 
-  <script>
-    // Gestion du formulaire (simulation)
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      const submitBtn = document.getElementById('submitBtn');
-      const formMessage = document.getElementById('formMessage');
-      
-      // Désactiver le bouton et afficher le chargement
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<span class="btn-text">Envoi en cours...</span>';
-      
-      // Simuler l'envoi (dans un vrai site, vous utiliseriez une API)
-      setTimeout(() => {
-        formMessage.style.display = 'block';
-        formMessage.className = 'form-message success';
-        formMessage.textContent = '✓ Message envoyé avec succès ! Nous vous répondrons bientôt.';
-        
-        // Réinitialiser le formulaire
-        document.getElementById('contactForm').reset();
-        
-        // Réactiver le bouton
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = '<span class="btn-text">Envoyer le message</span><span class="btn-icon">→</span>';
-        
-        // Cacher le message après 5 secondes
-        setTimeout(() => {
-          formMessage.style.display = 'none';
-        }, 5000);
-      }, 1500);
-    });
-
-    // Toggle FAQ
-    function toggleFaq(button) {
-      const faqItem = button.parentElement;
-      const isActive = faqItem.classList.contains('active');
-      
-      // Fermer toutes les autres FAQ
-      document.querySelectorAll('.faq-item').forEach(item => {
-        item.classList.remove('active');
-        item.querySelector('.faq-toggle').textContent = '+';
-      });
-      
-      // Ouvrir/fermer celle-ci
-      if (!isActive) {
-        faqItem.classList.add('active');
-        button.querySelector('.faq-toggle').textContent = '−';
-      }
-    }
-  </script>
 </body>
 </html>

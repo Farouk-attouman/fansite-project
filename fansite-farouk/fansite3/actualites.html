@@ -5,222 +5,238 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Actualités - Hideaki Anno</title>
   <meta name="description" content="Dernières actualités et projets d'Hideaki Anno et Studio Khara." />
-  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="fansite3.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
 
   <header class="site-header">
-    <nav class="site-nav">
-      <div class="site-branding">
-        <a href="../index.html" class="site-logo">日本</a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <section class="site-branding">
+        <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
         <p class="header-tagline">Une exploration de la culture japonaise</p>
-      </div>
-      <div class="site-nav-links">
-        <a href="fansite3.html" class="nav-link-item">Accueil</a>
-        <a href="actualites.html" class="nav-link-item">Actualités</a>
-        <a href="biographie.html" class="nav-link-item">Biographie</a>
-        <a href="contact.html" class="nav-link-item">Contact</a>
-      </div>
+      </section>
+      <ul class="site-nav-links" role="list">
+        <li><a href="fansite3.html" class="nav-link-item">Accueil</a></li>
+        <li><a href="actualites.html" class="nav-link-item" aria-current="page">Actualités</a></li>
+        <li><a href="biographie.html" class="nav-link-item">Biographie</a></li>
+        <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <main id="main">
-      <!-- Hero actualités -->
-      <section class="news-hero">
-        <div class="news-hero-content">
-          <h2>Actualités & Projets</h2>
-          <p class="lead">Suivez les derniers projets et annonces d'Hideaki Anno et Studio Khara</p>
-        </div>
+  <main id="main">
+    <!-- Hero news -->
+    <header class="news-hero">
+      <section class="news-hero-content">
+        <h1>Actualités & Projets</h1>
+        <p class="lead">Suivez les derniers projets et annonces d'Hideaki Anno et Studio Khara</p>
       </section>
+    </header>
 
-      <!-- Articles récents -->
-      <section class="card">
-        <h3 class="section-title">Dernières Nouvelles</h3>
-        <div class="news-grid">
-          <article class="news-card featured">
-            <div class="news-badge">À LA UNE</div>
-            <div class="news-date">15 novembre 2025</div>
-            <h4>Nouveau projet mystérieux en développement chez Studio Khara</h4>
+    <!-- Recent articles -->
+    <section class="card" aria-labelledby="news-title">
+      <h2 class="section-title" id="news-title">Dernières Nouvelles</h2>
+      <ul class="news-grid" role="list">
+        <li>
+          <article class="news-card featured" aria-labelledby="news-1-title">
+            <span class="news-badge">À LA UNE</span>
+            <time datetime="2025-11-15" class="news-date">15 novembre 2025</time>
+            <h3 id="news-1-title">Nouveau projet mystérieux en développement chez Studio Khara</h3>
             <p>Studio Khara a teasé un nouveau projet d'animation original dirigé par Hideaki Anno. Peu de détails ont été révélés, mais l'équipe promet "quelque chose qui n'a jamais été vu auparavant". Les fans spéculent sur un retour au genre mecha ou une exploration totalement nouvelle.</p>
-            <div class="news-tags">
-              <span class="tag">Studio Khara</span>
-              <span class="tag">Projet Original</span>
-            </div>
+            <ul class="news-tags" role="list" aria-label="Catégories">
+              <li><span class="tag">Studio Khara</span></li>
+              <li><span class="tag">Projet Original</span></li>
+            </ul>
           </article>
+        </li>
 
-          <article class="news-card">
-            <div class="news-date">3 novembre 2025</div>
-            <h4>Shin Ultraman : Succès continu en streaming</h4>
-            <p>Shin Ultraman continue de battre des records sur les plateformes de streaming internationales, deux ans après sa sortie. La réinvention d'Anno de la franchise emblématique séduit une nouvelle génération de fans à travers le monde.</p>
-            <div class="news-tags">
-              <span class="tag">Shin Ultraman</span>
-              <span class="tag">Streaming</span>
-            </div>
+        <li>
+          <article class="news-card" aria-labelledby="news-2-title">
+            <time datetime="2025-11-03" class="news-date">3 novembre 2025</time>
+            <h3 id="news-2-title">Shin Ultraman : Succès continu en streaming</h3>
+            <p><cite>Shin Ultraman</cite> continue de battre des records sur les plateformes de streaming internationales, deux ans après sa sortie. La réinvention d'Anno de la franchise emblématique séduit une nouvelle génération de fans à travers le monde.</p>
+            <ul class="news-tags" role="list" aria-label="Catégories">
+              <li><span class="tag">Shin Ultraman</span></li>
+              <li><span class="tag">Streaming</span></li>
+            </ul>
           </article>
+        </li>
 
-          <article class="news-card">
-            <div class="news-date">28 octobre 2025</div>
-            <h4>Exposition Evangelion prolongée à Tokyo</h4>
-            <p>L'exposition "Eva Extra" au musée national de Tokyo a été prolongée jusqu'en mars 2026 en raison de son immense succès. L'exposition présente des cellulos originaux, des storyboards annotés par Anno et des documents de production rares.</p>
-            <div class="news-tags">
-              <span class="tag">Evangelion</span>
-              <span class="tag">Exposition</span>
-            </div>
+        <li>
+          <article class="news-card" aria-labelledby="news-3-title">
+            <time datetime="2025-10-28" class="news-date">28 octobre 2025</time>
+            <h3 id="news-3-title">Exposition Evangelion prolongée à Tokyo</h3>
+            <p>L'exposition "Eva Extra" au musée national de Tokyo a été prolongée jusqu'en <time datetime="2026-03">mars 2026</time> en raison de son immense succès. L'exposition présente des cellulos originaux, des storyboards annotés par Anno et des documents de production rares.</p>
+            <ul class="news-tags" role="list" aria-label="Catégories">
+              <li><span class="tag">Evangelion</span></li>
+              <li><span class="tag">Exposition</span></li>
+            </ul>
           </article>
+        </li>
 
-          <article class="news-card">
-            <div class="news-date">20 octobre 2025</div>
-            <h4>Interview exclusive : Anno parle de son processus créatif</h4>
-            <p>Dans une interview rare accordée à Newtype magazine, Hideaki Anno discute de son approche de la réalisation, de ses influences et de comment il a surmonté ses démons personnels à travers son art. Un témoignage poignant et inspirant.</p>
-            <div class="news-tags">
-              <span class="tag">Interview</span>
-              <span class="tag">Newtype</span>
-            </div>
+        <li>
+          <article class="news-card" aria-labelledby="news-4-title">
+            <time datetime="2025-10-20" class="news-date">20 octobre 2025</time>
+            <h3 id="news-4-title">Interview exclusive : Anno parle de son processus créatif</h3>
+            <p>Dans une interview rare accordée à <cite>Newtype magazine</cite>, Hideaki Anno discute de son approche de la réalisation, de ses influences et de comment il a surmonté ses démons personnels à travers son art. Un témoignage poignant et inspirant.</p>
+            <ul class="news-tags" role="list" aria-label="Catégories">
+              <li><span class="tag">Interview</span></li>
+              <li><span class="tag">Newtype</span></li>
+            </ul>
           </article>
+        </li>
 
-          <article class="news-card">
-            <div class="news-date">10 octobre 2025</div>
-            <h4>Restauration 4K d'Evangelion en préparation</h4>
-            <p>Studio Khara a annoncé travailler sur une restauration 4K complète de la série originale Neon Genesis Evangelion. Le projet, supervisé personnellement par Anno, vise à préserver l'œuvre pour les générations futures tout en respectant la vision artistique originale.</p>
-            <div class="news-tags">
-              <span class="tag">Evangelion</span>
-              <span class="tag">Restauration 4K</span>
-            </div>
+        <li>
+          <article class="news-card" aria-labelledby="news-5-title">
+            <time datetime="2025-10-10" class="news-date">10 octobre 2025</time>
+            <h3 id="news-5-title">Restauration 4K d'Evangelion en préparation</h3>
+            <p>Studio Khara a annoncé travailler sur une restauration 4K complète de la série originale <cite>Neon Genesis Evangelion</cite>. Le projet, supervisé personnellement par Anno, vise à préserver l'œuvre pour les générations futures tout en respectant la vision artistique originale.</p>
+            <ul class="news-tags" role="list" aria-label="Catégories">
+              <li><span class="tag">Evangelion</span></li>
+              <li><span class="tag">Restauration 4K</span></li>
+            </ul>
           </article>
+        </li>
 
-          <article class="news-card">
-            <div class="news-date">1 octobre 2025</div>
-            <h4>Collaboration surprise avec Studio Ghibli ?</h4>
+        <li>
+          <article class="news-card" aria-labelledby="news-6-title">
+            <time datetime="2025-10-01" class="news-date">1<sup>er</sup> octobre 2025</time>
+            <h3 id="news-6-title">Collaboration surprise avec Studio Ghibli ?</h3>
             <p>Des rumeurs circulent sur une possible collaboration entre Hideaki Anno et Studio Ghibli pour un projet futur. Bien que rien n'ait été confirmé officiellement, les deux studios ont une longue histoire de collaboration et de respect mutuel.</p>
-            <div class="news-tags">
-              <span class="tag">Rumeur</span>
-              <span class="tag">Ghibli</span>
-            </div>
+            <ul class="news-tags" role="list" aria-label="Catégories">
+              <li><span class="tag">Rumeur</span></li>
+              <li><span class="tag">Ghibli</span></li>
+            </ul>
           </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects in development -->
+    <section class="card" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Projets en Développement</h2>
+      <ul class="projects-list" role="list">
+        <li class="project-item">
+          <header class="project-header">
+            <h3>Shin Japan Heroes Universe</h3>
+            <span class="status-badge ongoing" role="status">En cours</span>
+          </header>
+          <p>Suite de la série "Shin" incluant potentiellement de nouvelles réinventions de franchises tokusatsu classiques. Anno continue d'explorer et de réinventer les héros qui l'ont inspiré durant son enfance.</p>
+        </li>
+
+        <li class="project-item">
+          <header class="project-header">
+            <h3>Nouveau projet d'animation original</h3>
+            <span class="status-badge development" role="status">Développement</span>
+          </header>
+          <p>Un mystérieux nouveau projet entièrement original est en développement chez Studio Khara. Les détails sont gardés secrets, mais l'équipe promet quelque chose qui repoussera les limites de l'animation.</p>
+        </li>
+
+        <li class="project-item">
+          <header class="project-header">
+            <h3>Mentoring de nouveaux créateurs</h3>
+            <span class="status-badge ongoing" role="status">En cours</span>
+          </header>
+          <p>Anno consacre du temps à former et guider la nouvelle génération d'animateurs et réalisateurs japonais, partageant son expérience et sa passion pour le médium.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Archives -->
+    <section class="card" aria-labelledby="archives-title">
+      <h2 class="section-title" id="archives-title">Archives 2023-2024</h2>
+      <dl class="archive-list">
+        <div class="archive-item">
+          <dt><time datetime="2024-03" class="archive-date">Mars 2024</time></dt>
+          <dd>Sortie internationale étendue de <cite>Shin Kamen Rider</cite></dd>
         </div>
-      </section>
-
-      <!-- Projets en cours -->
-      <section class="card">
-        <h3 class="section-title">Projets en Développement</h3>
-        <div class="projects-list">
-          <div class="project-item">
-            <div class="project-header">
-              <h4>Shin Japan Heroes Universe</h4>
-              <div class="status-badge ongoing">En cours</div>
-            </div>
-            <p>Suite de la série "Shin" incluant potentiellement de nouvelles réinventions de franchises tokusatsu classiques. Anno continue d'explorer et de réinventer les héros qui l'ont inspiré durant son enfance.</p>
-          </div>
-
-          <div class="project-item">
-            <div class="project-header">
-              <h4>Nouveau projet d'animation original</h4>
-              <span class="status-badge development">Développement</span>
-            </div>
-            <p>Un mystérieux nouveau projet entièrement original est en développement chez Studio Khara. Les détails sont gardés secrets, mais l'équipe promet quelque chose qui repoussera les limites de l'animation.</p>
-          </div>
-
-          <div class="project-item">
-            <div class="project-header">
-              <h4>Mentoring de nouveaux créateurs</h4>
-              <span class="status-badge ongoing">En cours</span>
-            </div>
-            <p>Anno consacre du temps à former et guider la nouvelle génération d'animateurs et réalisateurs japonais, partageant son expérience et sa passion pour le médium.</p>
-          </div>
+        <div class="archive-item">
+          <dt><time datetime="2023-12" class="archive-date">Décembre 2023</time></dt>
+          <dd>Prix d'honneur pour l'ensemble de sa carrière au Tokyo Anime Award Festival</dd>
         </div>
-      </section>
-
-      <!-- Archives -->
-      <section class="card">
-        <h3 class="section-title">Archives 2023-2024</h3>
-        <div class="archive-list">
-          <div class="archive-item">
-            <span class="archive-date">Mars 2024</span>
-            <p>Sortie internationale étendue de Shin Kamen Rider</p>
-          </div>
-          <div class="archive-item">
-            <span class="archive-date">Décembre 2023</span>
-            <p>Prix d'honneur pour l'ensemble de sa carrière au Tokyo Anime Award Festival</p>
-          </div>
-          <div class="archive-item">
-            <span class="archive-date">Octobre 2023</span>
-            <p>Annonce du développement d'une nouvelle série "Shin"</p>
-          </div>
-          <div class="archive-item">
-            <span class="archive-date">Juillet 2023</span>
-            <p>Shin Kamen Rider bat des records au box-office japonais</p>
-          </div>
-          <div class="archive-item">
-            <span class="archive-date">Avril 2023</span>
-            <p>Conférence spéciale sur l'avenir de l'animation japonaise</p>
-          </div>
-          <div class="archive-item">
-            <span class="archive-date">Janvier 2023</span>
-            <p>Sortie de Shin Kamen Rider au Japon</p>
-          </div>
+        <div class="archive-item">
+          <dt><time datetime="2023-10" class="archive-date">Octobre 2023</time></dt>
+          <dd>Annonce du développement d'une nouvelle série "Shin"</dd>
         </div>
-      </section>
-
-      <!-- Newsletter -->
-      <section class="card newsletter-section">
-        <h3 class="section-title">Restez Informé</h3>
-        <p>Cette section présente les actualités fictives pour ce site hommage. Pour les vraies actualités sur Hideaki Anno et ses projets, consultez les sites officiels de Studio Khara et les médias spécialisés en animation japonaise.</p>
-        <div class="info-links">
-          <a href="https://www.khara.co.jp/" target="_blank" rel="noopener" class="info-link">Site officiel Studio Khara</a>
-          <a href="https://www.evangelion.co.jp/" target="_blank" rel="noopener" class="info-link">Site officiel Evangelion</a>
+        <div class="archive-item">
+          <dt><time datetime="2023-07" class="archive-date">Juillet 2023</time></dt>
+          <dd><cite>Shin Kamen Rider</cite> bat des records au box-office japonais</dd>
         </div>
-      </section>
-    </main>
+        <div class="archive-item">
+          <dt><time datetime="2023-04" class="archive-date">Avril 2023</time></dt>
+          <dd>Conférence spéciale sur l'avenir de l'animation japonaise</dd>
+        </div>
+        <div class="archive-item">
+          <dt><time datetime="2023-01" class="archive-date">Janvier 2023</time></dt>
+          <dd>Sortie de <cite>Shin Kamen Rider</cite> au Japon</dd>
+        </div>
+      </dl>
+    </section>
 
-  </div>
+    <!-- Newsletter -->
+    <aside class="card newsletter-section" aria-labelledby="newsletter-title">
+      <h2 class="section-title" id="newsletter-title">Restez Informé</h2>
+      <p>Cette section présente les actualités fictives pour ce site hommage. Pour les vraies actualités sur Hideaki Anno et ses projets, consultez les sites officiels de Studio Khara et les médias spécialisés en animation japonaise.</p>
+      <nav class="info-links" aria-label="Liens officiels">
+        <a href="https://www.khara.co.jp/" target="_blank" rel="noopener noreferrer" class="info-link">
+          Site officiel Studio Khara
+          <span class="visually-hidden">(ouvre dans un nouvel onglet)</span>
+        </a>
+        <a href="https://www.evangelion.co.jp/" target="_blank" rel="noopener noreferrer" class="info-link">
+          Site officiel Evangelion
+          <span class="visually-hidden">(ouvre dans un nouvel onglet)</span>
+        </a>
+      </nav>
+    </aside>
+  </main>
 
-  <!-- Pied de page -->
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-container">
-      <!-- Colonne 1 : À propos -->
-      <div class="footer-column">
-        <h4>À Propos</h4>
+    <section class="footer-container">
+      <!-- Column 1: About -->
+      <section class="footer-column">
+        <h2>À Propos</h2>
         <p class="footer-description">
           Une exploration passionnante de la culture japonaise à travers ses figures emblématiques : 
           l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
         </p>
-      </div>
+      </section>
 
-      <!-- Colonne 2 : Navigation rapide -->
-      <div class="footer-column">
-        <h4>Navigation</h4>
-        <ul class="footer-links">
+      <!-- Column 2: Quick navigation -->
+      <nav class="footer-column" aria-label="Navigation secondaire">
+        <h2>Navigation</h2>
+        <ul class="footer-links" role="list">
           <li><a href="fansite3.html">Accueil</a></li>
           <li><a href="actualites.html">Actualités</a></li>
           <li><a href="biographie.html">Biographie</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <!-- Colonne 3 : Le Japon -->
-      <div class="footer-column">
-        <h4>Le Pays du Soleil Levant</h4>
-        <ul class="footer-links">
-          <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-          <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-          <li><span class="footer-info">🎌 Culture unique</span></li>
-          <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+      <!-- Column 3: Japan -->
+      <aside class="footer-column">
+        <h2>Le Pays du Soleil Levant</h2>
+        <ul class="footer-links" role="list">
+          <li><span class="footer-info"><span aria-hidden="true">🏯</span> Tradition millénaire</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🍣</span> Gastronomie raffinée</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🎌</span> Culture unique</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🎨</span> Arts narratifs reconnus</span></li>
         </ul>
-      </div>
-    </div>
+      </aside>
+    </section>
 
-    <!-- Barre de copyright -->
-    <div class="footer-bottom">
+    <!-- Copyright bar -->
+    <section class="footer-bottom">
       <p class="footer-copyright">
-        © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+        <small>© <time datetime="2025">2025</time> Le Pays du Soleil Levant – Une exploration de la culture japonaise</small>
       </p>
       <p class="footer-disclaimer">
-        Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+        <small>Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.</small>
       </p>
-    </div>
+    </section>
   </footer>
+
+  
 </body>
 </html>

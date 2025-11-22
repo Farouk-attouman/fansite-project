@@ -5,197 +5,224 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hideaki Anno — Créateur d'Evangelion</title>
   <meta name="description" content="Découvrez Hideaki Anno, le visionnaire derrière Neon Genesis Evangelion." />
-  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="fansite3.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
 
   <header class="site-header">
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Navigation principale">
 
-      <div class="site-branding">
-        <a href="../index.html" class="site-logo">日本</a>
+      <section class="site-branding">
+        <a href="../index.html" class="site-logo" aria-label="Accueil - Le Pays du Soleil Levant">日本</a>
         <p class="header-tagline">Une exploration de la culture japonaise</p>
-      </div>
+      </section>
 
-      <div class="site-nav-links">
-        <a href="fansite3.html" class="nav-link-item">Accueil</a>
-        <a href="actualites.html" class="nav-link-item">Actualités</a>
-        <a href="biographie.html" class="nav-link-item">Biographie</a>
-        <a href="contact.html" class="nav-link-item">Contact</a>
-      </div>
+      <ul class="site-nav-links" role="list">
+        <li><a href="fansite3.html" class="nav-link-item" aria-current="page">Accueil</a></li>
+        <li><a href="actualites.html" class="nav-link-item">Actualités</a></li>
+        <li><a href="biographie.html" class="nav-link-item">Biographie</a></li>
+        <li><a href="contact.html" class="nav-link-item">Contact</a></li>
+      </ul>
 
     </nav>
   </header>
 
-  <div class="container">
-    <div class="hero-header">
+  <main id="main">
+    <header class="hero-header">
       <img src="Neon_Genesis_Evangelion.svg.png" alt="Logo Evangelion" class="hero-logo">
       <h1>Hideaki <span class="brand-accent">Anno</span></h1>
       <p class="tagline">Réalisateur • Visionnaire • Créateur d'Evangelion</p>
-    </div>
+    </header>
 
-    <main id="main">
-      <!-- Carrousel CSS pur -->
-      <div class="carousel-container">
-        <input type="radio" name="carousel" id="slide1" checked>
-        <input type="radio" name="carousel" id="slide2">
-        <input type="radio" name="carousel" id="slide3">
-        <input type="radio" name="carousel" id="slide4">
+    <!-- Carrousel CSS pur -->
+    <section class="carousel-container" aria-label="Galerie d'images Evangelion" aria-roledescription="carousel">
+      <input type="radio" name="carousel" id="slide1" checked aria-label="Afficher la diapositive 1">
+      <input type="radio" name="carousel" id="slide2" aria-label="Afficher la diapositive 2">
+      <input type="radio" name="carousel" id="slide3" aria-label="Afficher la diapositive 3">
+      <input type="radio" name="carousel" id="slide4" aria-label="Afficher la diapositive 4">
 
-        <div class="carousel">
-          <div class="carousel-slide">
-            <img src="Neon_Genesis_Evangelion.svg.png" alt="Evangelion Logo">
-            <div class="carousel-caption">
-              <h3>Neon Genesis Evangelion</h3>
-              <p>L'œuvre qui a révolutionné l'animation japonaise</p>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img src="shinji.png" alt="Shinji Ikari">
-            <div class="carousel-caption">
-              <h3>Shinji Ikari</h3>
-              <p>Le pilote introverti de l'EVA-01</p>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img src="rei.png" alt="Rei Ayanami">
-            <div class="carousel-caption">
-              <h3>Rei Ayanami</h3>
-              <p>Mystérieuse pilote de l'EVA-00</p>
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <img src="asuka2.png" alt="Asuka Langley">
-            <div class="carousel-caption">
-              <h3>Asuka Langley Soryu</h3>
-              <p>Fière pilote de l'EVA-02</p>
-            </div>
-          </div>
-        </div>
+      <figure class="carousel" aria-live="polite">
+        <figure class="carousel-slide">
+          <img src="Neon_Genesis_Evangelion.svg.png" alt="Logo emblématique de la série Neon Genesis Evangelion">
+          <figcaption class="carousel-caption">
+            <h2>Neon Genesis Evangelion</h2>
+            <p>L'œuvre qui a révolutionné l'animation japonaise</p>
+          </figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <img src="shinji.png" alt="Shinji Ikari, protagoniste principal d'Evangelion">
+          <figcaption class="carousel-caption">
+            <h2>Shinji Ikari</h2>
+            <p>Le pilote introverti de l'EVA-01</p>
+          </figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <img src="rei.png" alt="Rei Ayanami, pilote mystérieuse de l'EVA-00">
+          <figcaption class="carousel-caption">
+            <h2>Rei Ayanami</h2>
+            <p>Mystérieuse pilote de l'EVA-00</p>
+          </figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <img src="asuka2.png" alt="Asuka Langley Soryu, pilote fière de l'EVA-02">
+          <figcaption class="carousel-caption">
+            <h2>Asuka Langley Soryu</h2>
+            <p>Fière pilote de l'EVA-02</p>
+          </figcaption>
+        </figure>
+      </figure>
 
-        <div class="carousel-indicators">
-          <label for="slide1" class="indicator"></label>
-          <label for="slide2" class="indicator"></label>
-          <label for="slide3" class="indicator"></label>
-          <label for="slide4" class="indicator"></label>
-        </div>
-      </div>
+      <nav class="carousel-indicators" aria-label="Navigation du carrousel">
+        <label for="slide1" class="indicator" aria-label="Aller à la diapositive 1">
+          <span class="visually-hidden">Diapositive 1</span>
+        </label>
+        <label for="slide2" class="indicator" aria-label="Aller à la diapositive 2">
+          <span class="visually-hidden">Diapositive 2</span>
+        </label>
+        <label for="slide3" class="indicator" aria-label="Aller à la diapositive 3">
+          <span class="visually-hidden">Diapositive 3</span>
+        </label>
+        <label for="slide4" class="indicator" aria-label="Aller à la diapositive 4">
+          <span class="visually-hidden">Diapositive 4</span>
+        </label>
+      </nav>
+    </section>
 
-      <!-- Hero Anno -->
-      <section class="hero-anno">
-        <img src="Neon_Genesis_Evangelion.svg.png" alt="Portrait Hideaki Anno" class="anno-portrait">
-        <div class="anno-info">
-          <h2>Hideaki Anno</h2>
-          <p class="subtitle">Né le 22 mai 1960 à Ube, Yamaguchi, Japon</p>
-          <p>Hideaki Anno est un réalisateur, animateur et scénariste japonais reconnu comme l'une des figures les plus influentes de l'animation japonaise. Cofondateur du studio Gainax en 1984, il est surtout célèbre pour avoir créé <strong>Neon Genesis Evangelion</strong>, une série qui a redéfini le genre mecha et exploré des thèmes psychologiques profonds.</p>
-          <p>Son approche unique mêle action spectaculaire, introspection psychologique et symbolisme religieux. Anno a ouvertement parlé de ses propres luttes contre la dépression, qu'il a canalisées dans son œuvre, créant des personnages complexes et authentiques.</p>
-          <div class="meta">
-            <span class="meta-pill">🎬 Réalisateur</span>
-            <span class="meta-pill">✏️ Scénariste</span>
-            <span class="meta-pill">🎨 Animateur</span>
-            <span class="meta-pill">🏢 Fondateur Gainax & Studio Khara</span>
-          </div>
-        </div>
+    <!-- Hero Anno -->
+    <article class="hero-anno">
+      <img src="Neon_Genesis_Evangelion.svg.png" alt="Portrait de Hideaki Anno, créateur d'Evangelion" class="anno-portrait">
+      <section class="anno-info">
+        <h2>Hideaki Anno</h2>
+        <p class="subtitle">Né le <time datetime="1960-05-22">22 mai 1960</time> à Ube, Yamaguchi, Japon</p>
+        <p>Hideaki Anno est un réalisateur, animateur et scénariste japonais reconnu comme l'une des figures les plus influentes de l'animation japonaise. Cofondateur du studio Gainax en <time datetime="1984">1984</time>, il est surtout célèbre pour avoir créé <strong>Neon Genesis Evangelion</strong>, une série qui a redéfini le genre mecha et exploré des thèmes psychologiques profonds.</p>
+        <p>Son approche unique mêle action spectaculaire, introspection psychologique et symbolisme religieux. Anno a ouvertement parlé de ses propres luttes contre la dépression, qu'il a canalisées dans son œuvre, créant des personnages complexes et authentiques.</p>
+        <ul class="meta" role="list" aria-label="Rôles et réalisations">
+          <li class="meta-pill"><span aria-hidden="true">🎬</span> Réalisateur</li>
+          <li class="meta-pill"><span aria-hidden="true">✏️</span> Scénariste</li>
+          <li class="meta-pill"><span aria-hidden="true">🎨</span> Animateur</li>
+          <li class="meta-pill"><span aria-hidden="true">🏢</span> Fondateur Gainax & Studio Khara</li>
+        </ul>
       </section>
+    </article>
 
-      <!-- Evangelion -->
-      <section class="card">
-        <h3 class="section-title">Neon Genesis Evangelion</h3>
-        <p>Diffusée entre 1995 et 1996, <strong>Neon Genesis Evangelion</strong> raconte l'histoire de Shinji Ikari, un adolescent recruté par l'organisation NERV pour piloter un Evangelion — un robot géant — afin de combattre des entités mystérieuses appelées Anges.</p>
-        <p>La série commence comme un anime mecha classique mais évolue vers une exploration psychologique intense des traumatismes, de l'isolement et de la quête d'identité. Anno y a insufflé ses propres démons intérieurs, créant une œuvre viscérale et profondément personnelle.</p>
-        <p><strong>Impact culturel :</strong> Evangelion a influencé d'innombrables créateurs, redéfini les attentes du public envers l'animation et reste une référence incontournable dans la culture pop japonaise et mondiale.</p>
-        <div class="meta">
-          <span class="meta-pill">📺 26 épisodes (1995-1996)</span>
-          <span class="meta-pill">🎬 Films & Rebuild (1997-2021)</span>
-          <span class="meta-pill">🏆 Prix & reconnaissance mondiale</span>
-        </div>
-      </section>
+    <!-- Evangelion -->
+    <article class="card">
+      <h2 class="section-title">Neon Genesis Evangelion</h2>
+      <p>Diffusée entre <time datetime="1995">1995</time> et <time datetime="1996">1996</time>, <strong>Neon Genesis Evangelion</strong> raconte l'histoire de Shinji Ikari, un adolescent recruté par l'organisation <abbr title="NERV">NERV</abbr> pour piloter un Evangelion — un robot géant — afin de combattre des entités mystérieuses appelées Anges.</p>
+      <p>La série commence comme un anime mecha classique mais évolue vers une exploration psychologique intense des traumatismes, de l'isolement et de la quête d'identité. Anno y a insufflé ses propres démons intérieurs, créant une œuvre viscérale et profondément personnelle.</p>
+      <p><strong>Impact culturel :</strong> Evangelion a influencé d'innombrables créateurs, redéfini les attentes du public envers l'animation et reste une référence incontournable dans la culture pop japonaise et mondiale.</p>
+      <ul class="meta" role="list" aria-label="Informations sur la série">
+        <li class="meta-pill"><span aria-hidden="true">📺</span> <data value="26">26 épisodes</data> (<time datetime="1995">1995</time>-<time datetime="1996">1996</time>)</li>
+        <li class="meta-pill"><span aria-hidden="true">🎬</span> Films & Rebuild (<time datetime="1997">1997</time>-<time datetime="2021">2021</time>)</li>
+        <li class="meta-pill"><span aria-hidden="true">🏆</span> Prix & reconnaissance mondiale</li>
+      </ul>
+    </article>
 
-      <!-- Personnages -->
-      <section class="card">
-        <h3 class="section-title">Personnages Principaux</h3>
-        <div class="characters-grid">
+    <!-- Personnages -->
+    <section class="card">
+      <h2 class="section-title">Personnages Principaux</h2>
+      <ul class="characters-grid" role="list">
+        <li>
           <article class="character-card">
-            <img src="shinji.png" alt="Shinji Ikari" class="character-img">
-            <h4>Shinji Ikari</h4>
-            <p>Pilote de l'EVA-01. Introverti et en conflit permanent avec lui-même et son père.</p>
+            <img src="shinji.png" alt="Shinji Ikari portant son uniforme scolaire" class="character-img">
+            <h3>Shinji Ikari</h3>
+            <p>Pilote de l'<abbr title="Evangelion Unit">EVA</abbr>-01. Introverti et en conflit permanent avec lui-même et son père.</p>
           </article>
+        </li>
 
+        <li>
           <article class="character-card">
-            <img src="rei.png" alt="Rei Ayanami" class="character-img">
-            <h4>Rei Ayanami</h4>
-            <p>Pilote de l'EVA-00. Silencieuse, mystérieuse et au centre de nombreux mystères.</p>
+            <img src="rei.png" alt="Rei Ayanami avec ses cheveux bleus courts" class="character-img">
+            <h3>Rei Ayanami</h3>
+            <p>Pilote de l'<abbr title="Evangelion Unit">EVA</abbr>-00. Silencieuse, mystérieuse et au centre de nombreux mystères.</p>
           </article>
+        </li>
 
+        <li>
           <article class="character-card">
-            <img src="asuka2.png" alt="Asuka Langley Soryu" class="character-img">
-            <h4>Asuka Langley Soryu</h4>
-            <p>Pilote de l'EVA-02. Fière, compétitive et cache une profonde fragilité émotionnelle.</p>
+            <img src="asuka2.png" alt="Asuka Langley Soryu en tenue de combat" class="character-img">
+            <h3>Asuka Langley Soryu</h3>
+            <p>Pilote de l'<abbr title="Evangelion Unit">EVA</abbr>-02. Fière, compétitive et cache une profonde fragilité émotionnelle.</p>
           </article>
+        </li>
 
+        <li>
           <article class="character-card">
-            <img src="misato5.png" alt="Misato Katsuragi" class="character-img">
-            <h4>Misato Katsuragi</h4>
-            <p>Officier chez NERV. Figure maternelle complexe, chaleureuse mais hantée par son passé.</p>
+            <img src="misato5.png" alt="Misato Katsuragi en uniforme de NERV" class="character-img">
+            <h3>Misato Katsuragi</h3>
+            <p>Officier chez <abbr title="NERV">NERV</abbr>. Figure maternelle complexe, chaleureuse mais hantée par son passé.</p>
           </article>
-        </div>
-      </section>
-    </main>
-
-    </div>
+        </li>
+      </ul>
+    </section>
+  </main>
 
   <!-- Pied de page -->
   <footer class="site-footer">
-    <div class="footer-container">
+    <section class="footer-container">
       <!-- Colonne 1 : À propos -->
-      <div class="footer-column">
-        <h4>À Propos</h4>
+      <section class="footer-column">
+        <h2>À Propos</h2>
         <p class="footer-description">
           Une exploration passionnante de la culture japonaise à travers ses figures emblématiques : 
           l'Empereur Naruhito, l'art culinaire, Hideaki Anno et Masashi Kishimoto.
         </p>
-      </div>
+      </section>
 
       <!-- Colonne 2 : Navigation rapide -->
-      <div class="footer-column">
-        <h4>Navigation</h4>
-        <ul class="footer-links">
+      <nav class="footer-column" aria-label="Navigation secondaire">
+        <h2>Navigation</h2>
+        <ul class="footer-links" role="list">
           <li><a href="fansite3.html">Accueil</a></li>
           <li><a href="actualites.html">Actualités</a></li>
           <li><a href="biographie.html">Biographie</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
+      </nav>
 
       <!-- Colonne 3 : Le Japon -->
-      <div class="footer-column">
-        <h4>Le Pays du Soleil Levant</h4>
-        <ul class="footer-links">
-          <li><span class="footer-info">🏯 Tradition millénaire</span></li>
-          <li><span class="footer-info">🍣 Gastronomie raffinée</span></li>
-          <li><span class="footer-info">🎌 Culture unique</span></li>
-          <li><span class="footer-info">🎨 Arts narratifs reconnus</span></li>
+      <aside class="footer-column">
+        <h2>Le Pays du Soleil Levant</h2>
+        <ul class="footer-links" role="list">
+          <li><span class="footer-info"><span aria-hidden="true">🏯</span> Tradition millénaire</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🍣</span> Gastronomie raffinée</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🎌</span> Culture unique</span></li>
+          <li><span class="footer-info"><span aria-hidden="true">🎨</span> Arts narratifs reconnus</span></li>
         </ul>
-      </div>
-    </div>
+      </aside>
+    </section>
 
     <!-- Barre de copyright -->
-    <div class="footer-bottom">
+    <section class="footer-bottom">
       <p class="footer-copyright">
-        © 2025 Le Pays du Soleil Levant – Une exploration de la culture japonaise
+        <small>© <time datetime="2025">2025</time> Le Pays du Soleil Levant – Une exploration de la culture japonaise</small>
       </p>
       <p class="footer-disclaimer">
-        Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.
+        <small>Site créé dans le cadre d'un projet La Plateforme. Toutes les œuvres appartiennent à leurs auteurs respectifs.</small>
       </p>
-    </div>
+    </section>
   </footer>
 
   <style>
+    /* Classe utilitaire pour l'accessibilité */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     /* Carrousel CSS pur - remplace le JavaScript */
     .carousel-container input[type="radio"] {
-      display: none;
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
     }
 
     .carousel {
@@ -230,6 +257,20 @@
     #slide4:checked ~ .carousel-indicators label:nth-child(4) {
       opacity: 1;
       transform: scale(1.2);
+    }
+
+    /* Styles pour les listes sans puces par défaut */
+    ul[role="list"] {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Focus visible pour l'accessibilité clavier */
+    a:focus-visible,
+    label:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
     }
   </style>
 </body>
